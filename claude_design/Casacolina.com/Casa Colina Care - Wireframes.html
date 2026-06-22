@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Casa Colina Care — Wireframes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="wireframes.css">
+<style>
+  html, body { margin: 0; padding: 0; background: #f0eee9; font-family: var(--sans); }
+  .intro-note {
+    position: absolute; top: 20px; left: 20px; z-index: 5;
+    background: #fef4a8; padding: 14px 18px; border-radius: 2px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    font-family: var(--hand); color: #5a4a2a; font-size: 17px;
+    max-width: 320px; line-height: 1.3; transform: rotate(-1.5deg);
+  }
+  .intro-note strong { font-family: var(--sans); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; display: block; margin-bottom: 6px; color: #8a6a2a; font-weight: 600; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="lanai.jsx"></script>
+<script type="text/babel" src="hale.jsx"></script>
+<script type="text/babel" src="kupuna.jsx"></script>
+
+<script type="text/babel" data-presets="react">
+const DC_Canvas = window.DesignCanvas;
+const DC_Sec = window.DCSection;
+const DC_Art = window.DCArtboard;
+
+/* Page dimensions — desktop wireframe width */
+const W = 1280;
+
+/* Each page section holds three directions side by side. Heights vary per page to fit content without clipping. */
+const pages = [
+  { id: "home",   title: "Home",          subtitle: "Landing page · first impression · primary CTA",
+    variants: [
+      { id: "home-lanai",  label: "1 · Lanai — editorial, quiet",     h: 2200, C: LanaiHome },
+      { id: "home-hale",   label: "2 · Hale — warm, photo-led",        h: 2560, C: HaleHome },
+      { id: "home-kupuna", label: "3 · Kupuna — clinical, credential", h: 2300, C: KupunaHome },
+    ]},
+  { id: "about",  title: "About Us",      subtitle: "Founder story · credentials · timeline",
+    variants: [
+      { id: "about-lanai",  label: "1 · Lanai",  h: 2000, C: LanaiAbout },
+      { id: "about-hale",   label: "2 · Hale",   h: 2100, C: HaleAbout },
+      { id: "about-kupuna", label: "3 · Kupuna", h: 1950, C: KupunaAbout },
+    ]},
+  { id: "care",   title: "Care / Services", subtitle: "Four levels of care · daily rhythm",
+    variants: [
+      { id: "care-lanai",  label: "1 · Lanai",  h: 1900, C: LanaiCare },
+      { id: "care-hale",   label: "2 · Hale",   h: 2100, C: HaleCare },
+      { id: "care-kupuna", label: "3 · Kupuna", h: 2050, C: KupunaCare },
+    ]},
+  { id: "gallery", title: "Gallery / Facility Tour", subtitle: "Photos of the actual home",
+    variants: [
+      { id: "gallery-lanai",  label: "1 · Lanai",  h: 1600, C: LanaiGallery },
+      { id: "gallery-hale",   label: "2 · Hale",   h: 1700, C: HaleGallery },
+      { id: "gallery-kupuna", label: "3 · Kupuna", h: 1850, C: KupunaGallery },
+    ]},
+  { id: "team",   title: "Team & Caregivers", subtitle: "The people who show up",
+    variants: [
+      { id: "team-lanai",  label: "1 · Lanai",  h: 1450, C: LanaiTeam },
+      { id: "team-hale",   label: "2 · Hale",   h: 1650, C: HaleTeam },
+      { id: "team-kupuna", label: "3 · Kupuna", h: 1450, C: KupunaTeam },
+    ]},
+  { id: "faq",    title: "FAQ",            subtitle: "Answers families need up front",
+    variants: [
+      { id: "faq-lanai",  label: "1 · Lanai",  h: 1750, C: LanaiFAQ },
+      { id: "faq-hale",   label: "2 · Hale",   h: 1500, C: HaleFAQ },
+      { id: "faq-kupuna", label: "3 · Kupuna", h: 1800, C: KupunaFAQ },
+    ]},
+  { id: "testimonials", title: "Testimonials", subtitle: "Families in their own words",
+    variants: [
+      { id: "test-lanai",  label: "1 · Lanai",  h: 1450, C: LanaiTestimonials },
+      { id: "test-hale",   label: "2 · Hale",   h: 1650, C: HaleTestimonials },
+      { id: "test-kupuna", label: "3 · Kupuna", h: 1500, C: KupunaTestimonials },
+    ]},
+  { id: "pricing", title: "Pricing / Cost", subtitle: "What's included, what isn't, how to pay",
+    variants: [
+      { id: "pricing-lanai",  label: "1 · Lanai",  h: 1450, C: LanaiPricing },
+      { id: "pricing-hale",   label: "2 · Hale",   h: 1600, C: HalePricing },
+      { id: "pricing-kupuna", label: "3 · Kupuna", h: 1600, C: KupunaPricing },
+    ]},
+  { id: "contact", title: "Contact / Consultation", subtitle: "The form + direct line",
+    variants: [
+      { id: "contact-lanai",  label: "1 · Lanai",  h: 1400, C: LanaiContact },
+      { id: "contact-hale",   label: "2 · Hale",   h: 1500, C: HaleContact },
+      { id: "contact-kupuna", label: "3 · Kupuna", h: 1450, C: KupunaContact },
+    ]},
+];
+
+function Intro() {
+  return (
+    <DC_Sec id="intro" title="Casa Colina Care — re-engineered" subtitle="3 directions × 9 pages · mid-fi greyscale wireframes">
+      <DC_Art id="system" label="System & directions" width={900} height={640}>
+        <div style={{ padding: 40, fontFamily: "-apple-system, sans-serif", background: "#fff", height: "100%", boxSizing: "border-box" }}>
+          <div style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, letterSpacing: "-0.01em" }}>Casa Colina Care — wireframes</div>
+          <div style={{ fontSize: 12.5, color: "#6b6660", marginTop: 6 }}>
+            Re-engineered from the existing one-page site into a 9-page information architecture, explored in 3 distinct directions.
+          </div>
+
+          <hr style={{ border: 0, borderTop: "1px solid #d9d4cc", margin: "24px 0" }} />
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
+            {[
+              { t: "1 · Lanai", s: "Editorial · quiet · reverent", d: "Asymmetric grids, generous whitespace, serif-forward. Photos as artifacts, not decoration. Trust earned through restraint." },
+              { t: "2 · Hale", s: "Warm · homey · story-led", d: "Photo-led storytelling, softer shapes, warmer paper. Testimonials woven throughout. Aloha-first." },
+              { t: "3 · Kupuna", s: "Clinical · reassuring · rigorous", d: "Structured, credentials-forward, denser info. For families who want the facts before the feelings." },
+            ].map(x => (
+              <div key={x.t} style={{ border: "1px solid #d9d4cc", padding: 20, background: "#faf8f3" }}>
+                <div style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22 }}>{x.t}</div>
+                <div style={{ fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "#6b6660", marginTop: 6 }}>{x.s}</div>
+                <div style={{ fontSize: 12, color: "#3a3631", marginTop: 12, lineHeight: 1.5 }}>{x.d}</div>
+              </div>
+            ))}
+          </div>
+
+          <hr style={{ border: 0, borderTop: "1px solid #d9d4cc", margin: "24px 0" }} />
+
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32 }}>
+            <div>
+              <div style={{ fontSize: 10, letterSpacing: "0.16em", textTransform: "uppercase", color: "#6b6660" }}>Shared system</div>
+              <ul style={{ margin: "10px 0 0", paddingLeft: 18, fontSize: 12.5, color: "#3a3631", lineHeight: 1.7 }}>
+                <li><b>Type</b> — Instrument Serif (display) + system sans (body), JetBrains Mono (labels)</li>
+                <li><b>Palette</b> — warm white, paper, ink, with one muted terracotta accent</li>
+                <li><b>Fidelity</b> — mid-fi, greyscale + one accent, striped placeholders for imagery</li>
+                <li><b>Scope</b> — Home · About · Care · Gallery · Team · FAQ · Testimonials · Pricing · Contact</li>
+              </ul>
+            </div>
+            <div>
+              <div style={{ fontSize: 10, letterSpacing: "0.16em", textTransform: "uppercase", color: "#6b6660" }}>How to use</div>
+              <ul style={{ margin: "10px 0 0", paddingLeft: 18, fontSize: 12.5, color: "#3a3631", lineHeight: 1.7 }}>
+                <li>Scroll down to see each page in all three directions side by side</li>
+                <li>Click the ↗ expand button on any wireframe to view it full-screen</li>
+                <li>Handwritten margin notes flag design intent</li>
+                <li>Every image is a placeholder — real photos replace them later</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style={{ marginTop: 24, fontFamily: "'Caveat', cursive", fontSize: 18, color: "#7a3c25" }}>
+            pick a direction — or cherry-pick pages from each. <span style={{ color: "#b65d3c" }}>↓</span>
+          </div>
+        </div>
+      </DC_Art>
+    </DC_Sec>
+  );
+}
+
+function Page({ page }) {
+  return (
+    <DC_Sec id={page.id} title={page.title} subtitle={page.subtitle}>
+      {page.variants.map(v => (
+        <DC_Art key={v.id} id={v.id} label={v.label} width={W} height={v.h}>
+          <v.C />
+        </DC_Art>
+      ))}
+    </DC_Sec>
+  );
+}
+
+function App() {
+  return (
+    <DC_Canvas>
+      <Intro />
+      {pages.map(p => <Page key={p.id} page={p} />)}
+    </DC_Canvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

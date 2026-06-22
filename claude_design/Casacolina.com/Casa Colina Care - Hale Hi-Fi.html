@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Casa Colina Care — A home in Hawai‘i Kai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream: oklch(0.94 0.028 78);          /* warm paper */
+  --cream-2: oklch(0.91 0.034 76);        /* deeper paper */
+  --cream-3: oklch(0.97 0.020 84);        /* lighter paper */
+  --paper: oklch(0.985 0.010 86);         /* near-white card */
+  --ink: oklch(0.25 0.025 50);            /* deep warm brown */
+  --ink-2: oklch(0.40 0.024 52);
+  --ink-3: oklch(0.55 0.022 54);
+  --ink-4: oklch(0.72 0.018 60);
+  --rule: oklch(0.85 0.030 76);
+  --terracotta: oklch(0.61 0.13 38);
+  --terracotta-deep: oklch(0.50 0.115 36);
+  --sage: oklch(0.55 0.045 130);
+  --leaf: oklch(0.50 0.085 145);
+
+  --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  --script: "Caveat", "Brush Script MT", cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* Type ─────────── */
+.display{font-family:var(--serif);font-weight:300;line-height:1.02;letter-spacing:-0.022em;font-variation-settings:"opsz" 120}
+.display .i{font-style:italic;font-weight:300}
+.serif{font-family:var(--serif)}
+.script{font-family:var(--script);font-weight:500}
+.eyebrow{font-family:var(--sans);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.eyebrow.accent{color:var(--terracotta-deep)}
+.lead{font-family:var(--serif);font-weight:300;font-size:22px;line-height:1.5;color:var(--ink-2)}
+
+/* Buttons — soft & pilled ─────────── */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;font-size:13.5px;font-weight:500;letter-spacing:0.005em;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:all .28s ease;font-family:var(--sans)}
+.btn .arr{transition:transform .28s ease;display:inline-block}
+.btn:hover .arr{transform:translateX(3px)}
+.btn-primary{background:var(--terracotta);color:#fff;box-shadow:0 1px 0 rgba(0,0,0,0.04), 0 6px 18px -8px rgba(182,93,60,0.55)}
+.btn-primary:hover{background:var(--terracotta-deep);transform:translateY(-1px);box-shadow:0 1px 0 rgba(0,0,0,0.04), 0 14px 30px -10px rgba(182,93,60,0.6)}
+.btn-ink{background:var(--ink);color:var(--cream)}
+.btn-ink:hover{background:#000}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--cream)}
+.btn-on-dark{border:1px solid rgba(255,255,255,0.4);color:#fff;background:transparent}
+.btn-on-dark:hover{background:#fff;color:var(--ink)}
+
+/* Layout ─────────── */
+.wrap{max-width:1340px;margin:0 auto;padding:0 48px}
+.section{padding:120px 0}
+.section-sm{padding:80px 0}
+
+/* Nav ─────────── */
+.nav{position:sticky;top:0;z-index:50;background:rgba(245,237,224,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,0.05)}
+.nav-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:20px 48px;max-width:1440px;margin:0 auto}
+.nav-brand{display:flex;align-items:center;gap:12px}
+.nav-mark{width:36px;height:36px;border-radius:999px;background:var(--terracotta);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:20px;font-weight:300}
+.nav-name{font-family:var(--serif);font-size:21px;font-weight:400;letter-spacing:-0.01em;line-height:1}
+.nav-name em{font-style:italic;font-weight:300;color:var(--terracotta-deep)}
+.nav-links{display:flex;gap:30px;justify-self:center}
+.nav-links a{font-size:13px;color:var(--ink-2);transition:color .2s;position:relative}
+.nav-links a:hover,.nav-links a.active{color:var(--terracotta-deep)}
+.nav-links a.active::after{content:"";position:absolute;left:50%;bottom:-7px;width:5px;height:5px;border-radius:999px;background:var(--terracotta);transform:translateX(-50%)}
+.nav-cta{justify-self:end;display:flex;align-items:center;gap:18px}
+.nav-cta .phone{font-size:13px;color:var(--ink);display:flex;align-items:center;gap:8px}
+
+/* Hero ─────────── */
+.hero{position:relative;height:92vh;min-height:720px;max-height:960px;overflow:hidden}
+.hero-img{position:absolute;inset:0;background-size:cover;background-position:center 55%;animation:kenburns 28s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1.02)}to{transform:scale(1.08)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(42,35,28,0.12) 0%, rgba(42,35,28,0) 30%, rgba(42,35,28,0.05) 55%, rgba(42,35,28,0.65) 100%)}
+.hero-wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:38px 48px 64px;max-width:1440px;left:50%;transform:translateX(-50%);width:100%;color:#fff}
+.hero-top{display:flex;justify-content:space-between;align-items:center}
+.hero-pill{display:inline-flex;align-items:center;gap:10px;padding:9px 16px;background:rgba(255,255,255,0.14);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.25);border-radius:999px;color:#fff;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500}
+.hero-pill .dot{width:7px;height:7px;border-radius:999px;background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,0.25)}
+.hero-pill.alt{background:rgba(255,255,255,0.08)}
+.hero-bottom{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:end}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(48px,7vw,108px);line-height:0.96;letter-spacing:-0.025em;color:#fff;font-variation-settings:"opsz" 144;max-width:11ch}
+.hero h1 .i{font-style:italic;color:oklch(0.94 0.06 76)}
+.hero-sub{color:rgba(255,255,255,0.92);font-size:16.5px;line-height:1.55;max-width:380px;margin-bottom:24px;font-weight:300}
+.hero-actions{display:flex;flex-direction:column;gap:18px;align-items:flex-end}
+.hero-handwritten{font-family:var(--script);font-size:26px;color:#fff;transform:rotate(-3deg);opacity:0.92;line-height:1.05;text-align:right;max-width:240px}
+.hero-handwritten::before{content:"";display:inline-block;width:36px;height:1px;background:#fff;vertical-align:middle;margin-right:10px;margin-bottom:4px;opacity:0.7}
+
+/* Promise strip ─────────── */
+.promise{padding:56px 0 0;background:var(--cream)}
+.promise-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pcard{background:var(--paper);border:1px solid var(--rule);border-radius:14px;padding:26px 26px 24px;display:flex;flex-direction:column;gap:6px;transition:transform .25s, box-shadow .25s;position:relative;overflow:hidden}
+.pcard:hover{transform:translateY(-3px);box-shadow:0 24px 40px -28px rgba(60,40,20,0.25)}
+.pcard .glyph{width:42px;height:42px;border-radius:12px;background:oklch(0.93 0.04 78);color:var(--terracotta-deep);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:22px;font-weight:300;margin-bottom:14px;line-height:1}
+.pcard .pnum{font-family:var(--serif);font-weight:300;font-size:34px;letter-spacing:-0.02em;line-height:1}
+.pcard .pnum sup{font-size:14px;vertical-align:top;color:var(--ink-3);margin-left:2px;font-style:italic;font-weight:400}
+.pcard h4{font-family:var(--serif);font-weight:400;font-size:17px;line-height:1.2;margin-top:8px;color:var(--ink)}
+.pcard p{font-size:12.5px;color:var(--ink-3);line-height:1.5;margin-top:4px}
+
+/* Story (photo-led) ─────────── */
+.story{padding:140px 0;background:var(--cream)}
+.story-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.story-images{position:relative;padding-right:60px;padding-bottom:60px}
+.story-main{aspect-ratio:5/6;background-size:cover;background-position:center;border-radius:10px;box-shadow:0 30px 60px -30px rgba(40,28,18,0.4)}
+.story-inset{position:absolute;width:42%;aspect-ratio:4/5;background-size:cover;background-position:center;right:0;bottom:0;border-radius:10px;border:8px solid var(--cream);box-shadow:0 30px 60px -28px rgba(40,28,18,0.4)}
+.story-stamp{position:absolute;top:-22px;right:42px;background:var(--terracotta);color:#fff;font-family:var(--script);font-size:22px;width:104px;height:104px;border-radius:999px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.05;transform:rotate(-8deg);padding:14px;box-shadow:0 14px 30px -10px rgba(182,93,60,0.55);z-index:2}
+.story-stamp small{display:block;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-family:var(--sans);font-weight:600;margin-top:4px;opacity:0.85}
+.story-body h2{font-family:var(--serif);font-weight:300;font-size:clamp(40px,4.6vw,64px);line-height:1.0;letter-spacing:-0.022em;margin-top:18px}
+.story-body h2 .i{font-style:italic;color:var(--terracotta-deep)}
+.story-body p{font-size:16px;line-height:1.75;color:var(--ink-2);margin-top:18px;max-width:460px}
+.story-body .pull{font-family:var(--serif);font-style:italic;font-weight:300;font-size:24px;line-height:1.35;color:var(--ink);max-width:460px;padding:22px 0 22px 22px;margin:28px 0;border-left:3px solid var(--terracotta);background:linear-gradient(90deg, oklch(0.94 0.035 78) 0%, transparent 100%);border-top-right-radius:8px;border-bottom-right-radius:8px}
+.story-sig{display:flex;align-items:center;gap:14px;margin-top:24px}
+.sig-mark{width:54px;height:54px;border-radius:999px;background:var(--terracotta);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-weight:300;font-size:28px;line-height:1}
+.sig-name{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.1}
+.sig-meta{font-size:11.5px;letter-spacing:0.06em;color:var(--ink-3);margin-top:2px}
+
+/* Pullquote band ─────────── */
+.pullband{padding:96px 0;background:var(--cream-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);position:relative}
+.pullband::before{content:"\201C";position:absolute;left:48px;top:30px;font-family:var(--serif);font-size:280px;line-height:0.6;color:var(--terracotta);opacity:0.16;font-style:italic;font-weight:300}
+.pullband-inner{max-width:1000px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;position:relative}
+.pullband-portrait{width:140px;height:140px;border-radius:999px;background-size:cover;background-position:center;border:6px solid var(--paper);box-shadow:0 20px 40px -20px rgba(40,28,18,0.35);flex-shrink:0}
+.pullband blockquote{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(26px,2.6vw,38px);line-height:1.28;color:var(--ink);letter-spacing:-0.012em}
+.pullband cite{display:block;margin-top:20px;font-style:normal;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+
+/* Services ─────────── */
+.services{padding:140px 0;background:var(--cream)}
+.services-head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:56px}
+.services-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(40px,4.6vw,64px);line-height:1.02;letter-spacing:-0.022em}
+.services-head h2 .i{font-style:italic}
+.services-head p{color:var(--ink-2);max-width:460px;font-size:16px;line-height:1.65;padding-bottom:10px}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc{background:var(--paper);border:1px solid var(--rule);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s, box-shadow .3s;cursor:pointer}
+.svc:hover{transform:translateY(-4px);box-shadow:0 30px 50px -28px rgba(60,40,20,0.32)}
+.svc-img{aspect-ratio:4/3;background-size:cover;background-position:center;border-bottom:1px solid var(--rule)}
+.svc-body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.svc-num{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--terracotta-deep)}
+.svc h3{font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.1;letter-spacing:-0.012em}
+.svc p{font-size:13px;color:var(--ink-2);line-height:1.55}
+.svc .more{margin-top:auto;padding-top:14px;font-size:12px;color:var(--terracotta-deep);letter-spacing:0.05em;display:flex;align-items:center;gap:6px;transition:gap .25s}
+.svc:hover .more{gap:10px}
+
+/* Photo strip (real photos, real days) ─────────── */
+.photos{padding:120px 0;background:var(--cream-3)}
+.photos-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:40px;gap:32px}
+.photos-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(36px,4vw,54px);line-height:1.02;letter-spacing:-0.022em;max-width:560px}
+.photos-head h2 .i{font-style:italic;color:var(--terracotta-deep)}
+.photos-head .hint{font-family:var(--script);font-size:24px;color:var(--terracotta-deep);transform:rotate(-2deg);max-width:240px;line-height:1.1;text-align:right}
+.photo-mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:120px;gap:10px}
+.pi{background-size:cover;background-position:center;border-radius:8px;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(0.2,0.7,0.3,1)}
+.pi:hover{transform:scale(1.02)}
+.pi-cap{position:absolute;left:14px;bottom:12px;color:#fff;font-family:var(--serif);font-style:italic;font-size:13px;text-shadow:0 2px 8px rgba(0,0,0,0.5);opacity:0;transition:opacity .3s}
+.pi:hover .pi-cap{opacity:1}
+.photos-after{margin-top:36px;display:flex;justify-content:space-between;align-items:center;padding-top:28px;border-top:1px solid var(--rule)}
+.photos-after p{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--ink-2)}
+
+/* Testimonials trio ─────────── */
+.testi{padding:140px 0;background:var(--cream)}
+.testi-head{text-align:center;margin-bottom:56px}
+.testi-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(40px,4.4vw,60px);line-height:1.02;letter-spacing:-0.022em;margin-top:14px}
+.testi-head h2 .i{font-style:italic;color:var(--terracotta-deep)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcard{background:var(--paper);border:1px solid var(--rule);border-radius:16px;padding:34px 32px 30px;display:flex;flex-direction:column;gap:18px;position:relative;transition:transform .3s, box-shadow .3s}
+.tcard:hover{transform:translateY(-3px);box-shadow:0 28px 48px -28px rgba(60,40,20,0.3)}
+.tcard.feature{background:var(--terracotta);color:#fff;border-color:var(--terracotta);box-shadow:0 30px 50px -24px rgba(182,93,60,0.55)}
+.tcard .qmark{font-family:var(--serif);font-style:italic;font-size:56px;line-height:0.5;color:var(--terracotta-deep);opacity:0.55;font-weight:300}
+.tcard.feature .qmark{color:rgba(255,255,255,0.7);opacity:1}
+.tcard q{font-family:var(--serif);font-style:italic;font-weight:300;font-size:21px;line-height:1.4;quotes:none;letter-spacing:-0.005em}
+.tcard.feature q{font-size:24px}
+.tcard q::before,.tcard q::after{content:""}
+.tcard footer{margin-top:auto;display:flex;align-items:center;gap:12px;padding-top:18px;border-top:1px solid var(--rule)}
+.tcard.feature footer{border-top-color:rgba(255,255,255,0.2)}
+.tcard .avatar{width:44px;height:44px;border-radius:999px;background:var(--cream-2);color:var(--terracotta-deep);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:18px;font-weight:300;flex-shrink:0}
+.tcard.feature .avatar{background:rgba(255,255,255,0.2);color:#fff}
+.tcard .who{font-size:13px;font-weight:500;line-height:1.2}
+.tcard .who small{display:block;font-size:11px;font-weight:400;letter-spacing:0.04em;color:var(--ink-3);margin-top:3px}
+.tcard.feature .who small{color:rgba(255,255,255,0.75)}
+
+/* Visit / dual CTA ─────────── */
+.visit{padding:140px 0;background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+.visit::before{content:"";position:absolute;inset:0;background-image:url('assets/home-dog-portrait.jpg');background-size:cover;background-position:center;opacity:0.10;mix-blend-mode:lighten}
+.visit::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(42,35,28,0.3) 0%, rgba(42,35,28,0.92) 100%)}
+.visit-inner{position:relative;z-index:2}
+.visit-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
+.visit-eye{color:rgba(245,237,224,0.65);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;margin-bottom:20px}
+.visit h2{font-family:var(--serif);font-weight:300;font-size:clamp(48px,5.6vw,82px);line-height:0.98;letter-spacing:-0.025em;color:#fff}
+.visit h2 .i{font-style:italic;color:oklch(0.86 0.08 78)}
+.visit p{margin-top:24px;font-size:17px;color:rgba(245,237,224,0.78);line-height:1.6;max-width:480px;font-weight:300}
+.visit-actions{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+.contact-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:16px;padding:36px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.contact-card .label{font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,237,224,0.55);font-weight:600}
+.contact-card .phone{font-family:var(--serif);font-weight:300;font-size:46px;letter-spacing:-0.015em;color:#fff;margin:10px 0 4px;line-height:1}
+.contact-card .email{font-size:14px;color:rgba(245,237,224,0.78);margin-bottom:24px}
+.contact-card .row{display:flex;gap:14px;align-items:flex-start;padding-top:22px;border-top:1px solid rgba(255,255,255,0.12)}
+.contact-card .row + .row{margin-top:18px}
+.contact-card .row .icon{width:36px;height:36px;border-radius:999px;background:rgba(245,237,224,0.1);display:flex;align-items:center;justify-content:center;color:rgba(245,237,224,0.7);font-family:var(--serif);font-style:italic;font-size:18px;flex-shrink:0}
+.contact-card .row .txt{font-size:13.5px;color:rgba(245,237,224,0.92);line-height:1.5}
+.contact-card .row .txt small{display:block;font-size:11.5px;color:rgba(245,237,224,0.55);margin-top:2px;letter-spacing:0.04em}
+
+/* Footer ─────────── */
+footer{background:#1c1814;color:rgba(245,237,224,0.75);padding:80px 0 32px}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,0.06)}
+footer h4{font-family:var(--sans);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,237,224,0.45);font-weight:600;margin-bottom:18px}
+footer .brand{font-family:var(--serif);font-weight:300;font-size:30px;color:var(--cream);margin-bottom:14px;display:flex;align-items:baseline;gap:8px}
+footer .brand em{font-style:italic;color:var(--terracotta)}
+footer .tag{font-size:13.5px;line-height:1.65;max-width:300px;color:rgba(245,237,224,0.62)}
+footer .madebadge{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-family:var(--script);font-size:18px;color:var(--terracotta);transform:rotate(-2deg)}
+footer ul{list-style:none}
+footer li{font-size:13.5px;padding:5px 0;color:rgba(245,237,224,0.78);transition:color .2s}
+footer li:hover{color:var(--terracotta)}
+footer .legal{padding-top:28px;display:flex;justify-content:space-between;font-size:11.5px;color:rgba(245,237,224,0.35);letter-spacing:0.04em}
+
+/* Reveal */
+.reveal{opacity:1;transition:opacity 0.7s cubic-bezier(0.2,0.7,0.3,1), transform 0.7s cubic-bezier(0.2,0.7,0.3,1)}
+
+@media (max-width: 1080px){
+  .essay,.story-grid,.services-head,.visit-grid,.photos-head,.pullband-inner{grid-template-columns:1fr;gap:40px}
+  .promise-grid,.svc-grid,.testi-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-bottom{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV ───────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <div class="nav-mark">c</div>
+      <div class="nav-name">casa colina <em>care</em></div>
+    </div>
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#story">About</a>
+      <a href="#care">Care</a>
+      <a href="#photos">Gallery</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <div class="nav-cta">
+      <span class="phone">📞 (808) 200-1840</span>
+      <a href="#visit" class="btn btn-primary">Say hello <span class="arr">→</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO ───────── -->
+<section class="hero">
+  <div class="hero-img" style="background-image:url('assets/home-kokohead.jpg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-wrap">
+    <div class="hero-top">
+      <div class="hero-pill"><span class="dot"></span> Accepting new residents · spring 2026</div>
+      <div class="hero-pill alt">6 beds · 1 home</div>
+    </div>
+    <div class="hero-bottom">
+      <div>
+        <h1>Where <span class="i">aloha</span> is the care plan.</h1>
+        <p class="hero-sub" style="margin-top:24px">A warm, family-style care home tucked under the green peak of Koko Head. Six residents. One kitchen. Your loved one, treated like ours.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#visit" class="btn btn-primary">Request a visit <span class="arr">→</span></a>
+          <a href="#story" class="btn btn-on-dark">Read our story</a>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <div class="hero-handwritten">come over for tea — we'll show you around.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE STRIP ───────── -->
+<section class="promise">
+  <div class="wrap">
+    <div class="promise-grid reveal">
+      <div class="pcard">
+        <div class="glyph">i</div>
+        <div class="pnum">6<sup>max</sup></div>
+        <h4>Residents, never more</h4>
+        <p>Small on purpose. Every name, every story, known by heart.</p>
+      </div>
+      <div class="pcard">
+        <div class="glyph">ii</div>
+        <div class="pnum">1:3</div>
+        <h4>Caregiver-to-resident ratio</h4>
+        <p>Awake staff day and night. An on-call RN, always.</p>
+      </div>
+      <div class="pcard">
+        <div class="glyph">iii</div>
+        <div class="pnum">0.4<sup>ac</sup></div>
+        <h4>Tropical grounds &amp; lanai</h4>
+        <p>Open-air seating, papaya trees, Koko Head over the lawn.</p>
+      </div>
+      <div class="pcard">
+        <div class="glyph">iv</div>
+        <div class="pnum">'19</div>
+        <h4>Family-owned since 2019</h4>
+        <p>Licensed ARCH II. Same family, same recipes, every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY ───────── -->
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="story-images reveal">
+        <div class="story-stamp">since<br/>2019<small>aloha</small></div>
+        <div class="story-main" style="background-image:url('assets/caregiver-resident.png')"></div>
+        <div class="story-inset" style="background-image:url('assets/home-garden.jpg')"></div>
+      </div>
+      <div class="story-body reveal">
+        <div class="eyebrow accent">Our story</div>
+        <h2>This started with my <span class="i">grandmother.</span></h2>
+        <p>I watched her spend her last years somewhere that felt like a waiting room. Fluorescent lights. Shift changes. A TV nobody watched. I couldn't change it for her — but I could build something different for the next family.</p>
+        <div class="pull">Casa Colina is six bedrooms, one kitchen, and a lanai that catches the trade winds. It's small because care can't be scaled.</div>
+        <p>We cook real meals. We sit on the lanai. We call families by their first names and we mean it. If that sounds like what your mother, father, or spouse deserves — come visit. We'll put water on for tea.</p>
+        <div class="story-sig">
+          <div class="sig-mark">K</div>
+          <div>
+            <div class="sig-name">Kriss</div>
+            <div class="sig-meta">Owner &amp; Director · ARCH-licensed administrator</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PULLQUOTE BAND ───────── -->
+<section class="pullband">
+  <div class="pullband-inner reveal">
+    <div class="pullband-portrait" style="background-image:url('assets/home-dog-portrait.jpg')"></div>
+    <div>
+      <blockquote>The staff treats every resident like family. Mom stopped asking when we were going home — because this <em>became</em> home.</blockquote>
+      <cite>M. Tanaka · daughter of resident · Kaimuki</cite>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES ───────── -->
+<section class="services" id="care">
+  <div class="wrap">
+    <div class="services-head reveal">
+      <div>
+        <div class="eyebrow accent" style="margin-bottom:16px">How we care</div>
+        <h2>Four ways.<br/>One <span class="i">promise.</span></h2>
+      </div>
+      <p>From assisted living through end-of-life comfort — the same kindness, the same people. We don't transfer care between buildings; we adapt around the resident.</p>
+    </div>
+    <div class="svc-grid reveal">
+      <div class="svc">
+        <div class="svc-img" style="background-image:url('assets/home-living-room.jpg')"></div>
+        <div class="svc-body">
+          <div class="svc-num">i.</div>
+          <h3>Assisted Living</h3>
+          <p>Help with dressing, bathing, meds — while preserving the freedoms that matter most.</p>
+          <div class="more">Learn more <span>→</span></div>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="svc-img" style="background-image:url('assets/home-bedroom-cherry-blossom.jpg')"></div>
+        <div class="svc-body">
+          <div class="svc-num">ii.</div>
+          <h3>Memory Care</h3>
+          <p>A quiet, structured home for kupuna with dementia. Familiar routines, patient hands.</p>
+          <div class="more">Learn more <span>→</span></div>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="svc-img" style="background-image:url('assets/home-lanai-chairs.jpg')"></div>
+        <div class="svc-body">
+          <div class="svc-num">iii.</div>
+          <h3>Respite &amp; Short-Stay</h3>
+          <p>A weekend, a few weeks — a soft landing while family caregivers rest, travel, or recover.</p>
+          <div class="more">Learn more <span>→</span></div>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="svc-img" style="background-image:url('assets/home-bathroom-modern.jpg')"></div>
+        <div class="svc-body">
+          <div class="svc-num">iv.</div>
+          <h3>End-of-Life Comfort</h3>
+          <p>Gentle, loving care in familiar surroundings, in partnership with your hospice of choice.</p>
+          <div class="more">Learn more <span>→</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO MOSAIC ───────── -->
+<section class="photos" id="photos">
+  <div class="wrap">
+    <div class="photos-head reveal">
+      <h2>Real photos.<br/>Real <span class="i">ordinary days.</span></h2>
+      <div class="hint">no stock photos. ever.</div>
+    </div>
+    <div class="photo-mosaic reveal">
+      <div class="pi" style="grid-column:1/8;grid-row:1/4;background-image:url('assets/home-living-room-wide.jpg')"><div class="pi-cap">The living room, garden side</div></div>
+      <div class="pi" style="grid-column:8/13;grid-row:1/3;background-image:url('assets/home-kitchen-island.jpg')"><div class="pi-cap">The kitchen at midday</div></div>
+      <div class="pi" style="grid-column:8/13;grid-row:3/5;background-image:url('assets/home-hallway-dog.jpg')"><div class="pi-cap">Our resident-in-chief</div></div>
+      <div class="pi" style="grid-column:1/5;grid-row:4/6;background-image:url('assets/home-bedroom-twin.jpg')"><div class="pi-cap">A shared room, west-facing</div></div>
+      <div class="pi" style="grid-column:5/9;grid-row:4/6;background-image:url('assets/home-zen-entry.jpg')"><div class="pi-cap">Stones &amp; ferns, at the entry</div></div>
+      <div class="pi" style="grid-column:9/13;grid-row:5/6;background-image:url('assets/home-yard-papaya.jpg')"><div class="pi-cap">Papaya, Koko Head</div></div>
+    </div>
+    <div class="photos-after">
+      <p>Pictures only go so far.</p>
+      <a href="#visit" class="btn btn-ink">Schedule a private visit <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS TRIO ───────── -->
+<section class="testi">
+  <div class="wrap">
+    <div class="testi-head reveal">
+      <div class="eyebrow accent">From the families</div>
+      <h2>What aloha sounds like,<br/>in their <span class="i">own words.</span></h2>
+    </div>
+    <div class="testi-grid reveal">
+      <div class="tcard">
+        <div class="qmark">"</div>
+        <q>Kriss called me every evening for the first week, just to tell me how Dad was doing. I never had to ask.</q>
+        <footer>
+          <div class="avatar">J</div>
+          <div class="who">J. Reyes<small>Son of resident · Kailua</small></div>
+        </footer>
+      </div>
+      <div class="tcard feature">
+        <div class="qmark">"</div>
+        <q>My father is himself again here. He laughs. He sings. We hadn't heard him sing in two years.</q>
+        <footer>
+          <div class="avatar">A</div>
+          <div class="who">A. Kekoa<small>Daughter of resident · Hawai‘i Kai</small></div>
+        </footer>
+      </div>
+      <div class="tcard">
+        <div class="qmark">"</div>
+        <q>She picked up the phone at eleven at night when my mother fell. She talked me through it for forty-five minutes.</q>
+        <footer>
+          <div class="avatar">S</div>
+          <div class="who">S. Wong<small>Daughter of resident · Mānoa</small></div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT / CLOSING ───────── -->
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="visit-inner">
+      <div class="visit-grid">
+        <div class="reveal">
+          <div class="visit-eye">Come visit</div>
+          <h2>Put the kettle on.<br/>Let's talk about your <span class="i">mom.</span></h2>
+          <p>We host tours by appointment — one family at a time. No hard sell, no fluorescent lights. Just a real conversation about your family, on the lanai if the weather's right.</p>
+          <div class="visit-actions">
+            <a href="#" class="btn btn-primary">Request a consultation <span class="arr">→</span></a>
+            <a href="#" class="btn btn-on-dark">Schedule a visit</a>
+          </div>
+        </div>
+        <div class="contact-card reveal">
+          <div class="label">Speak directly with Kriss</div>
+          <div class="phone">(808) 200-1840</div>
+          <div class="email">kriss@casacolinacare.com</div>
+          <div class="row">
+            <div class="icon">⌂</div>
+            <div class="txt">189 Anapalau Street<br/><small>Hawai‘i Kai · Honolulu, HI 96825</small></div>
+          </div>
+          <div class="row">
+            <div class="icon">⌚</div>
+            <div class="txt">Mon–Sat · 8a–7p<br/><small>Urgent: same number, anytime</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER ───────── -->
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand">casa colina <em>care</em></div>
+      <p class="tag">A family-style care home in Hawai‘i Kai. Six residents. Real aloha. Open since 2019.</p>
+      <div class="madebadge">made with aloha 🌺</div>
+    </div>
+    <div>
+      <h4>The home</h4>
+      <ul><li>Our story</li><li>The team</li><li>Gallery</li><li>The lanai</li></ul>
+    </div>
+    <div>
+      <h4>Care</h4>
+      <ul><li>Services</li><li>Pricing</li><li>FAQ</li><li>For referrers</li></ul>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul><li>189 Anapalau Street</li><li>Hawai‘i Kai · 96825</li><li>(808) 200-1840</li><li>kriss@casacolinacare.com</li></ul>
+    </div>
+  </div>
+  <div class="wrap legal" style="display:flex;border:0;padding-top:28px;padding-bottom:0">
+    <div>© 2026 Casa Colina Care LLC · All rights reserved</div>
+    <div>Licensed ARCH Hawai‘i Type II · Privacy · Accessibility</div>
+  </div>
+</footer>
+
+<script>
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id.length > 1) {
+      const t = document.querySelector(id);
+      if (t) { e.preventDefault(); window.scrollTo({ top: t.offsetTop - 70, behavior: 'smooth' }); }
+    }
+  });
+});
+</script>
+</body>
+</html>
