@@ -1,0 +1,83 @@
+[
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "Notification",
+    "message": "Claude Code login successful",
+    "notification_type": "auth_success"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "Notification",
+    "message": "Claude Code login successful",
+    "notification_type": "auth_success"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "Notification",
+    "message": "Claude Code login successful",
+    "notification_type": "auth_success"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  }
+]

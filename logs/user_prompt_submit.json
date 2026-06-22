@@ -1,0 +1,245 @@
+[
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "hi there"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/jx-kb:init wiki"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "run it again"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "how can i run the app?"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "start the dev server"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "yes, apply the fix"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "yes, apply the fix"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "getting this error when browsing the dev site"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "## Error Type\nRuntime Error\n\n## Error Message\nCould not find the module \"[project]/node_modules/next/dist/client/components/builtin/global-error.js#default\" in the React Client Manifest. This is probably a bug in the React Server Components bundler.\n\n\n    at stringify (<anonymous>:1:18)\n\nNext.js version: 16.2.9 (Turbopack)"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "kill the bun dev site proces"
+  },
+  {
+    "session_id": "c58d079f-f4a9-4dbe-8010-975864e69159",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/c58d079f-f4a9-4dbe-8010-975864e69159.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "## Error Type\nRuntime Error\n\n## Error Message\nCould not find the module \"[project]/node_modules/next/dist/client/components/builtin/global-error.js#default\" in the React Client Manifest. This is probably a bug in the React Server Components bundler.\n\n\n    at stringify (<anonymous>:1:18)\n\nNext.js version: 16.2.9 (Turbopack)"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "hi there"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "hi there"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "how do i run the dev site?"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "auto",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "i've started the dev site, i'm getting an error, check the log for error,"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/jx-kb:insights wiki"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "are u able to check the log?"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "recap & next step?"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/jx-kb:insights wiki"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "yes"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "yes"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "yes"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "monitor the live log for nextjs"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<task-notification>\n<task-id>b3cb5lpzw</task-id>\n<summary>Monitor event: \"Next.js dev server startup and errors\"</summary>\n<event>\u001b[1m\u001b[38;2;173;127;168m\u25b2 Next.js 16.2.9\u001b[39m\u001b[22m (Turbopack)\n- Local:         http://localhost:3000</event>\nIf this event is something the user would act on now, send a PushNotification. Routine or benign output doesn't need one.\n</task-notification>"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<task-notification>\n<task-id>b3cb5lpzw</task-id>\n<summary>Monitor event: \"Next.js dev server startup and errors\"</summary>\n<event>\u001b[32m\u001b[1m\u2713\u001b[22m\u001b[39m Ready in 198ms</event>\nIf this event is something the user would act on now, send a PushNotification. Routine or benign output doesn't need one.\n</task-notification>"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<task-notification>\n<task-id>b3cb5lpzw</task-id>\n<summary>Monitor event: \"Next.js dev server startup and errors\"</summary>\n<event>[Monitor timed out \u2014 re-arm if needed.]</event>\n</task-notification>"
+  },
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "permission_mode": "bypassPermissions",
+    "agent_type": "claude",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "open localhost:3000 in browser"
+  }
+]

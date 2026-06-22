@@ -1,0 +1,11 @@
+[
+  {
+    "session_id": "fff978e9-5dba-4bdd-acb8-f1962f3654ab",
+    "transcript_path": "/Users/jairo/.claude/projects/-Users-jairo-Projects-casacolinacare-v2/fff978e9-5dba-4bdd-acb8-f1962f3654ab.jsonl",
+    "cwd": "/Users/jairo/Projects/casacolinacare-v2",
+    "agent_type": "claude",
+    "hook_event_name": "SessionStart",
+    "source": "compact",
+    "model": "claude-sonnet-4-6"
+  }
+]
