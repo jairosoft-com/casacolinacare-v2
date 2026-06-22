@@ -22,6 +22,7 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 
 # debug
@@ -29,6 +30,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+.eslintcache
 
 # env files (can opt-in for committing if needed)
 .env*
@@ -40,5 +42,17 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# claude
-logs/
+# editor / IDE
+*.swp
+*.swo
+*~
+.cursor/
+
+# claude / agent runtime
+/logs/
+**/logs/
+**/.claude/data/
+.claude/worktrees/
+
+# cache
+.thumbnail
