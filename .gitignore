@@ -56,3 +56,20 @@ next-env.d.ts
 
 # cache
 .thumbnail
+
+# playwright test runner output
+/test-results/
+/playwright-report/
+/blob-report/
+
+# playwright browser install / local cache
+/.playwright/
+/playwright/.cache/
+
+# browser automation session snapshots (playwright-cli / playwright-mcp)
+/.playwright-cli/
+/.playwright-mcp/
+
+# ad-hoc screenshots (playwright-cli, playwright test runner, manual captures)
+/screenshots/
+/*.png
