@@ -120,7 +120,7 @@ a{color:inherit;text-decoration:none}
 /* Place / mosaic */
 .place{padding:128px 0}
 .place-head{margin-bottom:64px;display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:end}
-.place-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(40px,4.4vw,64px);line-height:1.02;letter-spacing:-0.022em;max-width:680px}
+.place-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(40px,4.4vw,64px);line-height:1.02;letter-spacing:-0.022em}
 .place-head h2 .i{font-style:italic;color:var(--ink-2)}
 .mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:120px;gap:14px}
 .mosaic-img{background-size:cover;background-position:center;overflow:hidden;position:relative;transition:transform .5s cubic-bezier(0.2,0.7,0.3,1)}
