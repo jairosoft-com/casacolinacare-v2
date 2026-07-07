@@ -1,0 +1,4 @@
+# graphify scope for casacolinacare-v2: app/, tests/, wiki/, and root config only.
+# See wiki/platforms/graphify Scope for casacolinacare-v2.md for why.
+claude_design/
+public/

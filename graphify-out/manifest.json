@@ -65,14 +65,14 @@
     "semantic_hash": "269e5656e46ac09718606f7e9cc6b88e"
   },
   "wiki/_index.md": {
-    "mtime": 1782181822.9591343,
-    "ast_hash": "f4a62c966d5857a45bd8c86fde846295",
-    "semantic_hash": "f4a62c966d5857a45bd8c86fde846295"
+    "mtime": 1783404203.1560442,
+    "ast_hash": "023a769395bda5519748616061e3a15b",
+    "semantic_hash": "023a769395bda5519748616061e3a15b"
   },
   "wiki/_log.md": {
-    "mtime": 1782181834.1004755,
-    "ast_hash": "a50d21dc605b1cba46fe39e8b3325bad",
-    "semantic_hash": "a50d21dc605b1cba46fe39e8b3325bad"
+    "mtime": 1783404214.044535,
+    "ast_hash": "a722c04f70ba04cd59e3c0e00639860e",
+    "semantic_hash": "a722c04f70ba04cd59e3c0e00639860e"
   },
   "wiki/_schema.md": {
     "mtime": 1782087726.9366863,
@@ -95,9 +95,9 @@
     "semantic_hash": "9c88faaaa53c370404869d43c18eb6c1"
   },
   "wiki/code/next-font-axes-weight-constraint.md": {
-    "mtime": 1782101337.186198,
-    "ast_hash": "705aa32f0aa820f26b164200eeee0b95",
-    "semantic_hash": "705aa32f0aa820f26b164200eeee0b95"
+    "mtime": 1783404179.6868138,
+    "ast_hash": "64f4997390d411c677f1b8748d2733e5",
+    "semantic_hash": "64f4997390d411c677f1b8748d2733e5"
   },
   "wiki/code/playwright-cli-vs-playwright-test.md": {
     "mtime": 1782181388.78978,
@@ -105,9 +105,9 @@
     "semantic_hash": "9a5c8441359c7826e990847d68fd0c6c"
   },
   "wiki/code/turbopack-css-filewatcher-miss.md": {
-    "mtime": 1782101365.5390573,
-    "ast_hash": "205c9966c59cb3d9cf71f9c76bf5d7be",
-    "semantic_hash": "205c9966c59cb3d9cf71f9c76bf5d7be"
+    "mtime": 1783404184.2754567,
+    "ast_hash": "a4fd9d27401c6fe3917f786e06640393",
+    "semantic_hash": "a4fd9d27401c6fe3917f786e06640393"
   },
   "wiki/concepts/agents-md-claude-md-shim-pattern.md": {
     "mtime": 1782181774.4045227,
@@ -115,9 +115,9 @@
     "semantic_hash": "aeacd05698b0633e3ded33fa9dbc093e"
   },
   "wiki/concepts/bug-driven-tdd-red-spec.md": {
-    "mtime": 1782181414.8280072,
-    "ast_hash": "fd632e36494369247324875139e83d8a",
-    "semantic_hash": "fd632e36494369247324875139e83d8a"
+    "mtime": 1783404171.123166,
+    "ast_hash": "4f947d57ffc53e7d5c26243ee9875eae",
+    "semantic_hash": "4f947d57ffc53e7d5c26243ee9875eae"
   },
   "wiki/platforms/Next.js 16 Breaking Changes.md": {
     "mtime": 1782094422.3134081,
@@ -138,5 +138,30 @@
     "mtime": 1782181801.1171567,
     "ast_hash": "d8bee84f0a9c6a02a06211e76bb58f4b",
     "semantic_hash": "d8bee84f0a9c6a02a06211e76bb58f4b"
+  },
+  "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md": {
+    "mtime": 1783404157.281117,
+    "ast_hash": "afd69a8778172416baa75b326380886f",
+    "semantic_hash": "afd69a8778172416baa75b326380886f"
+  },
+  "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md": {
+    "mtime": 1783404148.9734619,
+    "ast_hash": "22805924e0280dc3d5cb869fe6f82e3b",
+    "semantic_hash": "22805924e0280dc3d5cb869fe6f82e3b"
+  },
+  "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md": {
+    "mtime": 1783404131.8414333,
+    "ast_hash": "d943993f8e95e53eca51eb79ddf61560",
+    "semantic_hash": "d943993f8e95e53eca51eb79ddf61560"
+  },
+  "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md": {
+    "mtime": 1783404141.336586,
+    "ast_hash": "1365257de80aeed9d45cdf2a739c7767",
+    "semantic_hash": "1365257de80aeed9d45cdf2a739c7767"
+  },
+  "wiki/platforms/graphify Scope for casacolinacare-v2.md": {
+    "mtime": 1783404163.7667918,
+    "ast_hash": "9bde522097090cce9db0e61fc3a21a95",
+    "semantic_hash": "9bde522097090cce9db0e61fc3a21a95"
   }
 }

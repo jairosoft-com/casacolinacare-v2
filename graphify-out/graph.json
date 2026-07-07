@@ -4,42 +4,44 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "turbopack_development_pitfalls",
-        "label": "Turbopack Development Pitfalls",
+        "id": "plugin_ado_session_pages",
+        "label": "2026-07-06 Plugin mgmt + ADO project mapping session pages",
         "nodes": [
-          "code_next_js_16_turbopack_root_confusion",
-          "code_turbopack_css_filewatcher_miss",
-          "platforms_next_js_16_breaking_changes"
+          "platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+          "platforms_claude_code_plugin_marketplace_naming_ambiguities",
+          "entities_casacolinacare_com_azure_devops_project",
+          "concepts_wiki_gotchas_lack_code_side_back_references",
+          "platforms_graphify_scope_for_casacolinacare_v2"
         ],
         "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "wiki/code/Next.js 16 Turbopack Root Confusion.md"
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "wiki/_log.md"
       },
       {
-        "id": "vercel_deployment_workflow",
-        "label": "Vercel Deployment Workflow",
+        "id": "code_coupling_gap_pattern",
+        "label": "Code-side back-reference gap pattern (concept + illustrating code gotchas)",
         "nodes": [
-          "platforms_vercel_bun_auto_detection",
-          "platforms_vercel_cli_first_deploy_auto_connects_github",
-          "platforms_vercel_domain_alias_vs_project_domains_api"
+          "concepts_wiki_gotchas_lack_code_side_back_references",
+          "code_next_font_axes_weight_constraint",
+          "code_turbopack_css_filewatcher_miss"
         ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md"
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md"
       },
       {
-        "id": "playwright_regression_testing_workflow",
-        "label": "Playwright Regression Testing Workflow",
+        "id": "bug_tracking_test_workflow",
+        "label": "ADO bug tracking to red-spec test workflow",
         "nodes": [
           "concepts_bug_driven_tdd_red_spec",
-          "code_playwright_cli_vs_playwright_test",
-          "agents"
+          "entities_casacolinacare_com_azure_devops_project",
+          "code_playwright_cli_vs_playwright_test"
         ],
         "relation": "participate_in",
         "confidence": "INFERRED",
-        "confidence_score": 0.75,
+        "confidence_score": 0.85,
         "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md"
       }
     ]
@@ -51,9 +53,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_layout",
       "community": 5,
-      "norm_label": "layout.tsx"
+      "norm_label": "layout.tsx",
+      "id": "app_layout"
     },
     {
       "label": "fraunces",
@@ -61,9 +63,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "app_layout_fraunces",
       "community": 5,
-      "norm_label": "fraunces"
+      "norm_label": "fraunces",
+      "id": "app_layout_fraunces"
     },
     {
       "label": "inter",
@@ -71,9 +73,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "app_layout_inter",
       "community": 5,
-      "norm_label": "inter"
+      "norm_label": "inter",
+      "id": "app_layout_inter"
     },
     {
       "label": "metadata",
@@ -81,9 +83,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "app_layout_metadata",
       "community": 5,
-      "norm_label": "metadata"
+      "norm_label": "metadata",
+      "id": "app_layout_metadata"
     },
     {
       "label": "RootLayout()",
@@ -91,9 +93,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "app_layout_rootlayout",
       "community": 5,
-      "norm_label": "rootlayout()"
+      "norm_label": "rootlayout()",
+      "id": "app_layout_rootlayout"
     },
     {
       "label": "page.tsx",
@@ -101,9 +103,9 @@
       "source_file": "app/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_page",
-      "community": 6,
-      "norm_label": "page.tsx"
+      "community": 7,
+      "norm_label": "page.tsx",
+      "id": "app_page"
     },
     {
       "label": "quotes",
@@ -111,9 +113,9 @@
       "source_file": "app/page.tsx",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "app_page_quotes",
-      "community": 6,
-      "norm_label": "quotes"
+      "community": 7,
+      "norm_label": "quotes",
+      "id": "app_page_quotes"
     },
     {
       "label": "Page()",
@@ -121,9 +123,9 @@
       "source_file": "app/page.tsx",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "app_page_page",
-      "community": 6,
-      "norm_label": "page()"
+      "community": 7,
+      "norm_label": "page()",
+      "id": "app_page_page"
     },
     {
       "label": "eslint.config.mjs",
@@ -131,9 +133,9 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "eslint_config",
-      "community": 7,
-      "norm_label": "eslint.config.mjs"
+      "community": 8,
+      "norm_label": "eslint.config.mjs",
+      "id": "eslint_config"
     },
     {
       "label": "eslintConfig",
@@ -141,9 +143,9 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "eslint_config_eslintconfig",
-      "community": 7,
-      "norm_label": "eslintconfig"
+      "community": 8,
+      "norm_label": "eslintconfig",
+      "id": "eslint_config_eslintconfig"
     },
     {
       "label": "next.config.ts",
@@ -151,9 +153,9 @@
       "source_file": "next.config.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "next_config",
-      "community": 8,
-      "norm_label": "next.config.ts"
+      "community": 9,
+      "norm_label": "next.config.ts",
+      "id": "next_config"
     },
     {
       "label": "nextConfig",
@@ -161,9 +163,9 @@
       "source_file": "next.config.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "next_config_nextconfig",
-      "community": 8,
-      "norm_label": "nextconfig"
+      "community": 9,
+      "norm_label": "nextconfig",
+      "id": "next_config_nextconfig"
     },
     {
       "label": "package.json",
@@ -171,9 +173,9 @@
       "source_file": "package.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "package",
       "community": 2,
-      "norm_label": "package.json"
+      "norm_label": "package.json",
+      "id": "package"
     },
     {
       "label": "name",
@@ -181,9 +183,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "package_name",
       "community": 2,
-      "norm_label": "name"
+      "norm_label": "name",
+      "id": "package_name"
     },
     {
       "label": "version",
@@ -191,9 +193,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "package_version",
       "community": 2,
-      "norm_label": "version"
+      "norm_label": "version",
+      "id": "package_version"
     },
     {
       "label": "private",
@@ -201,9 +203,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "package_private",
       "community": 2,
-      "norm_label": "private"
+      "norm_label": "private",
+      "id": "package_private"
     },
     {
       "label": "scripts",
@@ -211,9 +213,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "package_scripts",
-      "community": 4,
-      "norm_label": "scripts"
+      "community": 2,
+      "norm_label": "scripts",
+      "id": "package_scripts"
     },
     {
       "label": "dev",
@@ -221,9 +223,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "package_scripts_dev",
-      "community": 4,
-      "norm_label": "dev"
+      "community": 2,
+      "norm_label": "dev",
+      "id": "package_scripts_dev"
     },
     {
       "label": "build",
@@ -231,9 +233,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "package_scripts_build",
-      "community": 4,
-      "norm_label": "build"
+      "community": 2,
+      "norm_label": "build",
+      "id": "package_scripts_build"
     },
     {
       "label": "start",
@@ -241,9 +243,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "package_scripts_start",
-      "community": 4,
-      "norm_label": "start"
+      "community": 2,
+      "norm_label": "start",
+      "id": "package_scripts_start"
     },
     {
       "label": "lint",
@@ -251,9 +253,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "package_scripts_lint",
-      "community": 4,
-      "norm_label": "lint"
+      "community": 2,
+      "norm_label": "lint",
+      "id": "package_scripts_lint"
     },
     {
       "label": "test:e2e",
@@ -261,9 +263,9 @@
       "source_file": "package.json",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "package_scripts_test_e2e",
-      "community": 4,
-      "norm_label": "test:e2e"
+      "community": 2,
+      "norm_label": "test:e2e",
+      "id": "package_scripts_test_e2e"
     },
     {
       "label": "dependencies",
@@ -271,9 +273,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "package_dependencies",
       "community": 2,
-      "norm_label": "dependencies"
+      "norm_label": "dependencies",
+      "id": "package_dependencies"
     },
     {
       "label": "next",
@@ -281,9 +283,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "package_dependencies_next",
       "community": 2,
-      "norm_label": "next"
+      "norm_label": "next",
+      "id": "package_dependencies_next"
     },
     {
       "label": "react",
@@ -291,9 +293,9 @@
       "source_file": "package.json",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "package_dependencies_react",
       "community": 2,
-      "norm_label": "react"
+      "norm_label": "react",
+      "id": "package_dependencies_react"
     },
     {
       "label": "react-dom",
@@ -301,9 +303,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "package_dependencies_react_dom",
       "community": 2,
-      "norm_label": "react-dom"
+      "norm_label": "react-dom",
+      "id": "package_dependencies_react_dom"
     },
     {
       "label": "devDependencies",
@@ -311,9 +313,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "package_devdependencies",
       "community": 3,
-      "norm_label": "devdependencies"
+      "norm_label": "devdependencies",
+      "id": "package_devdependencies"
     },
     {
       "label": "@playwright/test",
@@ -321,9 +323,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "package_devdependencies_playwright_test",
       "community": 3,
-      "norm_label": "@playwright/test"
+      "norm_label": "@playwright/test",
+      "id": "package_devdependencies_playwright_test"
     },
     {
       "label": "@tailwindcss/postcss",
@@ -331,9 +333,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "package_devdependencies_tailwindcss_postcss",
       "community": 3,
-      "norm_label": "@tailwindcss/postcss"
+      "norm_label": "@tailwindcss/postcss",
+      "id": "package_devdependencies_tailwindcss_postcss"
     },
     {
       "label": "@types/node",
@@ -341,9 +343,9 @@
       "source_file": "package.json",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "package_devdependencies_types_node",
       "community": 3,
-      "norm_label": "@types/node"
+      "norm_label": "@types/node",
+      "id": "package_devdependencies_types_node"
     },
     {
       "label": "@types/react",
@@ -351,9 +353,9 @@
       "source_file": "package.json",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "package_devdependencies_types_react",
       "community": 3,
-      "norm_label": "@types/react"
+      "norm_label": "@types/react",
+      "id": "package_devdependencies_types_react"
     },
     {
       "label": "@types/react-dom",
@@ -361,9 +363,9 @@
       "source_file": "package.json",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "package_devdependencies_types_react_dom",
       "community": 3,
-      "norm_label": "@types/react-dom"
+      "norm_label": "@types/react-dom",
+      "id": "package_devdependencies_types_react_dom"
     },
     {
       "label": "eslint",
@@ -371,9 +373,9 @@
       "source_file": "package.json",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "package_devdependencies_eslint",
       "community": 3,
-      "norm_label": "eslint"
+      "norm_label": "eslint",
+      "id": "package_devdependencies_eslint"
     },
     {
       "label": "eslint-config-next",
@@ -381,9 +383,9 @@
       "source_file": "package.json",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "package_devdependencies_eslint_config_next",
       "community": 3,
-      "norm_label": "eslint-config-next"
+      "norm_label": "eslint-config-next",
+      "id": "package_devdependencies_eslint_config_next"
     },
     {
       "label": "tailwindcss",
@@ -391,9 +393,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "package_devdependencies_tailwindcss",
       "community": 3,
-      "norm_label": "tailwindcss"
+      "norm_label": "tailwindcss",
+      "id": "package_devdependencies_tailwindcss"
     },
     {
       "label": "typescript",
@@ -401,9 +403,9 @@
       "source_file": "package.json",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "package_devdependencies_typescript",
       "community": 3,
-      "norm_label": "typescript"
+      "norm_label": "typescript",
+      "id": "package_devdependencies_typescript"
     },
     {
       "label": "ignoreScripts",
@@ -411,9 +413,9 @@
       "source_file": "package.json",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "package_ignorescripts",
       "community": 2,
-      "norm_label": "ignorescripts"
+      "norm_label": "ignorescripts",
+      "id": "package_ignorescripts"
     },
     {
       "label": "trustedDependencies",
@@ -421,9 +423,9 @@
       "source_file": "package.json",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "package_trusteddependencies",
       "community": 2,
-      "norm_label": "trusteddependencies"
+      "norm_label": "trusteddependencies",
+      "id": "package_trusteddependencies"
     },
     {
       "label": "playwright.config.ts",
@@ -431,9 +433,9 @@
       "source_file": "playwright.config.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playwright_config",
-      "community": 10,
-      "norm_label": "playwright.config.ts"
+      "community": 12,
+      "norm_label": "playwright.config.ts",
+      "id": "playwright_config"
     },
     {
       "label": "postcss.config.mjs",
@@ -441,9 +443,9 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "postcss_config",
-      "community": 9,
-      "norm_label": "postcss.config.mjs"
+      "community": 10,
+      "norm_label": "postcss.config.mjs",
+      "id": "postcss_config"
     },
     {
       "label": "config",
@@ -451,9 +453,9 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "postcss_config_config",
-      "community": 9,
-      "norm_label": "config"
+      "community": 10,
+      "norm_label": "config",
+      "id": "postcss_config_config"
     },
     {
       "label": "bugs.spec.ts",
@@ -461,9 +463,9 @@
       "source_file": "tests/bugs.spec.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tests_bugs_spec",
-      "community": 12,
-      "norm_label": "bugs.spec.ts"
+      "community": 6,
+      "norm_label": "bugs.spec.ts",
+      "id": "tests_bugs_spec"
     },
     {
       "label": "tsconfig.json",
@@ -471,9 +473,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tsconfig",
       "community": 0,
-      "norm_label": "tsconfig.json"
+      "norm_label": "tsconfig.json",
+      "id": "tsconfig"
     },
     {
       "label": "compilerOptions",
@@ -481,9 +483,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions",
       "community": 0,
-      "norm_label": "compileroptions"
+      "norm_label": "compileroptions",
+      "id": "tsconfig_compileroptions"
     },
     {
       "label": "target",
@@ -491,9 +493,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_target",
       "community": 0,
-      "norm_label": "target"
+      "norm_label": "target",
+      "id": "tsconfig_compileroptions_target"
     },
     {
       "label": "lib",
@@ -501,9 +503,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_lib",
       "community": 0,
-      "norm_label": "lib"
+      "norm_label": "lib",
+      "id": "tsconfig_compileroptions_lib"
     },
     {
       "label": "allowJs",
@@ -511,9 +513,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_allowjs",
       "community": 0,
-      "norm_label": "allowjs"
+      "norm_label": "allowjs",
+      "id": "tsconfig_compileroptions_allowjs"
     },
     {
       "label": "skipLibCheck",
@@ -521,9 +523,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_skiplibcheck",
       "community": 0,
-      "norm_label": "skiplibcheck"
+      "norm_label": "skiplibcheck",
+      "id": "tsconfig_compileroptions_skiplibcheck"
     },
     {
       "label": "strict",
@@ -531,9 +533,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_strict",
       "community": 0,
-      "norm_label": "strict"
+      "norm_label": "strict",
+      "id": "tsconfig_compileroptions_strict"
     },
     {
       "label": "noEmit",
@@ -541,9 +543,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_noemit",
       "community": 0,
-      "norm_label": "noemit"
+      "norm_label": "noemit",
+      "id": "tsconfig_compileroptions_noemit"
     },
     {
       "label": "esModuleInterop",
@@ -551,9 +553,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_esmoduleinterop",
       "community": 0,
-      "norm_label": "esmoduleinterop"
+      "norm_label": "esmoduleinterop",
+      "id": "tsconfig_compileroptions_esmoduleinterop"
     },
     {
       "label": "module",
@@ -561,9 +563,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_module",
       "community": 0,
-      "norm_label": "module"
+      "norm_label": "module",
+      "id": "tsconfig_compileroptions_module"
     },
     {
       "label": "moduleResolution",
@@ -571,9 +573,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_moduleresolution",
       "community": 0,
-      "norm_label": "moduleresolution"
+      "norm_label": "moduleresolution",
+      "id": "tsconfig_compileroptions_moduleresolution"
     },
     {
       "label": "resolveJsonModule",
@@ -581,9 +583,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_resolvejsonmodule",
       "community": 0,
-      "norm_label": "resolvejsonmodule"
+      "norm_label": "resolvejsonmodule",
+      "id": "tsconfig_compileroptions_resolvejsonmodule"
     },
     {
       "label": "isolatedModules",
@@ -591,9 +593,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_isolatedmodules",
       "community": 0,
-      "norm_label": "isolatedmodules"
+      "norm_label": "isolatedmodules",
+      "id": "tsconfig_compileroptions_isolatedmodules"
     },
     {
       "label": "jsx",
@@ -601,9 +603,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_jsx",
       "community": 0,
-      "norm_label": "jsx"
+      "norm_label": "jsx",
+      "id": "tsconfig_compileroptions_jsx"
     },
     {
       "label": "incremental",
@@ -611,9 +613,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_incremental",
       "community": 0,
-      "norm_label": "incremental"
+      "norm_label": "incremental",
+      "id": "tsconfig_compileroptions_incremental"
     },
     {
       "label": "plugins",
@@ -621,9 +623,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_plugins",
       "community": 0,
-      "norm_label": "plugins"
+      "norm_label": "plugins",
+      "id": "tsconfig_compileroptions_plugins"
     },
     {
       "label": "paths",
@@ -631,9 +633,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_paths",
       "community": 0,
-      "norm_label": "paths"
+      "norm_label": "paths",
+      "id": "tsconfig_compileroptions_paths"
     },
     {
       "label": "@/*",
@@ -641,9 +643,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "tsconfig_paths",
       "community": 0,
-      "norm_label": "@/*"
+      "norm_label": "@/*",
+      "id": "tsconfig_paths"
     },
     {
       "label": "include",
@@ -651,9 +653,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "tsconfig_include",
       "community": 0,
-      "norm_label": "include"
+      "norm_label": "include",
+      "id": "tsconfig_include"
     },
     {
       "label": "exclude",
@@ -661,9 +663,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "tsconfig_exclude",
       "community": 0,
-      "norm_label": "exclude"
+      "norm_label": "exclude",
+      "id": "tsconfig_exclude"
     },
     {
       "label": "AGENTS.md \u2014 Project Guidance",
@@ -674,9 +676,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents",
       "community": 1,
-      "norm_label": "agents.md \u2014 project guidance"
+      "norm_label": "agents.md \u2014 project guidance",
+      "id": "agents"
     },
     {
       "label": "CLAUDE.md \u2014 Shim File",
@@ -687,9 +689,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude",
       "community": 1,
-      "norm_label": "claude.md \u2014 shim file"
+      "norm_label": "claude.md \u2014 shim file",
+      "id": "claude"
     },
     {
       "label": "README.md \u2014 Project Bootstrap",
@@ -700,9 +702,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme",
-      "community": 11,
-      "norm_label": "readme.md \u2014 project bootstrap"
+      "community": 13,
+      "norm_label": "readme.md \u2014 project bootstrap",
+      "id": "readme"
     },
     {
       "label": "Wiki Backlog",
@@ -713,9 +715,139 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "wiki__backlog",
-      "community": 13,
-      "norm_label": "wiki backlog"
+      "community": 1,
+      "norm_label": "wiki backlog",
+      "id": "wiki__backlog"
+    },
+    {
+      "label": "Wiki Schema",
+      "file_type": "document",
+      "source_file": "wiki/_schema.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "wiki schema",
+      "id": "wiki__schema"
+    },
+    {
+      "label": "Next.js 16 ComponentMod.handler Architecture",
+      "file_type": "rationale",
+      "source_file": "wiki/code/Next.js 16 ComponentMod.handler Architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "next.js 16 componentmod.handler architecture",
+      "id": "code_next_js_16_componentmod_handler_architecture"
+    },
+    {
+      "label": "Next.js 16 Turbopack Root Confusion",
+      "file_type": "rationale",
+      "source_file": "wiki/code/Next.js 16 Turbopack Root Confusion.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "next.js 16 turbopack root confusion",
+      "id": "code_next_js_16_turbopack_root_confusion"
+    },
+    {
+      "label": "DesignSync get_file Truncates Binary Assets at 256 KB",
+      "file_type": "rationale",
+      "source_file": "wiki/code/designsync-binary-truncation.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 11,
+      "norm_label": "designsync get_file truncates binary assets at 256 kb",
+      "id": "code_designsync_binary_truncation"
+    },
+    {
+      "label": "playwright-cli vs @playwright/test \u2014 two separate tools",
+      "file_type": "rationale",
+      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "playwright-cli vs @playwright/test \u2014 two separate tools",
+      "id": "code_playwright_cli_vs_playwright_test"
+    },
+    {
+      "label": "AGENTS.md + CLAUDE.md Shim Pattern",
+      "file_type": "concept",
+      "source_file": "wiki/concepts/agents-md-claude-md-shim-pattern.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "agents.md + claude.md shim pattern",
+      "id": "concepts_agents_md_claude_md_shim_pattern"
+    },
+    {
+      "label": "Next.js 16 Breaking Changes",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Next.js 16 Breaking Changes.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "next.js 16 breaking changes",
+      "id": "platforms_next_js_16_breaking_changes"
+    },
+    {
+      "label": "Vercel CLI First Deploy Auto-Connects GitHub",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "vercel cli first deploy auto-connects github",
+      "id": "platforms_vercel_cli_first_deploy_auto_connects_github"
+    },
+    {
+      "label": "Vercel bun Auto-Detection",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Vercel bun auto-detection.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "vercel bun auto-detection",
+      "id": "platforms_vercel_bun_auto_detection"
+    },
+    {
+      "label": "Vercel Domain Alias vs Project Domains API",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "vercel domain alias vs project domains api",
+      "id": "platforms_vercel_domain_alias_vs_project_domains_api"
     },
     {
       "label": "Wiki Index",
@@ -744,60 +876,21 @@
       "norm_label": "wiki log"
     },
     {
-      "label": "Wiki Schema",
-      "file_type": "document",
-      "source_file": "wiki/_schema.md",
+      "label": "Bug-driven TDD \u2014 red spec before fix",
+      "file_type": "concept",
+      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "wiki__schema",
-      "community": 1,
-      "norm_label": "wiki schema"
+      "id": "concepts_bug_driven_tdd_red_spec",
+      "community": 6,
+      "norm_label": "bug-driven tdd \u2014 red spec before fix"
     },
     {
-      "label": "Next.js 16 ComponentMod.handler Architecture",
-      "file_type": "rationale",
-      "source_file": "wiki/code/Next.js 16 ComponentMod.handler Architecture.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "code_next_js_16_componentmod_handler_architecture",
-      "community": 1,
-      "norm_label": "next.js 16 componentmod.handler architecture"
-    },
-    {
-      "label": "Next.js 16 Turbopack Root Confusion",
-      "file_type": "rationale",
-      "source_file": "wiki/code/Next.js 16 Turbopack Root Confusion.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "code_next_js_16_turbopack_root_confusion",
-      "community": 1,
-      "norm_label": "next.js 16 turbopack root confusion"
-    },
-    {
-      "label": "DesignSync get_file Truncates Binary Assets at 256 KB",
-      "file_type": "rationale",
-      "source_file": "wiki/code/designsync-binary-truncation.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "code_designsync_binary_truncation",
-      "community": 1,
-      "norm_label": "designsync get_file truncates binary assets at 256 kb"
-    },
-    {
-      "label": "next/font axes + weight constraint for variable fonts",
-      "file_type": "rationale",
+      "label": "next/font \u2014 axes + weight constraint for variable fonts",
+      "file_type": "code",
       "source_file": "wiki/code/next-font-axes-weight-constraint.md",
       "source_location": null,
       "source_url": null,
@@ -806,24 +899,11 @@
       "contributor": null,
       "id": "code_next_font_axes_weight_constraint",
       "community": 1,
-      "norm_label": "next/font axes + weight constraint for variable fonts"
-    },
-    {
-      "label": "playwright-cli vs @playwright/test \u2014 two separate tools",
-      "file_type": "rationale",
-      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "code_playwright_cli_vs_playwright_test",
-      "community": 1,
-      "norm_label": "playwright-cli vs @playwright/test \u2014 two separate tools"
+      "norm_label": "next/font \u2014 axes + weight constraint for variable fonts"
     },
     {
       "label": "Turbopack CSS file-watch miss on programmatic write",
-      "file_type": "rationale",
+      "file_type": "code",
       "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
       "source_location": null,
       "source_url": null,
@@ -835,82 +915,147 @@
       "norm_label": "turbopack css file-watch miss on programmatic write"
     },
     {
-      "label": "AGENTS.md + CLAUDE.md Shim Pattern",
+      "label": "Wiki Gotchas Lack Code-Side Back-References",
       "file_type": "concept",
-      "source_file": "wiki/concepts/agents-md-claude-md-shim-pattern.md",
+      "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concepts_agents_md_claude_md_shim_pattern",
+      "id": "concepts_wiki_gotchas_lack_code_side_back_references",
       "community": 1,
-      "norm_label": "agents.md + claude.md shim pattern"
+      "norm_label": "wiki gotchas lack code-side back-references"
     },
     {
-      "label": "Bug-driven TDD \u2014 red spec before fix",
-      "file_type": "concept",
-      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
+      "label": "CasaColinaCare.com (Azure DevOps Project)",
+      "file_type": "document",
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concepts_bug_driven_tdd_red_spec",
-      "community": 1,
-      "norm_label": "bug-driven tdd \u2014 red spec before fix"
+      "id": "entities_casacolinacare_com_azure_devops_project",
+      "community": 6,
+      "norm_label": "casacolinacare.com (azure devops project)"
     },
     {
-      "label": "Next.js 16 Breaking Changes",
+      "label": "CasaColinaDestination.com (unrelated ADO project)",
+      "file_type": "document",
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_casacolinacare_com_azure_devops_project_casacolinadestination_com",
+      "community": 6,
+      "norm_label": "casacolinadestination.com (unrelated ado project)"
+    },
+    {
+      "label": "Claude Code Plugin CLI and Skills-Dir Plugins",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+      "community": 4,
+      "norm_label": "claude code plugin cli and skills-dir plugins"
+    },
+    {
+      "label": "Claude Code Plugin Marketplace Naming Ambiguities",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
+      "community": 4,
+      "norm_label": "claude code plugin marketplace naming ambiguities"
+    },
+    {
+      "label": "langfuse (Claude Code plugin, skills only)",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse",
+      "community": 4,
+      "norm_label": "langfuse (claude code plugin, skills only)"
+    },
+    {
+      "label": "langfuse-observability (Claude Code plugin, Stop/SessionEnd hooks)",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse_observability",
+      "community": 4,
+      "norm_label": "langfuse-observability (claude code plugin, stop/sessionend hooks)"
+    },
+    {
+      "label": "azure (Claude Code plugin, general cloud-ops)",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_azure",
+      "community": 4,
+      "norm_label": "azure (claude code plugin, general cloud-ops)"
+    },
+    {
+      "label": "commit-commands (Claude Code plugin, git workflow helper)",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_commit_commands",
+      "community": 4,
+      "norm_label": "commit-commands (claude code plugin, git workflow helper)"
+    },
+    {
+      "label": "github (Claude Code plugin, GitHub MCP server)",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_github",
+      "community": 4,
+      "norm_label": "github (claude code plugin, github mcp server)"
+    },
+    {
+      "label": "graphify Scope for casacolinacare-v2",
       "file_type": "rationale",
-      "source_file": "wiki/platforms/Next.js 16 Breaking Changes.md",
+      "source_file": "wiki/platforms/graphify Scope for casacolinacare-v2.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platforms_next_js_16_breaking_changes",
+      "id": "platforms_graphify_scope_for_casacolinacare_v2",
       "community": 1,
-      "norm_label": "next.js 16 breaking changes"
-    },
-    {
-      "label": "Vercel CLI First Deploy Auto-Connects GitHub",
-      "file_type": "rationale",
-      "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "platforms_vercel_cli_first_deploy_auto_connects_github",
-      "community": 1,
-      "norm_label": "vercel cli first deploy auto-connects github"
-    },
-    {
-      "label": "Vercel bun Auto-Detection",
-      "file_type": "rationale",
-      "source_file": "wiki/platforms/Vercel bun auto-detection.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "platforms_vercel_bun_auto_detection",
-      "community": 1,
-      "norm_label": "vercel bun auto-detection"
-    },
-    {
-      "label": "Vercel Domain Alias vs Project Domains API",
-      "file_type": "rationale",
-      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "platforms_vercel_domain_alias_vs_project_domains_api",
-      "community": 1,
-      "norm_label": "vercel domain alias vs project domains api"
+      "norm_label": "graphify scope for casacolinacare-v2"
     }
   ],
   "links": [
@@ -920,9 +1065,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_layout",
-      "target": "app_layout_fraunces",
-      "confidence_score": 1.0
+      "target": "app_layout_fraunces"
     },
     {
       "relation": "contains",
@@ -930,9 +1075,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_layout",
-      "target": "app_layout_inter",
-      "confidence_score": 1.0
+      "target": "app_layout_inter"
     },
     {
       "relation": "contains",
@@ -940,9 +1085,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_layout",
-      "target": "app_layout_metadata",
-      "confidence_score": 1.0
+      "target": "app_layout_metadata"
     },
     {
       "relation": "contains",
@@ -950,9 +1095,19 @@
       "source_file": "app/layout.tsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_layout",
-      "target": "app_layout_rootlayout",
-      "confidence_score": 1.0
+      "target": "app_layout_rootlayout"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_wiki_gotchas_lack_code_side_back_references",
+      "target": "app_layout"
     },
     {
       "relation": "contains",
@@ -960,9 +1115,9 @@
       "source_file": "app/page.tsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_page",
-      "target": "app_page_page",
-      "confidence_score": 1.0
+      "target": "app_page_page"
     },
     {
       "relation": "contains",
@@ -970,9 +1125,9 @@
       "source_file": "app/page.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_page",
-      "target": "app_page_quotes",
-      "confidence_score": 1.0
+      "target": "app_page_quotes"
     },
     {
       "relation": "contains",
@@ -980,9 +1135,9 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "eslint_config",
-      "target": "eslint_config_eslintconfig",
-      "confidence_score": 1.0
+      "target": "eslint_config_eslintconfig"
     },
     {
       "relation": "contains",
@@ -990,9 +1145,9 @@
       "source_file": "next.config.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "next_config",
-      "target": "next_config_nextconfig",
-      "confidence_score": 1.0
+      "target": "next_config_nextconfig"
     },
     {
       "relation": "contains",
@@ -1000,9 +1155,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_dependencies",
-      "confidence_score": 1.0
+      "target": "package_dependencies"
     },
     {
       "relation": "contains",
@@ -1010,9 +1165,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_devdependencies",
-      "confidence_score": 1.0
+      "target": "package_devdependencies"
     },
     {
       "relation": "contains",
@@ -1020,9 +1175,9 @@
       "source_file": "package.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_ignorescripts",
-      "confidence_score": 1.0
+      "target": "package_ignorescripts"
     },
     {
       "relation": "contains",
@@ -1030,9 +1185,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_name",
-      "confidence_score": 1.0
+      "target": "package_name"
     },
     {
       "relation": "contains",
@@ -1040,9 +1195,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_private",
-      "confidence_score": 1.0
+      "target": "package_private"
     },
     {
       "relation": "contains",
@@ -1050,9 +1205,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_scripts",
-      "confidence_score": 1.0
+      "target": "package_scripts"
     },
     {
       "relation": "contains",
@@ -1060,9 +1215,9 @@
       "source_file": "package.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_trusteddependencies",
-      "confidence_score": 1.0
+      "target": "package_trusteddependencies"
     },
     {
       "relation": "contains",
@@ -1070,9 +1225,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_version",
-      "confidence_score": 1.0
+      "target": "package_version"
     },
     {
       "relation": "contains",
@@ -1080,9 +1235,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_build",
-      "confidence_score": 1.0
+      "target": "package_scripts_build"
     },
     {
       "relation": "contains",
@@ -1090,9 +1245,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -1100,9 +1255,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_lint",
-      "confidence_score": 1.0
+      "target": "package_scripts_lint"
     },
     {
       "relation": "contains",
@@ -1110,9 +1265,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_start",
-      "confidence_score": 1.0
+      "target": "package_scripts_start"
     },
     {
       "relation": "contains",
@@ -1120,9 +1275,9 @@
       "source_file": "package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_test_e2e",
-      "confidence_score": 1.0
+      "target": "package_scripts_test_e2e"
     },
     {
       "relation": "contains",
@@ -1130,9 +1285,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_next",
-      "confidence_score": 1.0
+      "target": "package_dependencies_next"
     },
     {
       "relation": "contains",
@@ -1140,9 +1295,9 @@
       "source_file": "package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react"
     },
     {
       "relation": "contains",
@@ -1150,9 +1305,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react_dom"
     },
     {
       "relation": "contains",
@@ -1160,9 +1315,9 @@
       "source_file": "package.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint"
     },
     {
       "relation": "contains",
@@ -1170,9 +1325,9 @@
       "source_file": "package.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_config_next",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint_config_next"
     },
     {
       "relation": "contains",
@@ -1180,9 +1335,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_playwright_test",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_playwright_test"
     },
     {
       "relation": "contains",
@@ -1190,9 +1345,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_tailwindcss",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_tailwindcss"
     },
     {
       "relation": "contains",
@@ -1200,9 +1355,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_tailwindcss_postcss",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_tailwindcss_postcss"
     },
     {
       "relation": "contains",
@@ -1210,9 +1365,9 @@
       "source_file": "package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_node",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_node"
     },
     {
       "relation": "contains",
@@ -1220,9 +1375,9 @@
       "source_file": "package.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_react"
     },
     {
       "relation": "contains",
@@ -1230,9 +1385,9 @@
       "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react_dom",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_react_dom"
     },
     {
       "relation": "contains",
@@ -1240,9 +1395,9 @@
       "source_file": "package.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_typescript"
     },
     {
       "relation": "contains",
@@ -1250,9 +1405,29 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "postcss_config",
-      "target": "postcss_config_config",
-      "confidence_score": 1.0
+      "target": "postcss_config_config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_bug_driven_tdd_red_spec",
+      "target": "tests_bugs_spec"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_casacolinacare_com_azure_devops_project",
+      "target": "tests_bugs_spec"
     },
     {
       "relation": "contains",
@@ -1260,9 +1435,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig",
-      "target": "tsconfig_compileroptions",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions"
     },
     {
       "relation": "contains",
@@ -1270,9 +1445,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig",
-      "target": "tsconfig_exclude",
-      "confidence_score": 1.0
+      "target": "tsconfig_exclude"
     },
     {
       "relation": "contains",
@@ -1280,9 +1455,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig",
-      "target": "tsconfig_include",
-      "confidence_score": 1.0
+      "target": "tsconfig_include"
     },
     {
       "relation": "contains",
@@ -1290,9 +1465,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_allowjs",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_allowjs"
     },
     {
       "relation": "contains",
@@ -1300,9 +1475,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_esmoduleinterop",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_esmoduleinterop"
     },
     {
       "relation": "contains",
@@ -1310,9 +1485,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_incremental",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_incremental"
     },
     {
       "relation": "contains",
@@ -1320,9 +1495,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_isolatedmodules",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_isolatedmodules"
     },
     {
       "relation": "contains",
@@ -1330,9 +1505,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_jsx",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_jsx"
     },
     {
       "relation": "contains",
@@ -1340,9 +1515,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_lib",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_lib"
     },
     {
       "relation": "contains",
@@ -1350,9 +1525,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_module",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_module"
     },
     {
       "relation": "contains",
@@ -1360,9 +1535,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_moduleresolution",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_moduleresolution"
     },
     {
       "relation": "contains",
@@ -1370,9 +1545,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_noemit",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_noemit"
     },
     {
       "relation": "contains",
@@ -1380,9 +1555,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_paths",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_paths"
     },
     {
       "relation": "contains",
@@ -1390,9 +1565,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_plugins",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_plugins"
     },
     {
       "relation": "contains",
@@ -1400,9 +1575,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_resolvejsonmodule",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_resolvejsonmodule"
     },
     {
       "relation": "contains",
@@ -1410,9 +1585,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_skiplibcheck",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_skiplibcheck"
     },
     {
       "relation": "contains",
@@ -1420,9 +1595,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_strict",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_strict"
     },
     {
       "relation": "contains",
@@ -1430,9 +1605,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_target",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_target"
     },
     {
       "relation": "contains",
@@ -1440,9 +1615,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions_paths",
-      "target": "tsconfig_paths",
-      "confidence_score": 1.0
+      "target": "tsconfig_paths"
     },
     {
       "relation": "conceptually_related_to",
@@ -1518,121 +1693,21 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "wiki/_log.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_designsync_binary_truncation"
+      "source": "wiki__log",
+      "target": "wiki__backlog"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "wiki/_log.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_next_font_axes_weight_constraint"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_next_js_16_componentmod_handler_architecture"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_next_js_16_turbopack_root_confusion"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_playwright_cli_vs_playwright_test"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_turbopack_css_filewatcher_miss"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "concepts_agents_md_claude_md_shim_pattern"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "concepts_bug_driven_tdd_red_spec"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_next_js_16_breaking_changes"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_vercel_bun_auto_detection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_vercel_cli_first_deploy_auto_connects_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_vercel_domain_alias_vs_project_domains_api"
+      "source": "wiki__log",
+      "target": "wiki__schema"
     },
     {
       "relation": "conceptually_related_to",
@@ -1648,66 +1723,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "code_playwright_cli_vs_playwright_test"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "concepts_agents_md_claude_md_shim_pattern"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "concepts_bug_driven_tdd_red_spec"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_vercel_bun_auto_detection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_vercel_cli_first_deploy_auto_connects_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_vercel_domain_alias_vs_project_domains_api"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "wiki/code/Next.js 16 ComponentMod.handler Architecture.md",
       "source_location": null,
       "weight": 1.0,
@@ -1728,6 +1743,16 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "code_next_js_16_componentmod_handler_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "wiki/code/Next.js 16 Turbopack Root Confusion.md",
       "source_location": null,
       "weight": 1.0,
@@ -1735,12 +1760,12 @@
       "target": "platforms_next_js_16_breaking_changes"
     },
     {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
       "source_location": null,
-      "weight": 0.85,
+      "weight": 1.0,
       "source": "code_turbopack_css_filewatcher_miss",
       "target": "code_next_js_16_turbopack_root_confusion"
     },
@@ -1758,11 +1783,11 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
+      "source_file": "wiki/_index.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_next_font_axes_weight_constraint",
-      "target": "platforms_next_js_16_breaking_changes"
+      "source": "wiki__index",
+      "target": "code_next_js_16_turbopack_root_confusion"
     },
     {
       "relation": "references",
@@ -1798,10 +1823,70 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "code_playwright_cli_vs_playwright_test"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "code_playwright_cli_vs_playwright_test"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "concepts_agents_md_claude_md_shim_pattern"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "concepts_agents_md_claude_md_shim_pattern"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "code_next_font_axes_weight_constraint",
+      "target": "platforms_next_js_16_breaking_changes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "wiki/platforms/Vercel bun auto-detection.md",
       "source_location": null,
       "weight": 1.0,
       "source": "platforms_vercel_bun_auto_detection",
+      "target": "platforms_next_js_16_breaking_changes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
       "target": "platforms_next_js_16_breaking_changes"
     },
     {
@@ -1828,53 +1913,395 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "platforms_vercel_cli_first_deploy_auto_connects_github"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "platforms_vercel_cli_first_deploy_auto_connects_github"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
       "source_location": null,
       "weight": 1.0,
       "source": "platforms_vercel_domain_alias_vs_project_domains_api",
       "target": "platforms_vercel_bun_auto_detection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "platforms_vercel_bun_auto_detection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "platforms_vercel_bun_auto_detection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "platforms_vercel_domain_alias_vs_project_domains_api"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "platforms_vercel_domain_alias_vs_project_domains_api"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "code_next_font_axes_weight_constraint"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "code_turbopack_css_filewatcher_miss"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "concepts_bug_driven_tdd_red_spec"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "concepts_wiki_gotchas_lack_code_side_back_references"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "entities_casacolinacare_com_azure_devops_project"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "platforms_claude_code_plugin_cli_and_skills_dir_plugins"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index",
+      "target": "platforms_graphify_scope_for_casacolinacare_v2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "code_next_font_axes_weight_constraint"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "code_turbopack_css_filewatcher_miss"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "concepts_bug_driven_tdd_red_spec"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "concepts_wiki_gotchas_lack_code_side_back_references"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "entities_casacolinacare_com_azure_devops_project"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "platforms_claude_code_plugin_cli_and_skills_dir_plugins"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log",
+      "target": "platforms_graphify_scope_for_casacolinacare_v2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_bug_driven_tdd_red_spec",
+      "target": "entities_casacolinacare_com_azure_devops_project"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "code_next_font_axes_weight_constraint",
+      "target": "concepts_wiki_gotchas_lack_code_side_back_references"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "code_turbopack_css_filewatcher_miss",
+      "target": "concepts_wiki_gotchas_lack_code_side_back_references"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "wiki/platforms/graphify Scope for casacolinacare-v2.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_graphify_scope_for_casacolinacare_v2",
+      "target": "concepts_wiki_gotchas_lack_code_side_back_references"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_casacolinacare_com_azure_devops_project",
+      "target": "entities_casacolinacare_com_azure_devops_project_casacolinadestination_com"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
+      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_azure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
+      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_commit_commands"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
+      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_github"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
+      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
+      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse_observability"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse",
+      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse_observability"
     }
   ],
   "hyperedges": [
     {
-      "id": "turbopack_development_pitfalls",
-      "label": "Turbopack Development Pitfalls",
+      "id": "plugin_ado_session_pages",
+      "label": "2026-07-06 Plugin mgmt + ADO project mapping session pages",
       "nodes": [
-        "code_next_js_16_turbopack_root_confusion",
-        "code_turbopack_css_filewatcher_miss",
-        "platforms_next_js_16_breaking_changes"
+        "platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+        "platforms_claude_code_plugin_marketplace_naming_ambiguities",
+        "entities_casacolinacare_com_azure_devops_project",
+        "concepts_wiki_gotchas_lack_code_side_back_references",
+        "platforms_graphify_scope_for_casacolinacare_v2"
       ],
       "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "wiki/code/Next.js 16 Turbopack Root Confusion.md"
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md"
     },
     {
-      "id": "vercel_deployment_workflow",
-      "label": "Vercel Deployment Workflow",
+      "id": "code_coupling_gap_pattern",
+      "label": "Code-side back-reference gap pattern (concept + illustrating code gotchas)",
       "nodes": [
-        "platforms_vercel_bun_auto_detection",
-        "platforms_vercel_cli_first_deploy_auto_connects_github",
-        "platforms_vercel_domain_alias_vs_project_domains_api"
+        "concepts_wiki_gotchas_lack_code_side_back_references",
+        "code_next_font_axes_weight_constraint",
+        "code_turbopack_css_filewatcher_miss"
       ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md"
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md"
     },
     {
-      "id": "playwright_regression_testing_workflow",
-      "label": "Playwright Regression Testing Workflow",
+      "id": "bug_tracking_test_workflow",
+      "label": "ADO bug tracking to red-spec test workflow",
       "nodes": [
         "concepts_bug_driven_tdd_red_spec",
-        "code_playwright_cli_vs_playwright_test",
-        "agents"
+        "entities_casacolinacare_com_azure_devops_project",
+        "code_playwright_cli_vs_playwright_test"
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
-      "confidence_score": 0.75,
+      "confidence_score": 0.85,
       "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md"
     }
   ],
-  "built_at_commit": "d90f44e5a3e495e6df0918be3fd66d23e03dc938"
+  "built_at_commit": "72833b2c561c087b42fad62b2bffd736abffffed"
 }
