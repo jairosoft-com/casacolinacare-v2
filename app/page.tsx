@@ -1,90 +1,8 @@
-'use client';
-
-import { useState, useEffect, useRef } from 'react';
-
-const quotes = [
-  [
-    "The staff treats every resident like family. Mom stopped asking when we were going home — because this became home.",
-    "M. Tanaka · daughter of resident, Kaimuki",
-  ],
-  [
-    "Kriss called me every evening for the first week, just to tell me how Dad was doing. I never had to ask.",
-    "J. Reyes · son of resident, Kailua",
-  ],
-  [
-    "She picked up the phone at eleven at night when my mother fell. She talked me through it for forty-five minutes.",
-    "S. Wong · daughter of resident, Mānoa",
-  ],
-  [
-    "My father is himself again here. He laughs. He sings. We hadn't heard him sing in two years.",
-    "A. Kekoa · daughter of resident, Hawai'i Kai",
-  ],
-] as const;
+import Image from 'next/image';
+import SmoothLink from '@/app/components/SmoothLink';
+import TestimonialCarousel from '@/app/components/TestimonialCarousel';
 
 export default function Page() {
-  const [activeQ, setActiveQ] = useState(0);
-  const [quoteVisible, setQuoteVisible] = useState(true);
-  const activeQRef = useRef(0);
-
-  function goToQuote(i: number) {
-    setQuoteVisible(false);
-    setTimeout(() => {
-      setActiveQ(i);
-      activeQRef.current = i;
-      setQuoteVisible(true);
-    }, 350);
-  }
-
-  function handleAnchorClick(e: React.MouseEvent<HTMLAnchorElement>, id: string) {
-    if (id.length > 1) {
-      const el = document.getElementById(id.replace('#', ''));
-      if (el) {
-        e.preventDefault();
-        window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' });
-      }
-    }
-  }
-
-  useEffect(() => {
-    const revealEls = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-          });
-        },
-        { threshold: 0.05 }
-      );
-      revealEls.forEach((el) => io.observe(el));
-      requestAnimationFrame(() => {
-        revealEls.forEach((el) => {
-          const r = el.getBoundingClientRect();
-          if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('in');
-        });
-      });
-      setTimeout(() => {
-        const anyHidden = Array.from(revealEls).some((el) => !el.classList.contains('in'));
-        if (anyHidden && window.scrollY < 50) {
-          revealEls.forEach((el) => {
-            const r = el.getBoundingClientRect();
-            if (r.top < window.innerHeight + 200) el.classList.add('in');
-          });
-        }
-      }, 1500);
-      return () => io.disconnect();
-    } else {
-      revealEls.forEach((el) => el.classList.add('in'));
-    }
-  }, []);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      goToQuote((activeQRef.current + 1) % quotes.length);
-    }, 7500);
-    return () => clearInterval(id);
-  }, []);
-
   return (
     <div>
 
@@ -97,26 +15,32 @@ export default function Page() {
           </div>
           <div className="nav-links">
             <a href="#" className="active">Home</a>
-            <a href="#story" onClick={(e) => handleAnchorClick(e, '#story')}>About</a>
-            <a href="#care" onClick={(e) => handleAnchorClick(e, '#care')}>Care</a>
-            <a href="#place" onClick={(e) => handleAnchorClick(e, '#place')}>The Home</a>
-            <a href="#visit" onClick={(e) => handleAnchorClick(e, '#visit')}>Visit</a>
+            <SmoothLink href="#story">About</SmoothLink>
+            <SmoothLink href="#care">Care</SmoothLink>
+            <SmoothLink href="#place">The Home</SmoothLink>
+            <SmoothLink href="#visit">Visit</SmoothLink>
           </div>
           <div className="nav-cta">
             <span className="phone">+1 (808) 200-1840</span>
-            <a href="#visit" className="btn btn-primary" onClick={(e) => handleAnchorClick(e, '#visit')}>
+            <SmoothLink href="#visit" className="btn btn-primary">
               Request a visit <span className="arr">→</span>
-            </a>
+            </SmoothLink>
           </div>
         </div>
       </nav>
 
       {/* HERO */}
       <section className="hero">
-        <div
-          className="hero-img"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=2400&q=80&auto=format&fit=crop')" }}
-        ></div>
+        <div className="hero-img">
+          <Image
+            src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=2400&q=80&auto=format&fit=crop"
+            alt=""
+            fill
+            preload
+            sizes="100vw"
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+          />
+        </div>
         <div className="hero-overlay"></div>
         <div className="hero-tag">
           <span className="dot"></span> A care home in Hawaiʻi Kai
@@ -126,17 +50,16 @@ export default function Page() {
           <div className="hero-meta">
             <p>Six residents. One kitchen. Caregivers who know every name, every preference, and the story behind each one.</p>
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-              <a href="#visit" className="btn btn-accent" onClick={(e) => handleAnchorClick(e, '#visit')}>
+              <SmoothLink href="#visit" className="btn btn-accent">
                 Request a consultation <span className="arr">→</span>
-              </a>
-              <a
+              </SmoothLink>
+              <SmoothLink
                 href="#story"
                 className="btn btn-ghost"
                 style={{ color: '#fff', borderColor: 'rgba(255,255,255,0.6)' }}
-                onClick={(e) => handleAnchorClick(e, '#story')}
               >
                 Read our story
-              </a>
+              </SmoothLink>
             </div>
           </div>
         </div>
@@ -161,10 +84,15 @@ export default function Page() {
           <div className="essay">
             <div className="essay-meta reveal">
               <div className="eyebrow accent">A letter from our home</div>
-              <div
-                className="essay-img"
-                style={{ backgroundImage: "url('/assets/caregiver-resident.png')" }}
-              ></div>
+              <div className="essay-img">
+                <Image
+                  src="/assets/caregiver-resident.png"
+                  alt="A caregiver sharing a quiet moment with a resident"
+                  fill
+                  sizes="(min-width: 1320px) 473px, 42vw"
+                  style={{ objectFit: 'cover', objectPosition: 'center' }}
+                />
+              </div>
             </div>
             <div className="reveal">
               <h2>We opened Casa Colina because aloha shouldn&apos;t end at a <span className="i">hospital door.</span></h2>
@@ -235,40 +163,64 @@ export default function Page() {
             <h2>Six bedrooms. One real kitchen.<br />Koko Head from the <span className="i">back lawn.</span></h2>
           </div>
           <div className="mosaic reveal">
-            <div
-              className="mosaic-img"
-              style={{ gridColumn: '1/8', gridRow: '1/4', backgroundImage: "url('/assets/home-kokohead.jpg')" }}
-            >
+            <div className="mosaic-img" style={{ gridColumn: '1/8', gridRow: '1/4' }}>
+              <Image
+                src="/assets/home-kokohead.jpg"
+                alt="Koko Head crater seen from the home's back lawn"
+                fill
+                sizes="(min-width: 1320px) 708px, 58vw"
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+              />
               <div className="mosaic-cap">Koko Head, from the lawn</div>
             </div>
-            <div
-              className="mosaic-img"
-              style={{ gridColumn: '8/13', gridRow: '1/3', backgroundImage: "url('/assets/home-living-room-wide.jpg')" }}
-            >
+            <div className="mosaic-img" style={{ gridColumn: '8/13', gridRow: '1/3' }}>
+              <Image
+                src="/assets/home-living-room-wide.jpg"
+                alt="The living room, looking out to the garden"
+                fill
+                sizes="(min-width: 1320px) 502px, 42vw"
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+              />
               <div className="mosaic-cap">The living room, garden side</div>
             </div>
-            <div
-              className="mosaic-img"
-              style={{ gridColumn: '8/13', gridRow: '3/5', backgroundImage: "url('/assets/home-kitchen-island.jpg')" }}
-            >
+            <div className="mosaic-img" style={{ gridColumn: '8/13', gridRow: '3/5' }}>
+              <Image
+                src="/assets/home-kitchen-island.jpg"
+                alt="The kitchen island at midday"
+                fill
+                sizes="(min-width: 1320px) 502px, 42vw"
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+              />
               <div className="mosaic-cap">The kitchen at midday</div>
             </div>
-            <div
-              className="mosaic-img"
-              style={{ gridColumn: '1/5', gridRow: '4/6', backgroundImage: "url('/assets/home-lanai-chairs.jpg')" }}
-            >
+            <div className="mosaic-img" style={{ gridColumn: '1/5', gridRow: '4/6' }}>
+              <Image
+                src="/assets/home-lanai-chairs.jpg"
+                alt="Chairs on the lanai in afternoon shade"
+                fill
+                sizes="(min-width: 1320px) 399px, 33vw"
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+              />
               <div className="mosaic-cap">The lanai, afternoon shade</div>
             </div>
-            <div
-              className="mosaic-img"
-              style={{ gridColumn: '5/9', gridRow: '4/6', backgroundImage: "url('/assets/home-bathroom-modern.jpg')" }}
-            >
+            <div className="mosaic-img" style={{ gridColumn: '5/9', gridRow: '4/6' }}>
+              <Image
+                src="/assets/home-bathroom-modern.jpg"
+                alt="Walk-in shower in a resident bathroom"
+                fill
+                sizes="(min-width: 1320px) 399px, 33vw"
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+              />
               <div className="mosaic-cap">Walk-in shower, every room</div>
             </div>
-            <div
-              className="mosaic-img"
-              style={{ gridColumn: '9/13', gridRow: '5/6', backgroundImage: "url('/assets/home-dog-portrait.jpg')" }}
-            >
+            <div className="mosaic-img" style={{ gridColumn: '9/13', gridRow: '5/6' }}>
+              <Image
+                src="/assets/home-dog-portrait.jpg"
+                alt="The home's resident dog"
+                fill
+                sizes="(min-width: 1320px) 399px, 33vw"
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+              />
               <div className="mosaic-cap">Our resident-in-chief</div>
             </div>
           </div>
@@ -279,35 +231,15 @@ export default function Page() {
             <p style={{ fontFamily: 'var(--serif)', fontWeight: 300, fontSize: '22px', fontStyle: 'italic', color: 'var(--ink-2)' }}>
               Photos can only say so much.
             </p>
-            <a href="#visit" className="btn btn-quiet" onClick={(e) => handleAnchorClick(e, '#visit')}>
+            <SmoothLink href="#visit" className="btn btn-quiet">
               Schedule a private visit <span className="arr">→</span>
-            </a>
+            </SmoothLink>
           </div>
         </div>
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="testimonial">
-        <div className="testimonial-inner reveal">
-          <div className="eyebrow" style={{ color: 'rgba(245,240,230,0.5)', marginBottom: '32px' }}>From the families</div>
-          <blockquote style={{ opacity: quoteVisible ? 1 : 0, transition: 'opacity .35s ease' }}>
-            {quotes[activeQ][0]}
-          </blockquote>
-          <cite style={{ opacity: quoteVisible ? 1 : 0, transition: 'opacity .35s ease' }}>
-            {quotes[activeQ][1]}
-          </cite>
-          <div className="testi-nav">
-            {quotes.map((_, i) => (
-              <button
-                key={i}
-                className={`testi-dot${activeQ === i ? ' active' : ''}`}
-                aria-label={`Quote ${i + 1}`}
-                onClick={() => goToQuote(i)}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialCarousel />
 
       {/* CARE LEVELS */}
       <section className="care">
