@@ -1,0 +1,142 @@
+{
+  "app/layout.tsx": {
+    "mtime": 1782100104.1635149,
+    "ast_hash": "9144a7bf7430c4237e9fe080898e8279",
+    "semantic_hash": "9144a7bf7430c4237e9fe080898e8279"
+  },
+  "app/page.tsx": {
+    "mtime": 1782099319.925452,
+    "ast_hash": "87018b60cd3ef4fa503f4450ddad7cec",
+    "semantic_hash": "87018b60cd3ef4fa503f4450ddad7cec"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1781902977.88596,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "next.config.ts": {
+    "mtime": 1782087984.0304422,
+    "ast_hash": "a58a247b8b45a842c2bbe88afd6c4519",
+    "semantic_hash": "a58a247b8b45a842c2bbe88afd6c4519"
+  },
+  "package.json": {
+    "mtime": 1782157906.6272943,
+    "ast_hash": "5ad5e41fd932b99dacdfcb37289bd7bb",
+    "semantic_hash": "5ad5e41fd932b99dacdfcb37289bd7bb"
+  },
+  "playwright.config.ts": {
+    "mtime": 1782157909.4229999,
+    "ast_hash": "d974cc90a6ac96379c8556413c9d0b76",
+    "semantic_hash": "d974cc90a6ac96379c8556413c9d0b76"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1781902977.8873887,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "tests/bugs.spec.ts": {
+    "mtime": 1782157933.796548,
+    "ast_hash": "56c3a483f1870af1fae4638a7ac33a3b",
+    "semantic_hash": "56c3a483f1870af1fae4638a7ac33a3b"
+  },
+  "tsconfig.json": {
+    "mtime": 1781902977.8888724,
+    "ast_hash": "02fc19ad21338c2ab820a70136310db4",
+    "semantic_hash": "02fc19ad21338c2ab820a70136310db4"
+  },
+  "AGENTS.md": {
+    "mtime": 1782158429.6218028,
+    "ast_hash": "eff07c1763e8052b9722cb532eba009e",
+    "semantic_hash": "eff07c1763e8052b9722cb532eba009e"
+  },
+  "CLAUDE.md": {
+    "mtime": 1782533409.1158555,
+    "ast_hash": "03e3d38ba74cf8886d3d8fc322d9da8a",
+    "semantic_hash": "03e3d38ba74cf8886d3d8fc322d9da8a"
+  },
+  "README.md": {
+    "mtime": 1781902977.885993,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "wiki/_backlog.md": {
+    "mtime": 1782087733.9885185,
+    "ast_hash": "269e5656e46ac09718606f7e9cc6b88e",
+    "semantic_hash": "269e5656e46ac09718606f7e9cc6b88e"
+  },
+  "wiki/_index.md": {
+    "mtime": 1782181822.9591343,
+    "ast_hash": "f4a62c966d5857a45bd8c86fde846295",
+    "semantic_hash": "f4a62c966d5857a45bd8c86fde846295"
+  },
+  "wiki/_log.md": {
+    "mtime": 1782181834.1004755,
+    "ast_hash": "a50d21dc605b1cba46fe39e8b3325bad",
+    "semantic_hash": "a50d21dc605b1cba46fe39e8b3325bad"
+  },
+  "wiki/_schema.md": {
+    "mtime": 1782087726.9366863,
+    "ast_hash": "04ba502c14b608f9ae0ae6fd26c786cc",
+    "semantic_hash": "04ba502c14b608f9ae0ae6fd26c786cc"
+  },
+  "wiki/code/Next.js 16 ComponentMod.handler Architecture.md": {
+    "mtime": 1782094278.870324,
+    "ast_hash": "1f37f3392f7fd95853ec80b7a57b9c72",
+    "semantic_hash": "1f37f3392f7fd95853ec80b7a57b9c72"
+  },
+  "wiki/code/Next.js 16 Turbopack Root Confusion.md": {
+    "mtime": 1782094250.3929822,
+    "ast_hash": "dd50c219fc0eb40eb174ec94b745467c",
+    "semantic_hash": "dd50c219fc0eb40eb174ec94b745467c"
+  },
+  "wiki/code/designsync-binary-truncation.md": {
+    "mtime": 1782101478.5233333,
+    "ast_hash": "9c88faaaa53c370404869d43c18eb6c1",
+    "semantic_hash": "9c88faaaa53c370404869d43c18eb6c1"
+  },
+  "wiki/code/next-font-axes-weight-constraint.md": {
+    "mtime": 1782101337.186198,
+    "ast_hash": "705aa32f0aa820f26b164200eeee0b95",
+    "semantic_hash": "705aa32f0aa820f26b164200eeee0b95"
+  },
+  "wiki/code/playwright-cli-vs-playwright-test.md": {
+    "mtime": 1782181388.78978,
+    "ast_hash": "9a5c8441359c7826e990847d68fd0c6c",
+    "semantic_hash": "9a5c8441359c7826e990847d68fd0c6c"
+  },
+  "wiki/code/turbopack-css-filewatcher-miss.md": {
+    "mtime": 1782101365.5390573,
+    "ast_hash": "205c9966c59cb3d9cf71f9c76bf5d7be",
+    "semantic_hash": "205c9966c59cb3d9cf71f9c76bf5d7be"
+  },
+  "wiki/concepts/agents-md-claude-md-shim-pattern.md": {
+    "mtime": 1782181774.4045227,
+    "ast_hash": "aeacd05698b0633e3ded33fa9dbc093e",
+    "semantic_hash": "aeacd05698b0633e3ded33fa9dbc093e"
+  },
+  "wiki/concepts/bug-driven-tdd-red-spec.md": {
+    "mtime": 1782181414.8280072,
+    "ast_hash": "fd632e36494369247324875139e83d8a",
+    "semantic_hash": "fd632e36494369247324875139e83d8a"
+  },
+  "wiki/platforms/Next.js 16 Breaking Changes.md": {
+    "mtime": 1782094422.3134081,
+    "ast_hash": "277558e02ce4de4c24afa52fc23cc3d9",
+    "semantic_hash": "277558e02ce4de4c24afa52fc23cc3d9"
+  },
+  "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md": {
+    "mtime": 1782181741.2143986,
+    "ast_hash": "1075db96d4345aea8509909462c25a23",
+    "semantic_hash": "1075db96d4345aea8509909462c25a23"
+  },
+  "wiki/platforms/Vercel bun auto-detection.md": {
+    "mtime": 1782181592.4068928,
+    "ast_hash": "acbcf0120b1abbf9809ba589477c4372",
+    "semantic_hash": "acbcf0120b1abbf9809ba589477c4372"
+  },
+  "wiki/platforms/Vercel domain alias vs project domains API.md": {
+    "mtime": 1782181801.1171567,
+    "ast_hash": "d8bee84f0a9c6a02a06211e76bb58f4b",
+    "semantic_hash": "d8bee84f0a9c6a02a06211e76bb58f4b"
+  }
+}
