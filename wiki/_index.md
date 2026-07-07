@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
-updated: 2026-06-22
-page_count: 12
+updated: 2026-07-06
+page_count: 17
 ---
 
 # Wiki Index
@@ -12,12 +12,13 @@ _No ideas yet._
 
 ## Concepts
 
-- [[Bug-driven TDD — red spec before fix]] — write failing tests asserting fixed behavior before writing any fix; ADO ID in test name gives direct traceability
 - [[AGENTS.md + CLAUDE.md shim pattern]] — store agent guidance in AGENTS.md; CLAUDE.md is a one-line `@AGENTS.md` shim for multi-agent projects
+- [[Bug-driven TDD — red spec before fix]] — write failing tests asserting fixed behavior before writing any fix; ADO ID in test name gives direct traceability
+- [[Wiki Gotchas Lack Code-Side Back-References]] — graphify found documented gotchas (font axes, Turbopack CSS) have no structural link back to the source lines they apply to
 
 ## Entities
 
-_No entities yet._
+- [[CasaColinaCare.com (Azure DevOps Project)]] — this repo's ADO project (ID `35f6c5fd-...`); don't confuse with the unrelated `CasaColinaDestination.com` project
 
 ## Topics
 
@@ -29,6 +30,9 @@ _No plugins yet._
 
 ## Platforms
 
+- [[Claude Code Plugin CLI and Skills-Dir Plugins]] — `claude plugin install/list/details` CLI; skills-dir plugins under `~/.claude/skills/` auto-load without marketplace install
+- [[Claude Code Plugin Marketplace Naming Ambiguities]] — no exact "git"/"ado" plugin exists; `langfuse` vs `langfuse-observability` are distinct plugins
+- [[graphify Scope for casacolinacare-v2]] — scope to app/tests/wiki/root; exclude `.claude/` and `claude_design/` to avoid the 2M-word warning
 - [[Next.js 16 Breaking Changes]] — Turbopack default, async-only request APIs, middleware→proxy rename, new render path
 - [[Vercel bun auto-detection]] — `bun.lock` presence causes Vercel build system to use bun automatically; no vercel.json needed
 - [[Vercel CLI first deploy auto-connects GitHub]] — `vercel --prod --yes` with a GitHub remote auto-links the repo; no `vercel git connect` step needed

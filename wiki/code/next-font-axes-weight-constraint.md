@@ -56,6 +56,7 @@ Discovered in Next.js 16.2.9 while implementing the Casa Colina Care landing pag
 ## Related
 
 - [[Next.js 16 Breaking Changes]]
+- [[Wiki Gotchas Lack Code-Side Back-References]]
 
 ## Sources
 

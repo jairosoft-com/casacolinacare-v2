@@ -40,6 +40,7 @@ Turbopack watches files via the OS file notification API (kqueue on macOS). Prog
 ## Related
 
 - [[Next.js 16 Turbopack Root Confusion]] — a separate Turbopack caching issue caused by parent-directory lockfiles
+- [[Wiki Gotchas Lack Code-Side Back-References]]
 
 ## Sources
 

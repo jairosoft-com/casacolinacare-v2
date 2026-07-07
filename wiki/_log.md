@@ -4,6 +4,25 @@ title: Wiki Log
 
 # Wiki Log
 
+## 2026-07-06 — Session Insights: Plugin mgmt + ADO project mapping
+
+- **Operation**: insights
+- **Label**: Plugin mgmt + ADO project mapping
+- **Pages created**:
+  - `platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md` (platform)
+  - `platforms/Claude Code Plugin Marketplace Naming Ambiguities.md` (platform)
+  - `entities/CasaColinaCare.com (Azure DevOps Project).md` (entity)
+  - `concepts/Wiki Gotchas Lack Code-Side Back-References.md` (concept)
+  - `platforms/graphify Scope for casacolinacare-v2.md` (platform)
+- **Pages updated**:
+  - `concepts/bug-driven-tdd-red-spec.md` — added backlink to ADO project entity
+  - `code/next-font-axes-weight-constraint.md` — added backlink to code-coupling-gap concept
+  - `code/turbopack-css-filewatcher-miss.md` — added backlink to code-coupling-gap concept
+- **Ideas extracted**: 0
+- **Conflicts flagged**: 0
+- **Cross-references added**: 3
+- **Outcome**: Success
+
 ## 2026-06-22 — Session insights (jx-kb:insights)
 
 - **Operation**: insights extraction
