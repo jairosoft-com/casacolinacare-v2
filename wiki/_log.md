@@ -4,6 +4,23 @@ title: Wiki Log
 
 # Wiki Log
 
+## 2026-07-07 — Session Insights: content-fix stories + tooling PATH gaps
+
+- **Operation**: insights
+- **Label**: Content-fix stories (phone/residents/ARCH license/lanai) + Windows tooling PATH gaps
+- **Pages created**:
+  - `code/bun-bunx-not-on-path-windows.md` (code)
+  - `code/graphify-cli-not-invokable-via-bun.md` (code)
+  - `code/sitewide-content-duplication-pattern.md` (code)
+  - `code/cred-grid-hardcoded-columns.md` (code)
+  - `platforms/Azure DevOps MCP identity lookup.md` (platform)
+- **Pages updated**:
+  - `code/playwright-cli-vs-playwright-test.md` — added conflict callout: no global install on this Windows session, must use `bunx @playwright/cli`
+- **Ideas extracted**: 0
+- **Conflicts flagged**: 1 (playwright-cli global-install assumption doesn't hold cross-machine)
+- **Cross-references added**: 7
+- **Outcome**: Success
+
 ## 2026-07-06 — Session Insights: Plugin mgmt + ADO project mapping
 
 - **Operation**: insights

@@ -3,8 +3,8 @@ title: playwright-cli vs @playwright/test — two separate tools
 type: code
 tags: [playwright, testing, browser-automation, tooling]
 created: 2026-06-22
-updated: 2026-06-22
-source_count: 1
+updated: 2026-07-07
+source_count: 2
 aliases: [playwright-cli, playwright test runner, @playwright/test]
 ---
 
@@ -39,11 +39,20 @@ Having `playwright-cli` installed (globally or locally) does **not** mean `.spec
 | `playwright-cli` | global (`~/.nvm/.../bin/playwright-cli`) | 0.1.14 | Bug hunting, snapshots, manual screenshots |
 | `@playwright/test` | devDependency | 1.61.0 | Regression spec (`tests/bugs.spec.ts`) |
 
+> [!conflict] Global install assumption doesn't hold on every machine
+> This page originally assumed a global `playwright-cli` binary (from a macOS/nvm session). On a Windows session (2026-07-07), `playwright-cli` was not on PATH at all — no global install existed. The working invocation was `bunx @playwright/cli <command>`, and since `bunx` itself wasn't on PATH either (see [[bun/bunx not on PATH in Windows Claude Code environment]]), the full call was:
+> ```powershell
+> & "$env:USERPROFILE\.bun\bin\bunx.exe" @playwright/cli open http://localhost:3000
+> ```
+> Treat "is playwright-cli globally installed" as environment-dependent — check `Get-Command playwright-cli` (or `which`) before assuming either path works.
+
 ## Related
 
 - [[Turbopack CSS file-watch miss on programmatic write]] — separate Turbopack tooling quirk
 - [[Next.js 16 Breaking Changes]]
+- [[bun/bunx not on PATH in Windows Claude Code environment]]
 
 ## Sources
 
 - casacolinacare-v2 dev session 2026-06-22
+- casacolinacare-v2 dev session 2026-07-07

@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
-updated: 2026-07-06
-page_count: 17
+updated: 2026-07-07
+page_count: 22
 ---
 
 # Wiki Index
@@ -37,6 +37,7 @@ _No plugins yet._
 - [[Vercel bun auto-detection]] — `bun.lock` presence causes Vercel build system to use bun automatically; no vercel.json needed
 - [[Vercel CLI first deploy auto-connects GitHub]] — `vercel --prod --yes` with a GitHub remote auto-links the repo; no `vercel git connect` step needed
 - [[Vercel domain alias vs project domains API]] — aliases API (`/v4/aliases?domain=`) is authoritative for domain routing; project domains endpoint can lag
+- [[Azure DevOps MCP identity lookup]] — no "whoami" tool; use `core_get_identity_ids` with an email/name `searchFilter`
 
 ## Projects
 
@@ -54,6 +55,10 @@ _No decisions yet._
 - [[DesignSync get_file truncates binary assets at 256 KB]] — binary images cap at 256 KB (`truncated: true`); use the archived project folder instead
 - [[Next.js 16 ComponentMod.handler Architecture]] — All App Router pages render via `ComponentMod.handler(req, res, ctx)` in base-server.js:1462
 - [[playwright-cli vs @playwright/test — two separate tools]] — playwright-cli is an interactive browser driver; @playwright/test is the spec runner; installing one does not imply the other
+- [[bun/bunx not on PATH in Windows Claude Code environment]] — invoke via full path `$env:USERPROFILE\.bun\bin\bun.exe` / `bunx.exe` in Bash and PowerShell tools
+- [[graphify CLI not invokable via bun/bunx]] — `bunx graphify` fails; CLAUDE.md's `graphify update .` step is currently blocked, invocation method unresolved
+- [[Casa Colina site duplicates marketing facts across sections]] — grep sitewide before editing any single annotated fact (phone, resident count, license tier); marquee strip also duplicates its own string twice for scroll animation
+- [[cred-grid CSS hardcodes column count to card count]] — `.cred-grid`'s `repeat(N,1fr)` must be updated in lockstep with the number of `.cred` cards
 
 ## Sources
 

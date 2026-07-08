@@ -155,7 +155,7 @@ a{color:inherit;text-decoration:none}
 
 /* Credentials */
 .credentials{padding:96px 0;background:var(--cream)}
-.cred-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--rule);background:var(--paper)}
+.cred-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rule);background:var(--paper)}
 .cred{padding:32px 28px;border-right:1px solid var(--rule);transition:background .25s}
 .cred:last-child{border-right:none}
 .cred:hover{background:var(--cream-2)}
