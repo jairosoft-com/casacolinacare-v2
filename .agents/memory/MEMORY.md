@@ -5,3 +5,4 @@
 - [Feedback — Screenshots subfolder](feedback-screenshots-subfolder.md) — All playwright-cli and Playwright screenshots must go in screenshots/, never the repo root
 - [Reference — ADO project](reference-ado-project.md) — This repo's ADO project is CasaColinaCare.com; don't confuse with CasaColinaDestination.com
 - [Reference — NotebookLM Langfuse notebook](reference-notebooklm-langfuse.md) — For langfuse NotebookLM queries use notebook "Langfuse" (ccc5abb2-dbe4-453a-8610-5bdb567d961f)
+- [Reference — NotebookLM React Best Practices notebook](reference-notebooklm-react-best-practices.md) — For react-best-practices NotebookLM queries use notebook "React Best Practices" (3bd6b70c-4c5f-4dd9-bd67-e8414e0fe236)
