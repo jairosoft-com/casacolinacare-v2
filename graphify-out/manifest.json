@@ -65,14 +65,14 @@
     "semantic_hash": "269e5656e46ac09718606f7e9cc6b88e"
   },
   "wiki/_index.md": {
-    "mtime": 1783532695.8187418,
-    "ast_hash": "2d87fe4bbe2d295eaccd18dc43168de4",
-    "semantic_hash": "2d87fe4bbe2d295eaccd18dc43168de4"
+    "mtime": 1783536937.7191963,
+    "ast_hash": "833a96ba9a89564cfe6eb8c166551863",
+    "semantic_hash": "833a96ba9a89564cfe6eb8c166551863"
   },
   "wiki/_log.md": {
-    "mtime": 1783532695.818992,
-    "ast_hash": "07a430745aab3ad0e999a8f765fd6165",
-    "semantic_hash": "07a430745aab3ad0e999a8f765fd6165"
+    "mtime": 1783536964.5888915,
+    "ast_hash": "35f420bd569ad4e51eef7631c6b2cd7e",
+    "semantic_hash": "35f420bd569ad4e51eef7631c6b2cd7e"
   },
   "wiki/_schema.md": {
     "mtime": 1782087726.9366863,
@@ -160,9 +160,9 @@
     "semantic_hash": "1365257de80aeed9d45cdf2a739c7767"
   },
   "wiki/platforms/graphify Scope for casacolinacare-v2.md": {
-    "mtime": 1783404163.7667918,
-    "ast_hash": "9bde522097090cce9db0e61fc3a21a95",
-    "semantic_hash": "9bde522097090cce9db0e61fc3a21a95"
+    "mtime": 1783536917.0758836,
+    "ast_hash": "9ae9878aa80105acaf6fc15abada5d05",
+    "semantic_hash": "9ae9878aa80105acaf6fc15abada5d05"
   },
   "app/components/SmoothLink.tsx": {
     "mtime": 1783461972.6024137,
@@ -195,9 +195,9 @@
     "semantic_hash": "f8913e854cb2fed39fc8b14744609811"
   },
   "wiki/code/graphify-cli-not-invokable-via-bun.md": {
-    "mtime": 1783532695.8194754,
-    "ast_hash": "e551ffe5c68fcea8b93eb11892972b81",
-    "semantic_hash": "e551ffe5c68fcea8b93eb11892972b81"
+    "mtime": 1783536975.310868,
+    "ast_hash": "5cc69efff51b264e10938bc7cc8edfe6",
+    "semantic_hash": "5cc69efff51b264e10938bc7cc8edfe6"
   },
   "wiki/code/sitewide-content-duplication-pattern.md": {
     "mtime": 1783532695.8198917,
@@ -208,5 +208,10 @@
     "mtime": 1783532695.8200128,
     "ast_hash": "98f9787c838f4903e23062e19a228cea",
     "semantic_hash": "98f9787c838f4903e23062e19a228cea"
+  },
+  "wiki/code/graphify-update-re-extraction-gotchas.md": {
+    "mtime": 1783536903.5614588,
+    "ast_hash": "8de59ee7832adfb07bcc959115129e89",
+    "semantic_hash": "8de59ee7832adfb07bcc959115129e89"
   }
 }

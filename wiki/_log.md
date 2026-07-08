@@ -4,6 +4,19 @@ title: Wiki Log
 
 # Wiki Log
 
+## 2026-07-08 — Session Insights: graphify-update-mechanics
+
+- **Operation**: insights
+- **Label**: graphify-update-mechanics
+- **Pages created**:
+  - `code/graphify-update-re-extraction-gotchas.md` (code)
+- **Pages updated**:
+  - `platforms/graphify Scope for casacolinacare-v2.md` — added `.graphifyignore` enforcement, `.agents/`/`scratchpad/` exclusions, and the `--update` 131→12 leak evidence
+- **Ideas extracted**: 0
+- **Conflicts flagged**: 0
+- **Cross-references added**: 2
+- **Outcome**: Success
+
 ## 2026-07-07 — Session Insights: content-fix stories + tooling PATH gaps
 
 - **Operation**: insights
