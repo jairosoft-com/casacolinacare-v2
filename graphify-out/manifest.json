@@ -1,13 +1,13 @@
 {
   "app/layout.tsx": {
-    "mtime": 1782100104.1635149,
-    "ast_hash": "9144a7bf7430c4237e9fe080898e8279",
-    "semantic_hash": "9144a7bf7430c4237e9fe080898e8279"
+    "mtime": 1783532695.8175373,
+    "ast_hash": "5b7265ea7fb5d086d9e71351e1cc50a0",
+    "semantic_hash": "5b7265ea7fb5d086d9e71351e1cc50a0"
   },
   "app/page.tsx": {
-    "mtime": 1783462063.0721555,
-    "ast_hash": "8b1952d6df81a50033bb065e010d54af",
-    "semantic_hash": "8b1952d6df81a50033bb065e010d54af"
+    "mtime": 1783532695.8178978,
+    "ast_hash": "577514e0ecad8c1157294138a3fa6785",
+    "semantic_hash": "577514e0ecad8c1157294138a3fa6785"
   },
   "eslint.config.mjs": {
     "mtime": 1781902977.88596,
@@ -65,14 +65,14 @@
     "semantic_hash": "269e5656e46ac09718606f7e9cc6b88e"
   },
   "wiki/_index.md": {
-    "mtime": 1783404203.1560442,
-    "ast_hash": "023a769395bda5519748616061e3a15b",
-    "semantic_hash": "023a769395bda5519748616061e3a15b"
+    "mtime": 1783532695.8187418,
+    "ast_hash": "2d87fe4bbe2d295eaccd18dc43168de4",
+    "semantic_hash": "2d87fe4bbe2d295eaccd18dc43168de4"
   },
   "wiki/_log.md": {
-    "mtime": 1783404214.044535,
-    "ast_hash": "a722c04f70ba04cd59e3c0e00639860e",
-    "semantic_hash": "a722c04f70ba04cd59e3c0e00639860e"
+    "mtime": 1783532695.818992,
+    "ast_hash": "07a430745aab3ad0e999a8f765fd6165",
+    "semantic_hash": "07a430745aab3ad0e999a8f765fd6165"
   },
   "wiki/_schema.md": {
     "mtime": 1782087726.9366863,
@@ -100,9 +100,9 @@
     "semantic_hash": "64f4997390d411c677f1b8748d2733e5"
   },
   "wiki/code/playwright-cli-vs-playwright-test.md": {
-    "mtime": 1782181388.78978,
-    "ast_hash": "9a5c8441359c7826e990847d68fd0c6c",
-    "semantic_hash": "9a5c8441359c7826e990847d68fd0c6c"
+    "mtime": 1783532695.819766,
+    "ast_hash": "1071f02be5585f7c469a5d5a66ec8dbd",
+    "semantic_hash": "1071f02be5585f7c469a5d5a66ec8dbd"
   },
   "wiki/code/turbopack-css-filewatcher-miss.md": {
     "mtime": 1783404184.2754567,
@@ -175,8 +175,38 @@
     "semantic_hash": "2f8598c16a443a935550ad13109b880d"
   },
   "skills-lock.json": {
-    "mtime": 1783450358.2903252,
-    "ast_hash": "35a6adc6250810f14ddbc69ed9e6383d",
-    "semantic_hash": "35a6adc6250810f14ddbc69ed9e6383d"
+    "mtime": 1783532695.8184752,
+    "ast_hash": "d7b80def5dfb90d0dd772521a586e853",
+    "semantic_hash": "d7b80def5dfb90d0dd772521a586e853"
+  },
+  "feedback-target.json": {
+    "mtime": 1783532695.8180401,
+    "ast_hash": "6bf7e2b9686c5dbca27b9f9cd3a3de1f",
+    "semantic_hash": "6bf7e2b9686c5dbca27b9f9cd3a3de1f"
+  },
+  "wiki/code/bun-bunx-not-on-path-windows.md": {
+    "mtime": 1783532695.8191135,
+    "ast_hash": "94123dfe40b85bbe3684318da35c7a9e",
+    "semantic_hash": "94123dfe40b85bbe3684318da35c7a9e"
+  },
+  "wiki/code/cred-grid-hardcoded-columns.md": {
+    "mtime": 1783532695.819249,
+    "ast_hash": "f8913e854cb2fed39fc8b14744609811",
+    "semantic_hash": "f8913e854cb2fed39fc8b14744609811"
+  },
+  "wiki/code/graphify-cli-not-invokable-via-bun.md": {
+    "mtime": 1783532695.8194754,
+    "ast_hash": "e551ffe5c68fcea8b93eb11892972b81",
+    "semantic_hash": "e551ffe5c68fcea8b93eb11892972b81"
+  },
+  "wiki/code/sitewide-content-duplication-pattern.md": {
+    "mtime": 1783532695.8198917,
+    "ast_hash": "11341a34e8e2dbcb66073e9ace1e8451",
+    "semantic_hash": "11341a34e8e2dbcb66073e9ace1e8451"
+  },
+  "wiki/platforms/Azure DevOps MCP identity lookup.md": {
+    "mtime": 1783532695.8200128,
+    "ast_hash": "98f9787c838f4903e23062e19a228cea",
+    "semantic_hash": "98f9787c838f4903e23062e19a228cea"
   }
 }

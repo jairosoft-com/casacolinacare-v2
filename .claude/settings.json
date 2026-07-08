@@ -2,6 +2,14 @@
   "worktree": {
     "bgIsolation": "none"
   },
+  "env": {
+    "LANGFUSE_SECRET_KEY": "sk-lf-a36ddb6e-13d8-43e9-b8ac-bfceac8b436c",
+    "LANGFUSE_PUBLIC_KEY": "pk-lf-6fe2de1a-904d-4bcb-a002-f435ecdcb5f2",
+    "LANGFUSE_BASE_URL": "https://us.cloud.langfuse.com",
+    "LANGFUSE_HOST": "https://us.cloud.langfuse.com",
+    "TRACE_TO_LANGFUSE": "true",
+    "CC_LANGFUSE_DEBUG": "true"
+  },
   "hooks": {
     "PreToolUse": [
       {

@@ -2,3 +2,9 @@
 # See wiki/platforms/graphify Scope for casacolinacare-v2.md for why.
 claude_design/
 public/
+# Agent/tooling dirs committed into the repo — NOT part of the site codebase.
+# Without these, `graphify --update` re-leaks ~120 nodes (session transcripts,
+# hook scripts, vendored skill rule docs) into the graph. Learned the hard way.
+.claude/
+.agents/
+scratchpad/
