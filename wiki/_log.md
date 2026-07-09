@@ -4,22 +4,6 @@ title: Wiki Log
 
 # Wiki Log
 
-## 2026-07-08 — Session Insights: ADO per-AC task checklists + field-write gotchas
-
-- **Operation**: insights
-- **Label**: ADO Task-checklist workflow, field-format/transition gotchas, jx-pm worktree mismatch
-- **Pages created**:
-  - `platforms/Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks.md` (platform)
-  - `platforms/Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type.md` (platform)
-  - `platforms/Azure DevOps Task fields reject certain values on state-transition updates.md` (platform)
-  - `platforms/jx-pm impl-story-plan's worktree isolation can't see changes already staged in the main tree.md` (platform)
-- **Pages updated**:
-  - `entities/CasaColinaCare.com (Azure DevOps Project).md` — added backlinks to the two new ADO-workflow pages
-- **Ideas extracted**: 0
-- **Conflicts flagged**: 0
-- **Cross-references added**: 6
-- **Outcome**: Success
-
 ## 2026-07-07 — Session Insights: content-fix stories + tooling PATH gaps
 
 - **Operation**: insights

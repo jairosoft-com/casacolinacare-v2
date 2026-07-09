@@ -23,5 +23,6 @@
         ]
       }
     ]
-  }
+  },
+  "autoMemoryDirectory": ".agents/memory"
 }

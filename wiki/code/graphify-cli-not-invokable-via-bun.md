@@ -33,6 +33,7 @@ Find how `graphify` is actually installed/invoked in this repo (check for a loca
 
 - [[bun/bunx not on PATH in Windows Claude Code environment]]
 - [[graphify Scope for casacolinacare-v2]] — existing page on what graphify should scope to, written before this invocation gap was discovered
+- [[graphify --update Re-extraction Gotchas]] — the merge/re-extraction mechanics that run once `graphify` is invocable and scoped
 
 ## Sources
 

@@ -61,6 +61,7 @@ _No decisions yet._
 - [[playwright-cli vs @playwright/test — two separate tools]] — playwright-cli is an interactive browser driver; @playwright/test is the spec runner; installing one does not imply the other
 - [[bun/bunx not on PATH in Windows Claude Code environment]] — invoke via full path `$env:USERPROFILE\.bun\bin\bun.exe` / `bunx.exe` in Bash and PowerShell tools
 - [[graphify CLI not invokable via bun/bunx]] — `bunx graphify` fails; CLAUDE.md's `graphify update .` step is currently blocked, invocation method unresolved
+- [[graphify --update Re-extraction Gotchas]] — content-only code edits are AST-invariant (skip re-extraction); `build_merge` replace-on-re-extract drops all of a file's edges, so re-extract hub files completely (#graphify, #update)
 - [[Casa Colina site duplicates marketing facts across sections]] — grep sitewide before editing any single annotated fact (phone, resident count, license tier); marquee strip also duplicates its own string twice for scroll animation
 - [[cred-grid CSS hardcodes column count to card count]] — `.cred-grid`'s `repeat(N,1fr)` must be updated in lockstep with the number of `.cred` cards
 

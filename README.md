@@ -20,6 +20,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Observability (Langfuse)
+
+Claude Code sessions on this repo are traced to [Langfuse](https://langfuse.com) for observability. Each developer uses their own Langfuse keys. See **[docs/langfuse-local-setup.md](docs/langfuse-local-setup.md)** for the local setup runbook.
+
+## Code Quality (Vercel React Best Practices skill)
+
+This repo ships Vercel Engineering's React/Next.js performance skill (`vercel-react-best-practices`), vendored at `.agents/skills/` so it travels with a clone. Claude Code users get it automatically; other agents install via `npx add-skill vercel-labs/agent-skills`. See **[docs/vercel-react-best-practices-setup.md](docs/vercel-react-best-practices-setup.md)**.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
