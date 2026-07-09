@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
-updated: 2026-07-07
-page_count: 22
+updated: 2026-07-08
+page_count: 26
 ---
 
 # Wiki Index
@@ -38,6 +38,10 @@ _No plugins yet._
 - [[Vercel CLI first deploy auto-connects GitHub]] — `vercel --prod --yes` with a GitHub remote auto-links the repo; no `vercel git connect` step needed
 - [[Vercel domain alias vs project domains API]] — aliases API (`/v4/aliases?domain=`) is authoritative for domain routing; project domains endpoint can lag
 - [[Azure DevOps MCP identity lookup]] — no "whoami" tool; use `core_get_identity_ids` with an email/name `searchFilter`
+- [[Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks]] — one child Task per Gherkin AC scenario, not one consolidated task, is what makes the Tasks panel render as a checkbox checklist
+- [[Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type]] — check `multilineFieldsFormat` before writing; wrong syntax renders wrong without erroring
+- [[Azure DevOps Task fields reject certain values on state-transition updates]] — omit `System.Reason` (ADO auto-fills it) and never set `RemainingWork` to `"0"` (throws `InvalidNotEmpty`)
+- [[jx-pm impl-story-plan's worktree isolation can't see changes already staged in the main tree]] — a fresh worktree checkout can't see the main tree's staged-but-uncommitted index
 
 ## Projects
 

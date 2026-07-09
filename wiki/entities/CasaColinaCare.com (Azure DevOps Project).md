@@ -22,7 +22,10 @@ The Azure DevOps project that backs this repo's bug tracking.
 ## Related
 
 - [[Bug-driven TDD — red spec before fix]]
+- [[Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks]]
+- [[jx-pm impl-story-plan's worktree isolation can't see changes already staged in the main tree]]
 
 ## Sources
 
 - Session: Plugin mgmt + ADO project mapping (2026-07-06)
+- casacolinacare-v2 dev session 2026-07-08
