@@ -46,7 +46,7 @@ export default function Page() {
           <span className="dot"></span> A care home in Hawaiʻi Kai
         </div>
         <div className="hero-content">
-          <h1>A place where mom <br />can feel <span className="i">at home.</span></h1>
+          <h1>A place where mom and dad <br />can feel <span className="i">at home.</span></h1>
           <div className="hero-meta">
             <p>Five residents. One kitchen. Caregivers who know every name, every preference, and the story behind each one.</p>
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
