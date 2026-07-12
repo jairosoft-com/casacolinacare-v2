@@ -269,7 +269,7 @@ export default function Page() {
             <div className="care-row">
               <div className="num">iii.</div>
               <h3>Respite &amp; Short-Stay</h3>
-              <p>Short-term stays — from a weekend to a few weeks — so family caregivers can rest, travel, or recover.</p>
+              <p>Short-term stays with a minimum stay of two weeks — so family caregivers can rest, travel, or recover.</p>
               <div className="arrow">→</div>
             </div>
             <div className="care-row">
