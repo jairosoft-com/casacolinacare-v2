@@ -262,8 +262,8 @@ export default function Page() {
             </div>
             <div className="care-row">
               <div className="num">ii.</div>
-              <h3>Memory Care</h3>
-              <p>A quiet, structured environment for kupuna living with dementia or Alzheimer&apos;s. Familiar routines, patient caregivers, secure surroundings.</p>
+              <h3>Special Diet Certified</h3>
+              <p>Provide therapeutic or texture-modified diets. The PCP (Primary Care Physician) maintains signed orders, posts menus a month in advance, and strictly documents any food substitutions.</p>
               <div className="arrow">→</div>
             </div>
             <div className="care-row">
