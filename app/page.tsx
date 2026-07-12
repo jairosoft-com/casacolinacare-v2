@@ -343,7 +343,7 @@ export default function Page() {
               </div>
               <div className="addr">
                 189 Anapalau Street<br />
-                Hawaiʻi Kai · Honolulu, HI 96825
+                Hawaii Kai · Honolulu, HI 96825
               </div>
               <div className="hours">
                 <span>Mon–Sat · 8a–7p</span>
