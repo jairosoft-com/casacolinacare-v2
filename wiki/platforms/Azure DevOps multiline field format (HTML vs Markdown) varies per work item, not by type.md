@@ -3,7 +3,7 @@ title: Azure DevOps multiline field format (HTML vs Markdown) varies per work it
 type: platform
 tags: [azure-devops, work-item-fields, html, markdown, rich-text]
 created: 2026-07-08
-updated: 2026-07-08
+updated: 2026-07-13
 source_count: 1
 aliases: [multilineFieldsFormat, ado html vs markdown fields]
 ---
@@ -36,6 +36,17 @@ field:
 - If `"html"`: use one `<div>` per line for line breaks, `<b>` for bold.
 - If `"markdown"`: use plain `\n` for line breaks and `**bold**`; `- [ ] text` renders as a real,
   checkable checkbox.
+
+> [!conflict] Backtick-wrapped angle brackets in ADO fields
+> This page originally claimed backtick-wrapped `<...>` syntax "gets silently stripped... the
+> rendered field just shows empty backticks."
+> A later session (2026-07-13) found contrary evidence: writing `` `<h1>A place where mom <br
+> />...</h1>` `` into a Markdown-format Description/comment field rendered correctly as an
+> escaped `<code>` block (`&lt;h1&gt;...`), fully preserved — not stripped.
+> One real normalization was observed instead: self-closing void tags lose the trailing slash
+> (`<br />` → `<br>`) on round-trip, but the tag and its content survive intact.
+> Needs resolution — may depend on which field (comment vs AC vs Description) or on ADO
+> process/template differences between sessions. Verify per-field before trusting either claim.
 
 ## Related
 

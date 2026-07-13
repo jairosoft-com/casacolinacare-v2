@@ -32,6 +32,7 @@ Two `wit_update_work_item` calls that seem reasonable both fail with `TF401320`:
 ## Related
 
 - [[Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks]]
+- [[Azure DevOps wit_update_work_item rejects mixed-field-type batches]]
 
 ## Sources
 
