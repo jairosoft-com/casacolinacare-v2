@@ -1,4 +1,4 @@
-# Implementation Plan: Replace "Memory Care" care-level entry with "Special Diet Certified"
+/# Implementation Plan: Replace "Memory Care" care-level entry with "Special Diet Certified"
 
 **Story ID:** #208360
 **Feature:** — (no parent Feature linked)
