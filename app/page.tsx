@@ -363,7 +363,7 @@ export default function Page() {
         <div className="wrap">
           <div>
             <div className="brand">Casa Colina Care</div>
-            <p className="tag">A family-style care home in Hawaii Kai. Five residents. Real aloha. Open since 2019.</p>
+            <p className="tag">A family-style care home in Hawaii Kai. Five residents. Real aloha. Open since 2026.</p>
           </div>
           <div>
             <h4>Visit</h4>
