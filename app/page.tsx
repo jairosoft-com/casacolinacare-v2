@@ -95,10 +95,10 @@ export default function Page() {
               </div>
             </div>
             <div className="reveal">
-              <h2>We opened Casa Colina because aloha shouldn&apos;t end at a <span className="i">hospital door.</span></h2>
+              <h2>We opened Casa Colina Care because aloha shouldn&apos;t end at a <span className="i">hospital door.</span></h2>
               <div className="essay-body">
                 <p className="drop">My grandmother spent her last years in a place that felt like a waiting room. Fluorescent lights, shift changes, a TV nobody watched. I made a promise that day — if I ever cared for someone&apos;s kupuna, it would be different.</p>
-                <p>Casa Colina is a five-bed home, not a facility. We cook real meals. We sit on the front lawn, go for a walk. We call families by their first names and we mean it.</p>
+                <p>Casa Colina Care is a five-bed home, not a facility. We cook real meals. We sit on the front lawn, go for a walk. We call families by their first names and we mean it.</p>
                 <p>If that sounds like what your mother, father, or spouse deserves — come visit. We&apos;ll put water on for tea.</p>
               </div>
               <div className="essay-sig">
@@ -124,7 +124,7 @@ export default function Page() {
         <div className="wrap">
           <div className="pillars-head reveal">
             <h2>Four commitments,<br />held <span className="i">daily.</span></h2>
-            <p>How we care isn&apos;t a slogan. It&apos;s the rhythm of every day at Casa Colina — the small things, repeated, until they become the home.</p>
+            <p>How we care isn&apos;t a slogan. It&apos;s the rhythm of every day at Casa Colina Care — the small things, repeated, until they become the home.</p>
           </div>
           <div className="pillar-grid">
             <div className="pillar reveal">
@@ -358,7 +358,7 @@ export default function Page() {
       <footer>
         <div className="wrap">
           <div>
-            <div className="brand">Casa Colina</div>
+            <div className="brand">Casa Colina Care</div>
             <p className="tag">A family-style care home in Hawaiʻi Kai. Five residents. Real aloha. Open since 2019.</p>
           </div>
           <div>
