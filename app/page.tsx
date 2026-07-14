@@ -9,6 +9,7 @@ export default function Page() {
       {/* NAV */}
       <nav className="nav">
         <div className="nav-inner">
+          <input type="checkbox" id="nav-toggle" className="nav-toggle-input" />
           <div className="nav-brand">
             Casa Colina Care
             <small>EST. 2026</small>
@@ -26,6 +27,9 @@ export default function Page() {
               Request a visit <span className="arr">→</span>
             </SmoothLink>
           </div>
+          <label htmlFor="nav-toggle" className="nav-toggle-btn" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </label>
         </div>
       </nav>
 
@@ -359,7 +363,7 @@ export default function Page() {
         <div className="wrap">
           <div>
             <div className="brand">Casa Colina Care</div>
-            <p className="tag">A family-style care home in Hawaii Kai. Five residents. Real aloha. Open since 2019.</p>
+            <p className="tag">A family-style care home in Hawaii Kai. Five residents. Real aloha. Open since 2026.</p>
           </div>
           <div>
             <h4>Visit</h4>
