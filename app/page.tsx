@@ -46,7 +46,7 @@ export default function Page() {
           <span className="dot"></span> A care home in Hawaiʻi Kai
         </div>
         <div className="hero-content">
-          <h1>A place where mom <br />can feel <span className="i">at home.</span></h1>
+          <h1>A place where mom <br />and dad can feel <br /><span className="i">at home.</span></h1>
           <div className="hero-meta">
             <p>Five residents. One kitchen. Caregivers who know every name, every preference, and the story behind each one.</p>
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
@@ -86,8 +86,8 @@ export default function Page() {
               <div className="eyebrow accent">A letter from our home</div>
               <div className="essay-img">
                 <Image
-                  src="/assets/caregiver-resident.png"
-                  alt="A caregiver sharing a quiet moment with a resident"
+                  src="/assets/kriss-homepage-new.png"
+                  alt="Kriss, RN, sharing a quiet moment with a resident"
                   fill
                   sizes="(min-width: 1320px) 473px, 42vw"
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -262,14 +262,14 @@ export default function Page() {
             </div>
             <div className="care-row">
               <div className="num">ii.</div>
-              <h3>Memory Care</h3>
-              <p>A quiet, structured environment for kupuna living with dementia or Alzheimer&apos;s. Familiar routines, patient caregivers, secure surroundings.</p>
+              <h3>Special Diet Certified</h3>
+              <p>Provide therapeutic or texture-modified diets. The PCP (Primary Care Physician) maintains signed orders, posts menus a month in advance, and strictly documents any food substitutions.</p>
               <div className="arrow">→</div>
             </div>
             <div className="care-row">
               <div className="num">iii.</div>
               <h3>Respite &amp; Short-Stay</h3>
-              <p>Short-term stays — from a weekend to a few weeks — so family caregivers can rest, travel, or recover.</p>
+              <p>Short-term stays with a minimum stay of two weeks — so family caregivers can rest, travel, or recover.</p>
               <div className="arrow">→</div>
             </div>
             <div className="care-row">
@@ -343,7 +343,7 @@ export default function Page() {
               </div>
               <div className="addr">
                 189 Anapalau Street<br />
-                Hawaiʻi Kai · Honolulu, HI 96825
+                Hawaii Kai · Honolulu, HI 96825
               </div>
               <div className="hours">
                 <span>Mon–Sat · 8a–7p</span>

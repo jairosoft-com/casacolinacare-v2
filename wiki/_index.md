@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
-updated: 2026-07-08
-page_count: 23
+updated: 2026-07-13
+page_count: 29
 ---
 
 # Wiki Index
@@ -38,6 +38,13 @@ _No plugins yet._
 - [[Vercel CLI first deploy auto-connects GitHub]] — `vercel --prod --yes` with a GitHub remote auto-links the repo; no `vercel git connect` step needed
 - [[Vercel domain alias vs project domains API]] — aliases API (`/v4/aliases?domain=`) is authoritative for domain routing; project domains endpoint can lag
 - [[Azure DevOps MCP identity lookup]] — no "whoami" tool; use `core_get_identity_ids` with an email/name `searchFilter`
+- [[Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks]] — one child Task per Gherkin AC scenario, not one consolidated task, is what makes the Tasks panel render as a checkbox checklist
+- [[Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type]] — check `multilineFieldsFormat` before writing; wrong syntax renders wrong without erroring
+- [[Azure DevOps Task fields reject certain values on state-transition updates]] — omit `System.Reason` (ADO auto-fills it) and never set `RemainingWork` to `"0"` (throws `InvalidNotEmpty`)
+- [[Azure DevOps wit_update_work_item rejects mixed-field-type batches]] — combining AC/format patches with unrelated scalar fields (Priority, StoryPoints) in one call fails; split into single-purpose calls
+- [[jx-pm impl-story-plan's worktree isolation can't see changes already staged in the main tree]] — a fresh worktree checkout can't see the main tree's staged-but-uncommitted index, or completely untracked files
+- [[Vercel GitHub integration auto-deploys production on merge to main]] — no manual `vercel --prod` needed; confirm via `gh api repos/.../deployments`
+- [[Windows git worktree remove fails due to own shell cwd]] — a lingering dev-server process or the agent's own shell `cd`'d inside the worktree both block deletion on Windows
 
 ## Projects
 

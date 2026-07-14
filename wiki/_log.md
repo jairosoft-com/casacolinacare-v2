@@ -4,17 +4,22 @@ title: Wiki Log
 
 # Wiki Log
 
-## 2026-07-08 — Session Insights: graphify-update-mechanics
+## 2026-07-13 — Session Insights: ADO story creation, refinement, and implementation for #208447/#208450
 
 - **Operation**: insights
-- **Label**: graphify-update-mechanics
+- **Label**: ADO story creation, refinement, and implementation for #208447/#208450
 - **Pages created**:
-  - `code/graphify-update-re-extraction-gotchas.md` (code)
+  - `platforms/Azure DevOps wit_update_work_item rejects mixed-field-type batches.md` (platform)
+  - `platforms/Windows git worktree remove fails due to own shell cwd.md` (platform)
+  - `platforms/Vercel GitHub integration auto-deploys production on merge to main.md` (platform)
 - **Pages updated**:
-  - `platforms/graphify Scope for casacolinacare-v2.md` — added `.graphifyignore` enforcement, `.agents/`/`scratchpad/` exclusions, and the `--update` 131→12 leak evidence
+  - `platforms/jx-pm impl-story-plan's worktree isolation can't see changes already staged in the main tree.md` — broadened to cover completely untracked files, not just staged tracked changes
+  - `platforms/Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type.md` — added conflict callout contradicting the prior "backticks get stripped" claim
+  - `platforms/Vercel CLI first deploy auto-connects GitHub.md` — cross-reference added
+  - `platforms/Azure DevOps Task fields reject certain values on state-transition updates.md` — cross-reference added
 - **Ideas extracted**: 0
-- **Conflicts flagged**: 0
-- **Cross-references added**: 2
+- **Conflicts flagged**: 1 (ADO backtick-stripping claim contradicted by this session's evidence)
+- **Cross-references added**: 4
 - **Outcome**: Success
 
 ## 2026-07-07 — Session Insights: content-fix stories + tooling PATH gaps
