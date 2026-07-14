@@ -310,7 +310,7 @@ export default function Page() {
             <div className="cred">
               <div className="seal">✓</div>
               <h4>DOH Inspected</h4>
-              <p>March 2025 · no deficiencies</p>
+              <p>March 2026 · no deficiencies</p>
             </div>
             <div className="cred">
               <div className="seal">+</div>
