@@ -350,7 +350,7 @@ export default function Page() {
                 Hawaii Kai · Honolulu, HI 96825
               </div>
               <div className="hours">
-                <span>Mon–Sat · 8a–7p</span>
+                <span>Mon–Sat · 8:00 AM – 7:00 PM</span>
                 <span>Urgent: same number, anytime</span>
               </div>
             </div>
