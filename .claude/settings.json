@@ -39,10 +39,5 @@
     "jx-kb@jodex-plugins": true,
     "jx-dev@jodex-plugins": true,
     "jx-local@jodex-plugins": true
-  },
-  "LANGFUSE_PUBLIC_KEY": "pk-lf-fc8d2560-8ec3-4485-9e51-510d635e4177",
-    "LANGFUSE_SECRET_KEY": "sk-lf-776760c3-def2-4dce-88bc-e03f84d311d8",
-    "LANGFUSE_BASE_URL": "https://us.cloud.langfuse.com",
-    "TRACE_TO_LANGFUSE": "true",
-    "LANGFUSE_USER_ID": "lpaculanang@jairosoft.com"
+  }
 }
