@@ -5,7 +5,7 @@
       "source": "langfuse/skills",
       "sourceType": "github",
       "skillPath": "skills/langfuse/SKILL.md",
-      "computedHash": "c252bdfb0b1e8734e7309992fcbe9c0ef969df6d403d1c1780ee4c426fe30568"
+      "computedHash": "bb70330752acea564c2133b473b90514d6443d2bc2f51aa433833d9497806266"
     },
     "vercel-react-best-practices": {
       "source": "vercel-labs/agent-skills",
