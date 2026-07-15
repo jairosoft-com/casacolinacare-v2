@@ -529,11 +529,16 @@ def emit_turn(langfuse: Langfuse, session_id: str, turn_num: int, turn: Turn, tr
             candidate_end_ts.append(t)
     turn_end_ts = max(candidate_end_ts) if candidate_end_ts else None
 
-    with propagate_attributes(
-        session_id=session_id,
-        trace_name=f"Claude Code - Turn {turn_num}",
-        tags=["claude-code"],
-    ):
+    propagate_kwargs: Dict[str, Any] = {
+        "session_id": session_id,
+        "trace_name": f"Claude Code - Turn {turn_num}",
+        "tags": ["claude-code"],
+    }
+    user_id = os.environ.get("CC_LANGFUSE_USER_ID") or os.environ.get("LANGFUSE_USER_ID")
+    if user_id:
+        propagate_kwargs["user_id"] = user_id
+
+    with propagate_attributes(**propagate_kwargs):
         trace_span = _start_backdated(
             langfuse,
             name=f"Claude Code - Turn {turn_num}",
