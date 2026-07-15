@@ -17,7 +17,7 @@ const quotes = [
   ],
   [
     "My father is himself again here. He laughs. He sings. We hadn't heard him sing in two years.",
-    "A. Kekoa · daughter of resident, Hawai'i Kai",
+    "A. Kekoa · daughter of resident, Hawaii Kai",
   ],
 ] as const;
 

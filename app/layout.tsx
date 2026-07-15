@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Casa Colina Care — A care home in Hawai'i Kai",
+  title: "Casa Colina Care — A care home in Hawaii Kai",
   description:
     "Five residents. One kitchen. Caregivers who know every name, every preference, and the story behind each one.",
 };

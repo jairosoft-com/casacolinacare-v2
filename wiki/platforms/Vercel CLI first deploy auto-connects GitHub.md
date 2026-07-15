@@ -37,6 +37,7 @@ The Vercel GitHub App must already be installed on the GitHub organization/accou
 ## Related
 
 - [[Vercel bun auto-detection]]
+- [[Vercel GitHub integration auto-deploys production on merge to main]]
 
 ## Sources
 

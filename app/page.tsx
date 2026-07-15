@@ -9,6 +9,7 @@ export default function Page() {
       {/* NAV */}
       <nav className="nav">
         <div className="nav-inner">
+          <input type="checkbox" id="nav-toggle" className="nav-toggle-input" />
           <div className="nav-brand">
             Casa Colina Care
             <small>EST. 2026</small>
@@ -26,6 +27,9 @@ export default function Page() {
               Request a visit <span className="arr">→</span>
             </SmoothLink>
           </div>
+          <label htmlFor="nav-toggle" className="nav-toggle-btn" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </label>
         </div>
       </nav>
 
@@ -43,10 +47,10 @@ export default function Page() {
         </div>
         <div className="hero-overlay"></div>
         <div className="hero-tag">
-          <span className="dot"></span> A care home in Hawaiʻi Kai
+          <span className="dot"></span> A care home in Hawaii Kai
         </div>
         <div className="hero-content">
-          <h1>A place where mom <br />can feel <span className="i">at home.</span></h1>
+          <h1>A place where mom <br />and dad can feel <br /><span className="i">at home.</span></h1>
           <div className="hero-meta">
             <p>Five residents. One kitchen. Caregivers who know every name, every preference, and the story behind each one.</p>
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
@@ -70,10 +74,10 @@ export default function Page() {
       <div className="strip">
         <div className="strip-track">
           <span>
-            Licensed ARCH I <span className="glyph">·</span> Registered Nurse Owned since 2022 <span className="glyph">·</span> 1:3 staff ratio <span className="glyph">·</span> Five residents, max <span className="glyph">·</span> Hawaiʻi Kai · Honolulu <span className="glyph">·</span> Now accepting families · spring 2026 <span className="glyph">·</span>
+            Licensed ARCH I <span className="glyph">·</span> Registered Nurse Owned since 2022 <span className="glyph">·</span> 1:3 staff ratio <span className="glyph">·</span> Five residents, max <span className="glyph">·</span> Hawaii Kai · Honolulu <span className="glyph">·</span> Now accepting families · spring 2026 <span className="glyph">·</span>
           </span>
           <span>
-            Licensed ARCH I <span className="glyph">·</span> Registered Nurse Owned since 2022 <span className="glyph">·</span> 1:3 staff ratio <span className="glyph">·</span> Five residents, max <span className="glyph">·</span> Hawaiʻi Kai · Honolulu <span className="glyph">·</span> Now accepting families · spring 2026 <span className="glyph">·</span>
+            Licensed ARCH I <span className="glyph">·</span> Registered Nurse Owned since 2022 <span className="glyph">·</span> 1:3 staff ratio <span className="glyph">·</span> Five residents, max <span className="glyph">·</span> Hawaii Kai · Honolulu <span className="glyph">·</span> Now accepting families · spring 2026 <span className="glyph">·</span>
           </span>
         </div>
       </div>
@@ -86,8 +90,8 @@ export default function Page() {
               <div className="eyebrow accent">A letter from our home</div>
               <div className="essay-img">
                 <Image
-                  src="/assets/caregiver-resident.png"
-                  alt="A caregiver sharing a quiet moment with a resident"
+                  src="/assets/kriss-homepage-new.png"
+                  alt="Kriss, RN, sharing a quiet moment with a resident"
                   fill
                   sizes="(min-width: 1320px) 473px, 42vw"
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -95,10 +99,10 @@ export default function Page() {
               </div>
             </div>
             <div className="reveal">
-              <h2>We opened Casa Colina because aloha shouldn&apos;t end at a <span className="i">hospital door.</span></h2>
+              <h2>We opened Casa Colina Care because aloha shouldn&apos;t end at a <span className="i">hospital door.</span></h2>
               <div className="essay-body">
                 <p className="drop">My grandmother spent her last years in a place that felt like a waiting room. Fluorescent lights, shift changes, a TV nobody watched. I made a promise that day — if I ever cared for someone&apos;s kupuna, it would be different.</p>
-                <p>Casa Colina is a five-bed home, not a facility. We cook real meals. We sit on the front lawn, go for a walk. We call families by their first names and we mean it.</p>
+                <p>Casa Colina Care is a five-bed home, not a facility. We cook real meals. We sit on the front lawn, go for a walk. We call families by their first names and we mean it.</p>
                 <p>If that sounds like what your mother, father, or spouse deserves — come visit. We&apos;ll put water on for tea.</p>
               </div>
               <div className="essay-sig">
@@ -124,7 +128,7 @@ export default function Page() {
         <div className="wrap">
           <div className="pillars-head reveal">
             <h2>Four commitments,<br />held <span className="i">daily.</span></h2>
-            <p>How we care isn&apos;t a slogan. It&apos;s the rhythm of every day at Casa Colina — the small things, repeated, until they become the home.</p>
+            <p>How we care isn&apos;t a slogan. It&apos;s the rhythm of every day at Casa Colina Care — the small things, repeated, until they become the home.</p>
           </div>
           <div className="pillar-grid">
             <div className="pillar reveal">
@@ -262,14 +266,14 @@ export default function Page() {
             </div>
             <div className="care-row">
               <div className="num">ii.</div>
-              <h3>Memory Care</h3>
-              <p>A quiet, structured environment for kupuna living with dementia or Alzheimer&apos;s. Familiar routines, patient caregivers, secure surroundings.</p>
+              <h3>Special Diet Certified</h3>
+              <p>Provide therapeutic or texture-modified diets. The PCP (Primary Care Physician) maintains signed orders, posts menus a month in advance, and strictly documents any food substitutions.</p>
               <div className="arrow">→</div>
             </div>
             <div className="care-row">
               <div className="num">iii.</div>
               <h3>Respite &amp; Short-Stay</h3>
-              <p>Short-term stays — from a weekend to a few weeks — so family caregivers can rest, travel, or recover.</p>
+              <p>Short-term stays with a minimum stay of two weeks — so family caregivers can rest, travel, or recover.</p>
               <div className="arrow">→</div>
             </div>
             <div className="care-row">
@@ -301,12 +305,12 @@ export default function Page() {
             <div className="cred">
               <div className="seal">★</div>
               <h4>State Licensed ARCH I</h4>
-              <p>License #HI-01840 · Reviewed and renewed by Hawaiʻi Dept. of Health (OHCA), annually</p>
+              <p>License #HI-01840 · Reviewed and renewed by Hawaii Dept. of Health (OHCA), annually</p>
             </div>
             <div className="cred">
               <div className="seal">✓</div>
               <h4>DOH Inspected</h4>
-              <p>March 2025 · no deficiencies</p>
+              <p>March 2026 · no deficiencies</p>
             </div>
             <div className="cred">
               <div className="seal">+</div>
@@ -343,7 +347,7 @@ export default function Page() {
               </div>
               <div className="addr">
                 189 Anapalau Street<br />
-                Hawaiʻi Kai · Honolulu, HI 96825
+                Hawaii Kai · Honolulu, HI 96825
               </div>
               <div className="hours">
                 <span>Mon–Sat · 8a–7p</span>
@@ -358,8 +362,8 @@ export default function Page() {
       <footer>
         <div className="wrap">
           <div>
-            <div className="brand">Casa Colina</div>
-            <p className="tag">A family-style care home in Hawaiʻi Kai. Five residents. Real aloha. Open since 2019.</p>
+            <div className="brand">Casa Colina Care</div>
+            <p className="tag">A family-style care home in Hawaii Kai. Five residents. Real aloha. Open since 2026.</p>
           </div>
           <div>
             <h4>Visit</h4>
@@ -385,13 +389,13 @@ export default function Page() {
               <li>+1 808 444 1168</li>
               <li>kriss@casacolinacare.com</li>
               <li>189 Anapalau Street</li>
-              <li>Hawaiʻi Kai · 96825</li>
+              <li>Hawaii Kai · 96825</li>
             </ul>
           </div>
         </div>
         <div className="wrap legal" style={{ display: 'flex', border: '0', paddingTop: '28px', paddingBottom: 0 }}>
           <div>© 2026 Casa Colina Care LLC · All rights reserved</div>
-          <div>Licensed ARCH Hawaiʻi Type I · Privacy · Accessibility</div>
+          <div>Licensed ARCH Hawaii Type I · Privacy · Accessibility</div>
         </div>
       </footer>
 

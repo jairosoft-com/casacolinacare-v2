@@ -24,5 +24,20 @@
       }
     ]
   },
-  "autoMemoryDirectory": ".agents/memory"
+  "autoMemoryDirectory": ".agents/memory",
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "vercel@claude-plugins-official": true,
+    "langfuse@langfuse-observability": true,
+    "jx-core@jodex-plugins": true,
+    "jx-pm@jodex-plugins": true,
+    "jx-qa@jodex-plugins": true,
+    "jx-kb@jodex-plugins": true,
+    "jx-dev@jodex-plugins": true,
+    "jx-local@jodex-plugins": true
+  }
 }
