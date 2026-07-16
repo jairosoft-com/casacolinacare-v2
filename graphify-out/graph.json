@@ -4,6 +4,7 @@
   "graph": {
     "hyperedges": [
       {
+<<<<<<< HEAD
         "id": "graphify_tooling_gotchas",
         "label": "graphify CLI invocation & update gotchas",
         "nodes": [
@@ -11,10 +12,40 @@
           "wiki_code_graphify_cli_not_invokable_via_bun",
           "wiki_code_graphify_update_re_extraction_gotchas",
           "wiki_index_graphify_scope_for_casacolinacare_v2"
+=======
+        "id": "wiki_code_taxonomy_membership",
+        "label": "wiki/code pages implement the Code taxonomy bucket",
+        "nodes": [
+          "wiki__schema_taxonomy",
+          "wiki_code_next_js_16_componentmod_handler_architecture_page",
+          "wiki_code_next_js_16_turbopack_root_confusion_page",
+          "wiki_code_bun_bunx_not_on_path_windows_page",
+          "wiki_code_cred_grid_hardcoded_columns_page",
+          "wiki_code_designsync_binary_truncation_page",
+          "wiki_code_graphify_cli_not_invokable_via_bun_page",
+          "wiki_code_graphify_update_re_extraction_gotchas_page",
+          "wiki_code_next_font_axes_weight_constraint_page",
+          "wiki_code_playwright_cli_vs_playwright_test_page",
+          "wiki_code_sitewide_content_duplication_pattern_page"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "wiki/_schema.md"
+      },
+      {
+        "id": "windows_path_resolution_gotcha_cluster",
+        "label": "Windows PATH/environment-resolution gotchas discovered in the same sessions",
+        "nodes": [
+          "wiki_code_bun_bunx_not_on_path_windows_page",
+          "wiki_code_graphify_cli_not_invokable_via_bun_page",
+          "wiki_code_playwright_cli_vs_playwright_test_conflict_callout"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
         ],
         "relation": "participate_in",
         "confidence": "INFERRED",
         "confidence_score": 0.85,
+<<<<<<< HEAD
         "source_file": "CLAUDE.md"
       },
       {
@@ -53,10 +84,35 @@
           "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
           "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches",
           "wiki_platforms_azure_devops_user_story_tasks_panel_renders_as_a_checklist_only_with_per_ac_child_tasks"
+=======
+        "source_file": "wiki/code/bun-bunx-not-on-path-windows.md"
+      },
+      {
+        "id": "graphify_operational_mechanics_cluster",
+        "label": "graphify CLI usage rule plus its invocation and re-extraction gotchas",
+        "nodes": [
+          "claude_graphify_rules",
+          "wiki_code_graphify_cli_not_invokable_via_bun_page",
+          "wiki_code_graphify_update_re_extraction_gotchas_page"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "CLAUDE.md"
+      },
+      {
+        "id": "ado_field_validation_quirks",
+        "label": "ADO wit_update_work_item field-validation quirks",
+        "nodes": [
+          "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+          "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
+          "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
         ],
         "relation": "participate_in",
         "confidence": "INFERRED",
         "confidence_score": 0.85,
+<<<<<<< HEAD
         "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md"
       },
       {
@@ -66,11 +122,23 @@
           "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
           "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
           "wiki_platforms_vercel_bun_auto_detection",
+=======
+        "source_file": "wiki/platforms/Azure DevOps wit_update_work_item rejects mixed-field-type batches.md"
+      },
+      {
+        "id": "vercel_deployment_pipeline_casacolinacare",
+        "label": "Vercel deployment pipeline behavior for casacolinacare-v2",
+        "nodes": [
+          "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
+          "wiki_platforms_vercel_bun_auto_detection",
+          "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
           "wiki_platforms_vercel_domain_alias_vs_project_domains_api"
         ],
         "relation": "form",
         "confidence": "INFERRED",
         "confidence_score": 0.85,
+<<<<<<< HEAD
         "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md"
       },
       {
@@ -84,6 +152,21 @@
         "relation": "participate_in",
         "confidence": "INFERRED",
         "confidence_score": 0.75,
+=======
+        "source_file": "wiki/platforms/Vercel GitHub integration auto-deploys production on merge to main.md"
+      },
+      {
+        "id": "claude_code_tooling_ecosystem_casacolinacare",
+        "label": "Claude Code plugin/skill tooling ecosystem for casacolinacare-v2",
+        "nodes": [
+          "wiki_platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+          "wiki_platforms_claude_code_plugin_marketplace_naming_ambiguities",
+          "wiki_platforms_graphify_scope_for_casacolinacare_v2"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
         "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md"
       }
     ]
@@ -96,7 +179,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_components_smoothlink",
+<<<<<<< HEAD
       "community": 8,
+=======
+      "community": 9,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "smoothlink.tsx"
     },
     {
@@ -106,7 +193,11 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_components_smoothlink_smoothlinkprops",
+<<<<<<< HEAD
       "community": 8,
+=======
+      "community": 9,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "smoothlinkprops"
     },
     {
@@ -116,7 +207,11 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "app_components_smoothlink_smoothlink",
+<<<<<<< HEAD
       "community": 8,
+=======
+      "community": 9,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "smoothlink()"
     },
     {
@@ -126,7 +221,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_components_testimonialcarousel",
+<<<<<<< HEAD
       "community": 8,
+=======
+      "community": 9,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "testimonialcarousel.tsx"
     },
     {
@@ -136,7 +235,11 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_components_testimonialcarousel_quotes",
+<<<<<<< HEAD
       "community": 8,
+=======
+      "community": 9,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "quotes"
     },
     {
@@ -146,7 +249,11 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "app_components_testimonialcarousel_testimonialcarousel",
+<<<<<<< HEAD
       "community": 8,
+=======
+      "community": 9,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "testimonialcarousel()"
     },
     {
@@ -156,7 +263,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_layout",
+<<<<<<< HEAD
       "community": 9,
+=======
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "layout.tsx"
     },
     {
@@ -166,7 +277,11 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_layout_fraunces",
+<<<<<<< HEAD
       "community": 9,
+=======
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "fraunces"
     },
     {
@@ -176,7 +291,11 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "app_layout_inter",
+<<<<<<< HEAD
       "community": 9,
+=======
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "inter"
     },
     {
@@ -186,7 +305,11 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "app_layout_metadata",
+<<<<<<< HEAD
       "community": 9,
+=======
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "metadata"
     },
     {
@@ -196,7 +319,11 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
+<<<<<<< HEAD
       "community": 9,
+=======
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "rootlayout()"
     },
     {
@@ -206,7 +333,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_page",
+<<<<<<< HEAD
       "community": 8,
+=======
+      "community": 9,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "page.tsx"
     },
     {
@@ -216,7 +347,11 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_page_page",
+<<<<<<< HEAD
       "community": 8,
+=======
+      "community": 9,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "page()"
     },
     {
@@ -226,7 +361,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "eslint_config",
+<<<<<<< HEAD
       "community": 12,
+=======
+      "community": 11,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "eslint.config.mjs"
     },
     {
@@ -236,7 +375,11 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "eslint_config_eslintconfig",
+<<<<<<< HEAD
       "community": 12,
+=======
+      "community": 11,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "eslintconfig"
     },
     {
@@ -246,7 +389,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "next_config",
+<<<<<<< HEAD
       "community": 13,
+=======
+      "community": 12,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "next.config.ts"
     },
     {
@@ -256,7 +403,11 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "next_config_nextconfig",
+<<<<<<< HEAD
       "community": 13,
+=======
+      "community": 12,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "nextconfig"
     },
     {
@@ -266,7 +417,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "package.json"
     },
     {
@@ -276,7 +431,11 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "package_name",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "name"
     },
     {
@@ -286,7 +445,11 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "package_version",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "version"
     },
     {
@@ -296,7 +459,11 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "package_private",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "private"
     },
     {
@@ -306,7 +473,11 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "package_scripts",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "scripts"
     },
     {
@@ -316,7 +487,11 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "package_scripts_dev",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "dev"
     },
     {
@@ -326,7 +501,11 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "package_scripts_build",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "build"
     },
     {
@@ -336,7 +515,11 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "package_scripts_start",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "start"
     },
     {
@@ -346,7 +529,11 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "package_scripts_lint",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "lint"
     },
     {
@@ -356,7 +543,11 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "package_scripts_test_e2e",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "test:e2e"
     },
     {
@@ -626,7 +817,11 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "package_ignorescripts",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "ignorescripts"
     },
     {
@@ -636,7 +831,11 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "ref_sharp",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "sharp"
     },
     {
@@ -646,7 +845,11 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "ref_unrs_resolver",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "unrs-resolver"
     },
     {
@@ -656,7 +859,11 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "package_trusteddependencies",
+<<<<<<< HEAD
       "community": 4,
+=======
+      "community": 5,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "trusteddependencies"
     },
     {
@@ -676,7 +883,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "postcss_config",
+<<<<<<< HEAD
       "community": 14,
+=======
+      "community": 13,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "postcss.config.mjs"
     },
     {
@@ -686,7 +897,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "postcss_config_config",
+<<<<<<< HEAD
       "community": 14,
+=======
+      "community": 13,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "config"
     },
     {
@@ -696,7 +911,11 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_bugs_spec",
+<<<<<<< HEAD
       "community": 3,
+=======
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "bugs.spec.ts"
     },
     {
@@ -1020,7 +1239,11 @@
       "norm_label": "node_modules"
     },
     {
+<<<<<<< HEAD
       "label": "Playwright Tests CI Workflow",
+=======
+      "label": "Playwright CI Workflow",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "code",
       "source_file": ".github/workflows/playwright.yml",
       "source_location": null,
@@ -1028,12 +1251,21 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "github_workflows_playwright",
       "community": 5,
       "norm_label": "playwright tests ci workflow"
     },
     {
       "label": "AGENTS.md \u2014 Claude Code Guidance",
+=======
+      "id": "_github_workflows_playwright_workflow",
+      "community": 6,
+      "norm_label": "playwright ci workflow"
+    },
+    {
+      "label": "AGENTS.md - Project Guidance Document",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": null,
@@ -1041,12 +1273,164 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "agents",
       "community": 5,
       "norm_label": "agents.md \u2014 claude code guidance"
     },
     {
       "label": "README.md",
+=======
+      "id": "agents_document",
+      "community": 6,
+      "norm_label": "agents.md - project guidance document"
+    },
+    {
+      "label": "Casa Colina Care Site Architecture Overview",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_architecture_overview",
+      "community": 6,
+      "norm_label": "casa colina care site architecture overview"
+    },
+    {
+      "label": "Smooth-scroll Nav Bug (ADO 207038)",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_smooth_scroll_nav_bug",
+      "community": 6,
+      "norm_label": "smooth-scroll nav bug (ado 207038)"
+    },
+    {
+      "label": "Testimonial Carousel Behavior",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_testimonial_carousel",
+      "community": 6,
+      "norm_label": "testimonial carousel behavior"
+    },
+    {
+      "label": "Reveal Animations (IntersectionObserver)",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_reveal_animations",
+      "community": 6,
+      "norm_label": "reveal animations (intersectionobserver)"
+    },
+    {
+      "label": "Ken Burns Hero Animation",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_ken_burns_hero",
+      "community": 6,
+      "norm_label": "ken burns hero animation"
+    },
+    {
+      "label": "Turbopack CSS Hot-reload Gotcha",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_turbopack_css_hot_reload_gotcha",
+      "community": 0,
+      "norm_label": "turbopack css hot-reload gotcha"
+    },
+    {
+      "label": "Playwright Browser Install Gotcha",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_playwright_browser_install_gotcha",
+      "community": 6,
+      "norm_label": "playwright browser install gotcha"
+    },
+    {
+      "label": "Bun-only Package Manager Rule",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_package_manager_bun_rule",
+      "community": 6,
+      "norm_label": "bun-only package manager rule"
+    },
+    {
+      "label": "Next.js 16 Breaking-Changes Warning",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_nextjs16_not_the_nextjs_you_know",
+      "community": 6,
+      "norm_label": "next.js 16 breaking-changes warning"
+    },
+    {
+      "label": "CLAUDE.md to AGENTS.md Shim",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_agents_md_shim",
+      "community": 6,
+      "norm_label": "claude.md to agents.md shim"
+    },
+    {
+      "label": "graphify Usage Rules",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_graphify_rules",
+      "community": 0,
+      "norm_label": "graphify usage rules"
+    },
+    {
+      "label": "README Observability (Langfuse) Section",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "document",
       "source_file": "README.md",
       "source_location": null,
@@ -1054,6 +1438,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "readme",
       "community": 6,
       "norm_label": "readme.md"
@@ -1109,22 +1494,244 @@
       "id": "docs_vercel_react_best_practices_setup",
       "community": 6,
       "norm_label": "vercel react best practices skill setup"
+=======
+      "id": "readme_observability_langfuse",
+      "community": 3,
+      "norm_label": "readme observability (langfuse) section"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
-      "label": "Wiki Backlog",
+      "label": "README Code Quality (Vercel Skill) Section",
       "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_code_quality_vercel_skill",
+      "community": 0,
+      "norm_label": "readme code quality (vercel skill) section"
+    },
+    {
+      "label": "README Claude Code Plugins Section",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_claude_code_plugins",
+      "community": 3,
+      "norm_label": "readme claude code plugins section"
+    },
+    {
+      "label": "Langfuse Local Dev Setup Guide",
+      "file_type": "document",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_page",
+      "community": 3,
+      "norm_label": "langfuse local dev setup guide"
+    },
+    {
+      "label": "Langfuse Claude Code Stop Hook",
+      "file_type": "concept",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_stop_hook",
+      "community": 3,
+      "norm_label": "langfuse claude code stop hook"
+    },
+    {
+      "label": "Langfuse Env Var Credential Injection",
+      "file_type": "concept",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_env_vars",
+      "community": 3,
+      "norm_label": "langfuse env var credential injection"
+    },
+    {
+      "label": "Langfuse Hook Fail-open Design",
+      "file_type": "rationale",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_fail_open_design",
+      "community": 3,
+      "norm_label": "langfuse hook fail-open design"
+    },
+    {
+      "label": "Langfuse Setup Troubleshooting Table",
+      "file_type": "document",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_troubleshooting",
+      "community": 3,
+      "norm_label": "langfuse setup troubleshooting table"
+    },
+    {
+      "label": "Claude Code Plugins for This Repo Guide",
+      "file_type": "document",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_page",
+      "community": 3,
+      "norm_label": "claude code plugins for this repo guide"
+    },
+    {
+      "label": "13 Required Claude Code Plugins",
+      "file_type": "document",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_required_plugins",
+      "community": 0,
+      "norm_label": "13 required claude code plugins"
+    },
+    {
+      "label": "Optional codex Plugin",
+      "file_type": "document",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_optional_plugins",
+      "community": 3,
+      "norm_label": "optional codex plugin"
+    },
+    {
+      "label": "Explicitly Dropped Plugins Rationale",
+      "file_type": "rationale",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_dropped_plugins",
+      "community": 3,
+      "norm_label": "explicitly dropped plugins rationale"
+    },
+    {
+      "label": ".claude/settings.json enabledPlugins Mechanism",
+      "file_type": "concept",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_settings_json_mechanism",
+      "community": 3,
+      "norm_label": ".claude/settings.json enabledplugins mechanism"
+    },
+    {
+      "label": "Vercel React Best Practices Skill Guide",
+      "file_type": "document",
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_vercel_react_best_practices_setup_page",
+      "community": 0,
+      "norm_label": "vercel react best practices skill guide"
+    },
+    {
+      "label": "Vendored vercel-react-best-practices Skill",
+      "file_type": "concept",
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_vercel_react_best_practices_setup_vendored_skill",
+      "community": 0,
+      "norm_label": "vendored vercel-react-best-practices skill"
+    },
+    {
+      "label": "Windows Symlink Caveat for Vendored Skill",
+      "file_type": "rationale",
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_vercel_react_best_practices_setup_windows_symlink_caveat",
+      "community": 0,
+      "norm_label": "windows symlink caveat for vendored skill"
+    },
+    {
+      "label": "Path B: npx add-skill Install",
+      "file_type": "document",
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_vercel_react_best_practices_setup_install_path_b",
+      "community": 0,
+      "norm_label": "path b: npx add-skill install"
+    },
+    {
+      "label": "Backlog Priority Taxonomy (P0-P3)",
+      "file_type": "concept",
       "source_file": "wiki/_backlog.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_backlog",
       "community": 0,
       "norm_label": "wiki backlog"
     },
     {
       "label": "Wiki Index",
+=======
+      "id": "wiki__backlog_priority_taxonomy",
+      "community": 0,
+      "norm_label": "backlog priority taxonomy (p0-p3)"
+    },
+    {
+      "label": "Wiki Index Page",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "document",
       "source_file": "wiki/_index.md",
       "source_location": null,
@@ -1132,12 +1739,21 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_index",
       "community": 0,
       "norm_label": "wiki index"
     },
     {
       "label": "Wiki Log",
+=======
+      "id": "wiki__index_wiki_index",
+      "community": 0,
+      "norm_label": "wiki index page"
+    },
+    {
+      "label": "Wiki Log Page",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "document",
       "source_file": "wiki/_log.md",
       "source_location": null,
@@ -1145,6 +1761,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_log",
       "community": 0,
       "norm_label": "wiki log"
@@ -1152,12 +1769,22 @@
     {
       "label": "Wiki Schema",
       "file_type": "document",
+=======
+      "id": "wiki__log_wiki_log",
+      "community": 0,
+      "norm_label": "wiki log page"
+    },
+    {
+      "label": "Wiki Taxonomy (10 Buckets)",
+      "file_type": "concept",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/_schema.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_schema",
       "community": 0,
       "norm_label": "wiki schema"
@@ -1165,14 +1792,53 @@
     {
       "label": "Next.js 16 ComponentMod.handler Architecture",
       "file_type": "rationale",
+=======
+      "id": "wiki__schema_taxonomy",
+      "community": 0,
+      "norm_label": "wiki taxonomy (10 buckets)"
+    },
+    {
+      "label": "Wiki Contradiction Handling Convention",
+      "file_type": "rationale",
+      "source_file": "wiki/_schema.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki__schema_contradiction_handling",
+      "community": 19,
+      "norm_label": "wiki contradiction handling convention"
+    },
+    {
+      "label": "Wiki Tiebreaker Rule (Route to Ideas)",
+      "file_type": "rationale",
+      "source_file": "wiki/_schema.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki__schema_tiebreaker_rule",
+      "community": 3,
+      "norm_label": "wiki tiebreaker rule (route to ideas)"
+    },
+    {
+      "label": "Next.js 16 ComponentMod.handler Architecture",
+      "file_type": "concept",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/code/Next.js 16 ComponentMod.handler Architecture.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": "All App Router pages dispatch through ComponentMod.handler(req,res,ctx) (base-server.js:1462); Turbopack registers handler as a lazy getter, so an undefined handler indicates a stale/mixed .next cache rather than a code bug.",
       "id": "wiki_code_next_js_16_componentmod_handler_architecture",
+=======
+      "id": "wiki_code_next_js_16_componentmod_handler_architecture_page",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "community": 0,
       "norm_label": "next.js 16 componentmod.handler architecture"
     },
@@ -1185,13 +1851,21 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": "Turbopack walks up the directory tree for lockfiles to infer workspace root; a parent lockfile causes mixed-root compilation. Pinning turbopack.root to __dirname and clearing .next/ fixes it.",
       "id": "wiki_code_next_js_16_turbopack_root_confusion",
+=======
+      "id": "wiki_code_next_js_16_turbopack_root_confusion_page",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "community": 0,
       "norm_label": "next.js 16 turbopack root confusion"
     },
     {
+<<<<<<< HEAD
       "label": "bun/bunx not on PATH in Windows Claude Code environment",
+=======
+      "label": "bun/bunx not on PATH in Windows Claude Code Environment",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "rationale",
       "source_file": "wiki/code/bun-bunx-not-on-path-windows.md",
       "source_location": null,
@@ -1199,13 +1873,21 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": "Tool-spawned shells on Windows get a minimal, non-login environment that doesn't replay the user's shell profile, so bun's PATH addition is missing; invoke via full path to ~/.bun/bin instead.",
       "id": "wiki_code_bun_bunx_not_on_path_windows",
+=======
+      "id": "wiki_code_bun_bunx_not_on_path_windows_page",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "community": 0,
       "norm_label": "bun/bunx not on path in windows claude code environment"
     },
     {
+<<<<<<< HEAD
       "label": "cred-grid CSS hardcodes column count to card count",
+=======
+      "label": "cred-grid CSS Hardcodes Column Count to Card Count",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "rationale",
       "source_file": "wiki/code/cred-grid-hardcoded-columns.md",
       "source_location": null,
@@ -1213,13 +1895,21 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": ".cred-grid's repeat(5,1fr) is hardcoded to the current card count in app/page.tsx; adding/removing a .cred card without updating N leaves a gap or squeezes cards.",
       "id": "wiki_code_cred_grid_hardcoded_columns",
+=======
+      "id": "wiki_code_cred_grid_hardcoded_columns_page",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "community": 0,
       "norm_label": "cred-grid css hardcodes column count to card count"
     },
     {
+<<<<<<< HEAD
       "label": "DesignSync get_file truncates binary assets at 256 KB",
+=======
+      "label": "DesignSync get_file Truncates Binary Assets at 256 KB",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "rationale",
       "source_file": "wiki/code/designsync-binary-truncation.md",
       "source_location": null,
@@ -1227,13 +1917,21 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": "DesignSync's get_file MCP tool hard-caps base64 binary responses at 256 KB, silently corrupting larger images; the archived Claude Design project folder contains untruncated originals.",
       "id": "wiki_code_designsync_binary_truncation",
+=======
+      "id": "wiki_code_designsync_binary_truncation_page",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "community": 0,
       "norm_label": "designsync get_file truncates binary assets at 256 kb"
     },
     {
+<<<<<<< HEAD
       "label": "graphify CLI not invokable via bun/bunx",
+=======
+      "label": "graphify CLI Not Invokable via bun/bunx",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "rationale",
       "source_file": "wiki/code/graphify-cli-not-invokable-via-bun.md",
       "source_location": null,
@@ -1241,8 +1939,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": "graphify is not resolvable via bun/bunx PATH or bunx's package-runner fallback, unlike @playwright/cli which resolves by full package name; likely graphify isn't published under that bare name or its bin entry differs.",
       "id": "wiki_code_graphify_cli_not_invokable_via_bun",
+=======
+      "id": "wiki_code_graphify_cli_not_invokable_via_bun_page",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "community": 0,
       "norm_label": "graphify cli not invokable via bun/bunx"
     },
@@ -1255,6 +1957,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": "AST extraction is content-invariant so pure copy edits need no re-extraction (and re-extracting a lone file without its import targets produces phantom full-path import IDs); build_merge replace-on-re-extract also drops ALL of a re-extracted file's existing edges, so hub files like _index.md/_log.md must be re-extracted with their COMPLETE link set or edges silently vanish.",
       "id": "wiki_code_graphify_update_re_extraction_gotchas",
       "community": 0,
@@ -1262,6 +1965,40 @@
     },
     {
       "label": "next/font \u2014 axes + weight constraint for variable fonts",
+=======
+      "id": "wiki_code_graphify_update_re_extraction_gotchas_page",
+      "community": 3,
+      "norm_label": "graphify --update re-extraction gotchas"
+    },
+    {
+      "label": "AST-invariant Content-only Edits Skip Re-extraction",
+      "file_type": "rationale",
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_graphify_update_re_extraction_gotchas_ast_invariant_edits",
+      "community": 3,
+      "norm_label": "ast-invariant content-only edits skip re-extraction"
+    },
+    {
+      "label": "build_merge Replace-on-Re-extract Drops All File Edges",
+      "file_type": "rationale",
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_graphify_update_re_extraction_gotchas_build_merge_replace_on_reextract",
+      "community": 3,
+      "norm_label": "build_merge replace-on-re-extract drops all file edges"
+    },
+    {
+      "label": "next/font axes + weight Constraint for Variable Fonts",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "rationale",
       "source_file": "wiki/code/next-font-axes-weight-constraint.md",
       "source_location": null,
@@ -1269,6 +2006,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": "next/font/google throws a build error if axes is combined with an explicit weight array; weight must be omitted to get the full variable range when requesting a non-standard axis like opsz.",
       "id": "wiki_code_next_font_axes_weight_constraint",
       "community": 0,
@@ -1276,6 +2014,14 @@
     },
     {
       "label": "playwright-cli vs @playwright/test \u2014 two separate tools",
+=======
+      "id": "wiki_code_next_font_axes_weight_constraint_page",
+      "community": 0,
+      "norm_label": "next/font axes + weight constraint for variable fonts"
+    },
+    {
+      "label": "playwright-cli vs @playwright/test - Two Separate Tools",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "concept",
       "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
       "source_location": null,
@@ -1283,12 +2029,34 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_code_playwright_cli_vs_playwright_test",
       "community": 0,
       "norm_label": "playwright-cli vs @playwright/test \u2014 two separate tools"
     },
     {
       "label": "Casa Colina site duplicates marketing facts across sections",
+=======
+      "id": "wiki_code_playwright_cli_vs_playwright_test_page",
+      "community": 0,
+      "norm_label": "playwright-cli vs @playwright/test - two separate tools"
+    },
+    {
+      "label": "Global Install Assumption Conflict Callout",
+      "file_type": "rationale",
+      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_playwright_cli_vs_playwright_test_conflict_callout",
+      "community": 0,
+      "norm_label": "global install assumption conflict callout"
+    },
+    {
+      "label": "Casa Colina Site Duplicates Marketing Facts Across Sections",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "file_type": "rationale",
       "source_file": "wiki/code/sitewide-content-duplication-pattern.md",
       "source_location": null,
@@ -1296,12 +2064,32 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": "Marketing facts (phone, resident count, license tier) are restated verbatim in multiple unrelated markup locations rather than sourced once, so a single circled screenshot annotation understates true edit scope; the marquee strip additionally duplicates its own string twice for the scroll-loop animation.",
       "id": "wiki_code_sitewide_content_duplication_pattern",
+=======
+      "id": "wiki_code_sitewide_content_duplication_pattern_page",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "community": 0,
       "norm_label": "casa colina site duplicates marketing facts across sections"
     },
     {
+<<<<<<< HEAD
+=======
+      "label": "Marquee Strip Duplicate-string Pattern",
+      "file_type": "rationale",
+      "source_file": "wiki/code/sitewide-content-duplication-pattern.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_sitewide_content_duplication_pattern_marquee_duplication",
+      "community": 0,
+      "norm_label": "marquee strip duplicate-string pattern"
+    },
+    {
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "label": "Turbopack CSS file-watch miss on programmatic write",
       "file_type": "rationale",
       "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
@@ -1310,6 +2098,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "rationale": "Turbopack's OS file-notification watcher can silently miss programmatic writes to CSS files during dev, serving a stale compiled chunk; touching the file's mtime reliably forces reprocessing.",
       "id": "wiki_code_turbopack_css_filewatcher_miss",
       "community": 0,
@@ -1537,6 +2326,14 @@
       "norm_label": "playwright plugin (claude code)"
     },
     {
+=======
+      "rationale": "Turbopack watches files via the OS file notification API (kqueue on macOS); programmatic writes sometimes don't emit a notification event, or the event fires before the write is fully flushed, leaving the watcher unaware of the change. `touch app/globals.css` updates mtime and reliably triggers reprocessing.",
+      "id": "wiki_code_turbopack_css_filewatcher_miss",
+      "community": 4,
+      "norm_label": "turbopack css file-watch miss on programmatic write"
+    },
+    {
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "label": "Wiki Gotchas Lack Code-Side Back-References",
       "file_type": "concept",
       "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
@@ -1545,8 +2342,14 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_concepts_wiki_gotchas_lack_code_side_back_references",
       "community": 9,
+=======
+      "rationale": "graphify's own generated graph showed wiki gotcha articles have zero structural edges back to the source lines they describe, risking silent reintroduction of already-solved bugs during refactors since nothing in the code points a future editor at the constraint.",
+      "id": "wiki_concepts_wiki_gotchas_lack_code_side_back_references",
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "wiki gotchas lack code-side back-references"
     },
     {
@@ -1558,8 +2361,14 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_concepts_agents_md_claude_md_shim_pattern",
       "community": 5,
+=======
+      "rationale": "Different AI coding agents read different context files (Claude Code reads CLAUDE.md, Codex and others read AGENTS.md); maintaining both in full leads to drift, so AGENTS.md holds canonical content and CLAUDE.md is reduced to a one-line `@AGENTS.md` import shim.",
+      "id": "wiki_concepts_agents_md_claude_md_shim_pattern",
+      "community": 20,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "agents.md + claude.md shim pattern"
     },
     {
@@ -1571,13 +2380,23 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_concepts_bug_driven_tdd_red_spec",
       "community": 3,
+=======
+      "rationale": "Writing a red Playwright spec asserting fixed behavior before any fix code forces a precise, executable definition of 'fixed', makes each green test proof rather than opinion, and creates a permanent regression guard so the bug cannot silently reintroduce itself.",
+      "id": "wiki_concepts_bug_driven_tdd_red_spec",
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "bug-driven tdd \u2014 red spec before fix"
     },
     {
       "label": "CasaColinaCare.com (Azure DevOps Project)",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "document",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
       "source_location": null,
       "source_url": null,
@@ -1585,12 +2404,20 @@
       "author": null,
       "contributor": null,
       "id": "wiki_entities_casacolinacare_com_azure_devops_project",
+<<<<<<< HEAD
       "community": 3,
+=======
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "casacolinacare.com (azure devops project)"
     },
     {
       "label": "Azure DevOps MCP has no whoami tool \u2014 use core_get_identity_ids",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "document",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
       "source_location": null,
       "source_url": null,
@@ -1598,25 +2425,43 @@
       "author": null,
       "contributor": null,
       "id": "wiki_platforms_azure_devops_mcp_identity_lookup",
+<<<<<<< HEAD
       "community": 3,
+=======
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "azure devops mcp has no whoami tool \u2014 use core_get_identity_ids"
     },
     {
       "label": "Azure DevOps Task fields reject certain values on state-transition updates",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "rationale",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
       "community": 3,
+=======
+      "rationale": "ADO's Reason field only accepts values from the work item type's defined transition set, not arbitrary text (TF401320 on mismatch); RemainingWork treats an explicit zero as empty (InvalidNotEmpty), which the close-task validation rule rejects. Fix: omit Reason (ADO auto-fills a valid default) and leave RemainingWork at its prior value.",
+      "id": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+      "community": 8,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "azure devops task fields reject certain values on state-transition updates"
     },
     {
       "label": "Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "document",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks.md",
       "source_location": null,
       "source_url": null,
@@ -1624,38 +2469,66 @@
       "author": null,
       "contributor": null,
       "id": "wiki_platforms_azure_devops_user_story_tasks_panel_renders_as_a_checklist_only_with_per_ac_child_tasks",
+<<<<<<< HEAD
       "community": 3,
+=======
+      "community": 8,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "azure devops user story tasks panel renders as a checklist only with per-ac child tasks"
     },
     {
       "label": "Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "rationale",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
       "community": 3,
+=======
+      "rationale": "Rendering format for multiline fields (Description, AcceptanceCriteria) is stored per-work-item in the response's multilineFieldsFormat map, not fixed by work item type or process template, so writing the wrong syntax silently renders wrong instead of erroring. A later session found a prior claim (backtick-wrapped angle brackets get stripped) was contradicted by contrary evidence \u2014 flagged as an unresolved conflict needing per-field verification.",
+      "id": "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
+      "community": 8,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "azure devops multiline field format (html vs markdown) varies per work item, not by type"
     },
     {
       "label": "Azure DevOps wit_update_work_item rejects mixed-field-type batches",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "rationale",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Azure DevOps wit_update_work_item rejects mixed-field-type batches.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches",
       "community": 3,
+=======
+      "rationale": "Combining a content-and-format multiline patch (AC + multilineFieldsFormat) with unrelated scalar fields (Priority, StoryPoints) in one wit_update_work_item call fails with a generic 'type changed without a value' error, reproduced identically across two separate stories; splitting into single-purpose calls succeeds. Discovered empirically \u2014 the tool schema gives no hint why.",
+      "id": "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches",
+      "community": 8,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "azure devops wit_update_work_item rejects mixed-field-type batches"
     },
     {
       "label": "Claude Code Plugin CLI and Skills-Dir Plugins",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "document",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
       "source_location": null,
       "source_url": null,
@@ -1663,12 +2536,20 @@
       "author": null,
       "contributor": null,
       "id": "wiki_platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+<<<<<<< HEAD
       "community": 3,
+=======
+      "community": 14,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "claude code plugin cli and skills-dir plugins"
     },
     {
       "label": "Claude Code Plugin Marketplace Naming Ambiguities",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "document",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
       "source_location": null,
       "source_url": null,
@@ -1676,12 +2557,20 @@
       "author": null,
       "contributor": null,
       "id": "wiki_platforms_claude_code_plugin_marketplace_naming_ambiguities",
+<<<<<<< HEAD
       "community": 3,
+=======
+      "community": 14,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "claude code plugin marketplace naming ambiguities"
     },
     {
       "label": "Next.js 16 Breaking Changes",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "document",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Next.js 16 Breaking Changes.md",
       "source_location": null,
       "source_url": null,
@@ -1689,25 +2578,43 @@
       "author": null,
       "contributor": null,
       "id": "wiki_platforms_next_js_16_breaking_changes",
+<<<<<<< HEAD
       "community": 5,
+=======
+      "community": 8,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "next.js 16 breaking changes"
     },
     {
       "label": "Vercel CLI first deploy auto-connects GitHub",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "rationale",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
       "community": 11,
+=======
+      "rationale": "Vercel CLI v54+ detects a GitHub-origin git remote and auto-connects the repo to the new Vercel project during the first `vercel --prod --yes` deploy, provided the Vercel GitHub App is already installed on the org/account \u2014 no separate `vercel git connect` command needed.",
+      "id": "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
+      "community": 8,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "vercel cli first deploy auto-connects github"
     },
     {
       "label": "Vercel GitHub integration auto-deploys production on merge to main",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "document",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Vercel GitHub integration auto-deploys production on merge to main.md",
       "source_location": null,
       "source_url": null,
@@ -1715,25 +2622,43 @@
       "author": null,
       "contributor": null,
       "id": "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
+<<<<<<< HEAD
       "community": 11,
+=======
+      "community": 8,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "vercel github integration auto-deploys production on merge to main"
     },
     {
       "label": "Vercel bun auto-detection",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "rationale",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Vercel bun auto-detection.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_platforms_vercel_bun_auto_detection",
       "community": 11,
+=======
+      "rationale": "Presence of bun.lock (and absence of package-lock.json/pnpm-lock.yaml) is the sole signal Vercel's build system uses to select bun for install/build (`bun install` then `bun run build`), without needing a vercel.json override.",
+      "id": "wiki_platforms_vercel_bun_auto_detection",
+      "community": 8,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "vercel bun auto-detection"
     },
     {
       "label": "Vercel domain alias API vs project domains API",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "document",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
       "source_location": null,
       "source_url": null,
@@ -1741,44 +2666,73 @@
       "author": null,
       "contributor": null,
       "id": "wiki_platforms_vercel_domain_alias_vs_project_domains_api",
+<<<<<<< HEAD
       "community": 11,
+=======
+      "community": 8,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "vercel domain alias api vs project domains api"
     },
     {
       "label": "Windows git worktree remove fails due to own shell cwd",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "rationale",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Windows git worktree remove fails due to own shell cwd.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_platforms_windows_git_worktree_remove_fails_due_to_own_shell_cwd",
       "community": 3,
+=======
+      "rationale": "Two distinct causes: (1) a leftover next dev/Turbopack node.exe process holds file locks in .next/ and node_modules/.bin; (2) the agent's own persistent shell still has cwd inside the worktree, which holds a Windows directory handle open and blocks delete/rename even with zero other processes running.",
+      "id": "wiki_platforms_windows_git_worktree_remove_fails_due_to_own_shell_cwd",
+      "community": 4,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "windows git worktree remove fails due to own shell cwd"
     },
     {
       "label": "graphify Scope for casacolinacare-v2",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "rationale",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/graphify Scope for casacolinacare-v2.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_platforms_graphify_scope_for_casacolinacare_v2",
       "community": 9,
+=======
+      "rationale": "A full-repo scan hits ~5.65M words dominated by .claude/ session logs and claude_design/ assets, neither adding real code or doc signal; scoping to app/, tests/, wiki/, and root config via .graphifyignore (honored by the incremental --update path) keeps updates clean. An incomplete ignore list leaked ~120 files (mostly .claude/data/sessions and .agents/skills docs) into a --update scan before .claude/, .agents/, and scratchpad/ were added.",
+      "id": "wiki_platforms_graphify_scope_for_casacolinacare_v2",
+      "community": 21,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "norm_label": "graphify scope for casacolinacare-v2"
     },
     {
       "label": "jx-pm:impl-story-plan's worktree isolation can't see changes already staged in the main tree",
+<<<<<<< HEAD
       "file_type": "concept",
+=======
+      "file_type": "rationale",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/jx-pm impl-story-plan's worktree isolation can't see changes already staged in the main tree.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "wiki_platforms_jx_pm_impl_story_plan_s_worktree_isolation_can_t_see_changes_already_staged_in_the_main_tree",
       "community": 3,
       "norm_label": "jx-pm:impl-story-plan's worktree isolation can't see changes already staged in the main tree"
@@ -1787,11 +2741,23 @@
       "label": "core_get_identity_ids (Azure DevOps MCP tool)",
       "file_type": "concept",
       "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
+=======
+      "rationale": "A fresh worktree checks out from HEAD only, so it has no visibility into the main tree's staged-but-uncommitted git index state, nor into completely untracked files (e.g. a referenced image asset never `git add`-ed) \u2014 `git worktree add` only materializes committed, tracked content.",
+      "id": "wiki_platforms_jx_pm_impl_story_plan_s_worktree_isolation_can_t_see_changes_already_staged_in_the_main_tree",
+      "community": 4,
+      "norm_label": "jx-pm:impl-story-plan's worktree isolation can't see changes already staged in the main tree"
+    },
+    {
+      "label": "ADO Bug #207038 \u2014 nav links don't update URL hash",
+      "file_type": "document",
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "mcp_azure_devops_core_get_identity_ids",
       "community": 3,
       "norm_label": "core_get_identity_ids (azure devops mcp tool)"
@@ -1800,11 +2766,22 @@
       "label": "mcp__github__get_me",
       "file_type": "concept",
       "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
+=======
+      "id": "wiki_entities_casacolinacare_com_azure_devops_project_bug_207038",
+      "community": 4,
+      "norm_label": "ado bug #207038 \u2014 nav links don't update url hash"
+    },
+    {
+      "label": "TF401320 (ADO field validation error)",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+<<<<<<< HEAD
       "id": "mcp_github_get_me",
       "community": 3,
       "norm_label": "mcp__github__get_me"
@@ -1821,6 +2798,11 @@
       "id": "mcp_azure_devops_wit_update_work_item",
       "community": 3,
       "norm_label": "wit_update_work_item (azure devops mcp tool)"
+=======
+      "id": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates_tf401320",
+      "community": 8,
+      "norm_label": "tf401320 (ado field validation error)"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     }
   ],
   "links": [
@@ -1950,15 +2932,36 @@
     },
     {
       "relation": "references",
+<<<<<<< HEAD
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+=======
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
       "source_location": null,
       "weight": 1.0,
       "source": "wiki_concepts_wiki_gotchas_lack_code_side_back_references",
+<<<<<<< HEAD
       "target": "app_layout"
     },
     {
+=======
+      "target": "app_layout_fraunces"
+    },
+    {
+      "relation": "references",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_concepts_wiki_gotchas_lack_code_side_back_references",
+      "target": "app_layout_inter"
+    },
+    {
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/page.tsx",
@@ -2722,6 +3725,93 @@
       "source": "tsconfig_compileroptions_lib",
       "target": "ref_esnext",
       "confidence_score": 1.0
+<<<<<<< HEAD
+=======
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_mts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_next_dev_types_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_next_env_d_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_next_types_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_exclude",
+      "target": "ref_node_modules",
+      "confidence_score": 1.0
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "extends",
@@ -2814,6 +3904,7 @@
       "source_file": ".github/workflows/playwright.yml",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "github_workflows_playwright",
       "target": "agents_playwright_config_ts"
     },
@@ -2848,14 +3939,25 @@
       "target": "wiki_code_playwright_cli_vs_playwright_test"
     },
     {
+=======
+      "source": "_github_workflows_playwright_workflow",
+      "target": "agents_architecture_overview"
+    },
+    {
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "agents",
       "target": "agents_app_globals_css"
+=======
+      "source": "agents_document",
+      "target": "agents_architecture_overview"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -2864,8 +3966,13 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "agents",
       "target": "agents_app_layout_tsx"
+=======
+      "source": "agents_document",
+      "target": "agents_ken_burns_hero"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -2874,8 +3981,13 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "agents",
       "target": "agents_app_page_tsx"
+=======
+      "source": "agents_document",
+      "target": "agents_nextjs16_not_the_nextjs_you_know"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -2884,8 +3996,13 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "agents",
       "target": "agents_next_config_ts"
+=======
+      "source": "agents_document",
+      "target": "agents_package_manager_bun_rule"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -2894,8 +4011,13 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "agents",
       "target": "agents_playwright_config_ts"
+=======
+      "source": "agents_document",
+      "target": "agents_playwright_browser_install_gotcha"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -2904,14 +4026,50 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "agents",
       "target": "agents_tests_bugs_spec_ts"
+=======
+      "source": "agents_document",
+      "target": "agents_reveal_animations"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_smooth_scroll_nav_bug"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_testimonial_carousel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_turbopack_css_hot_reload_gotcha"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
+<<<<<<< HEAD
       "source_location": null,
       "weight": 1.0,
       "source": "claude",
@@ -2976,6 +4134,12 @@
       "weight": 1.0,
       "source": "wiki_concepts_agents_md_claude_md_shim_pattern",
       "target": "claude"
+=======
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_agents_md_shim",
+      "target": "agents_document"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -3090,6 +4254,7 @@
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
+<<<<<<< HEAD
       "confidence_score": 0.75,
       "source_file": "wiki/_backlog.md",
       "source_location": null,
@@ -3106,14 +4271,43 @@
       "weight": 1.0,
       "source": "docs_plugins_for_this_repo_jx_kb",
       "target": "wiki_index"
+=======
+      "confidence_score": 0.85,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_turbopack_css_hot_reload_gotcha",
+      "target": "wiki_code_next_js_16_turbopack_root_confusion_page"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "wiki/code/graphify-cli-not-invokable-via-bun.md",
       "source_location": null,
       "weight": 1.0,
+      "source": "wiki_code_graphify_cli_not_invokable_via_bun_page",
+      "target": "claude_graphify_rules"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_observability_langfuse",
+      "target": "docs_langfuse_local_setup_page"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+<<<<<<< HEAD
       "source": "wiki_index",
       "target": "wiki_code_bun_bunx_not_on_path_windows"
     },
@@ -3346,26 +4540,420 @@
       "weight": 1.0,
       "source": "wiki_code_next_js_16_componentmod_handler_architecture",
       "target": "wiki_index_next_js_16_breaking_changes"
+=======
+      "source": "readme_code_quality_vercel_skill",
+      "target": "docs_vercel_react_best_practices_setup_page"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/Next.js 16 Turbopack Root Confusion.md",
+      "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "wiki_code_next_js_16_turbopack_root_confusion",
       "target": "wiki_index_next_js_16_breaking_changes"
+=======
+      "source": "readme_claude_code_plugins",
+      "target": "docs_plugins_for_this_repo_page"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
+      "source_file": "docs/langfuse-local-setup.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "wiki_code_turbopack_css_filewatcher_miss",
       "target": "wiki_code_next_js_16_turbopack_root_confusion"
+=======
+      "source": "docs_langfuse_local_setup_page",
+      "target": "docs_langfuse_local_setup_env_vars"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_langfuse_local_setup_page",
+      "target": "docs_langfuse_local_setup_fail_open_design"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_langfuse_local_setup_page",
+      "target": "docs_langfuse_local_setup_stop_hook"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_langfuse_local_setup_page",
+      "target": "docs_langfuse_local_setup_troubleshooting"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plugins_for_this_repo_dropped_plugins",
+      "target": "docs_langfuse_local_setup_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plugins_for_this_repo_required_plugins",
+      "target": "docs_langfuse_local_setup_page"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_langfuse_local_setup_fail_open_design",
+      "target": "wiki__schema_tiebreaker_rule"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_graphify_update_re_extraction_gotchas_build_merge_replace_on_reextract",
+      "target": "docs_langfuse_local_setup_troubleshooting"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plugins_for_this_repo_page",
+      "target": "docs_plugins_for_this_repo_dropped_plugins"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plugins_for_this_repo_page",
+      "target": "docs_plugins_for_this_repo_optional_plugins"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plugins_for_this_repo_page",
+      "target": "docs_plugins_for_this_repo_required_plugins"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plugins_for_this_repo_page",
+      "target": "docs_plugins_for_this_repo_settings_json_mechanism"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plugins_for_this_repo_required_plugins",
+      "target": "docs_vercel_react_best_practices_setup_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plugins_for_this_repo_required_plugins",
+      "target": "wiki__schema_taxonomy"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "docs_plugins_for_this_repo_required_plugins"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_vercel_react_best_practices_setup_page",
+      "target": "docs_vercel_react_best_practices_setup_install_path_b"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_vercel_react_best_practices_setup_page",
+      "target": "docs_vercel_react_best_practices_setup_vendored_skill"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_vercel_react_best_practices_setup_page",
+      "target": "docs_vercel_react_best_practices_setup_windows_symlink_caveat"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.3,
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_vercel_react_best_practices_setup_windows_symlink_caveat",
+      "target": "wiki_code_bun_bunx_not_on_path_windows_page"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "wiki/_backlog.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__backlog_priority_taxonomy",
+      "target": "wiki__schema_taxonomy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki__backlog_priority_taxonomy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_bun_bunx_not_on_path_windows_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_cred_grid_hardcoded_columns_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_designsync_binary_truncation_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_graphify_cli_not_invokable_via_bun_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_next_font_axes_weight_constraint_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_next_js_16_componentmod_handler_architecture_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_next_js_16_turbopack_root_confusion_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_playwright_cli_vs_playwright_test_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_sitewide_content_duplication_pattern_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki__index_wiki_index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki__schema_taxonomy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_bun_bunx_not_on_path_windows_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_cred_grid_hardcoded_columns_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_graphify_cli_not_invokable_via_bun_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_playwright_cli_vs_playwright_test_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_sitewide_content_duplication_pattern_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/code/Next.js 16 ComponentMod.handler Architecture.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_next_js_16_componentmod_handler_architecture_page",
+      "target": "wiki_code_next_js_16_turbopack_root_confusion_page"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -3374,8 +4962,13 @@
       "source_file": "wiki/code/bun-bunx-not-on-path-windows.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "wiki_code_bun_bunx_not_on_path_windows",
       "target": "wiki_code_graphify_cli_not_invokable_via_bun"
+=======
+      "source": "wiki_code_bun_bunx_not_on_path_windows_page",
+      "target": "wiki_code_graphify_cli_not_invokable_via_bun_page"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -3384,8 +4977,13 @@
       "source_file": "wiki/code/bun-bunx-not-on-path-windows.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "wiki_code_bun_bunx_not_on_path_windows",
       "target": "wiki_code_playwright_cli_vs_playwright_test"
+=======
+      "source": "wiki_code_bun_bunx_not_on_path_windows_page",
+      "target": "wiki_code_playwright_cli_vs_playwright_test_page"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -3394,8 +4992,13 @@
       "source_file": "wiki/code/cred-grid-hardcoded-columns.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "wiki_code_cred_grid_hardcoded_columns",
       "target": "wiki_code_sitewide_content_duplication_pattern"
+=======
+      "source": "wiki_code_cred_grid_hardcoded_columns_page",
+      "target": "wiki_code_sitewide_content_duplication_pattern_page"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -3404,6 +5007,7 @@
       "source_file": "wiki/code/graphify-cli-not-invokable-via-bun.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "wiki_code_graphify_cli_not_invokable_via_bun",
       "target": "wiki_code_graphify_update_re_extraction_gotchas"
     },
@@ -3426,6 +5030,10 @@
       "weight": 1.0,
       "source": "docs_langfuse_local_setup_langfuse_hook",
       "target": "wiki_code_graphify_update_re_extraction_gotchas"
+=======
+      "source": "wiki_code_graphify_cli_not_invokable_via_bun_page",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_page"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -3434,23 +5042,47 @@
       "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
       "source_location": null,
       "weight": 1.0,
+<<<<<<< HEAD
       "source": "wiki_code_graphify_update_re_extraction_gotchas",
       "target": "wiki_index_graphify_scope_for_casacolinacare_v2"
+=======
+      "source": "wiki_code_graphify_update_re_extraction_gotchas_page",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_ast_invariant_edits"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+<<<<<<< HEAD
       "source_file": "wiki/code/next-font-axes-weight-constraint.md",
       "source_location": null,
       "weight": 1.0,
       "source": "wiki_code_next_font_axes_weight_constraint",
       "target": "wiki_index_next_js_16_breaking_changes"
+=======
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_graphify_update_re_extraction_gotchas_page",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_build_merge_replace_on_reextract"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_graphify_update_re_extraction_gotchas_ast_invariant_edits",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_build_merge_replace_on_reextract"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+<<<<<<< HEAD
       "source_file": "wiki/code/next-font-axes-weight-constraint.md",
       "source_location": null,
       "weight": 1.0,
@@ -3466,31 +5098,75 @@
       "weight": 1.0,
       "source": "docs_plugins_for_this_repo_playwright_plugin",
       "target": "wiki_code_playwright_cli_vs_playwright_test"
+=======
+      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_playwright_cli_vs_playwright_test_page",
+      "target": "wiki_code_playwright_cli_vs_playwright_test_conflict_callout"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+<<<<<<< HEAD
       "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
       "source_location": null,
       "weight": 1.0,
       "source": "wiki_code_playwright_cli_vs_playwright_test",
       "target": "wiki_code_turbopack_css_filewatcher_miss"
+=======
+      "source_file": "wiki/code/sitewide-content-duplication-pattern.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_sitewide_content_duplication_pattern_page",
+      "target": "wiki_code_sitewide_content_duplication_pattern_marquee_duplication"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+<<<<<<< HEAD
       "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
       "source_location": null,
       "weight": 1.0,
       "source": "wiki_code_playwright_cli_vs_playwright_test",
       "target": "wiki_index_next_js_16_breaking_changes"
+=======
+      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_turbopack_css_filewatcher_miss",
+      "target": "wiki_concepts_wiki_gotchas_lack_code_side_back_references"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_turbopack_css_filewatcher_miss",
+      "target": "wiki_platforms_windows_git_worktree_remove_fails_due_to_own_shell_cwd"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_concepts_bug_driven_tdd_red_spec",
+      "target": "wiki_concepts_wiki_gotchas_lack_code_side_back_references"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+<<<<<<< HEAD
       "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
       "source_location": null,
       "weight": 1.0,
@@ -3516,21 +5192,37 @@
       "weight": 1.0,
       "source": "wiki_concepts_wiki_gotchas_lack_code_side_back_references",
       "target": "wiki_platforms_graphify_scope_for_casacolinacare_v2"
+=======
+      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_concepts_bug_driven_tdd_red_spec",
+      "target": "wiki_entities_casacolinacare_com_azure_devops_project"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+<<<<<<< HEAD
       "source_file": "wiki/concepts/agents-md-claude-md-shim-pattern.md",
       "source_location": null,
       "weight": 1.0,
       "source": "wiki_concepts_agents_md_claude_md_shim_pattern",
       "target": "wiki_platforms_next_js_16_breaking_changes"
+=======
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_entities_casacolinacare_com_azure_devops_project",
+      "target": "wiki_entities_casacolinacare_com_azure_devops_project_bug_207038"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+<<<<<<< HEAD
       "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
       "source_location": null,
       "weight": 1.0,
@@ -3544,6 +5236,11 @@
       "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
       "source_location": null,
       "weight": 1.0,
+=======
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
+      "source_location": null,
+      "weight": 1.0,
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source": "wiki_entities_casacolinacare_com_azure_devops_project",
       "target": "wiki_platforms_azure_devops_user_story_tasks_panel_renders_as_a_checklist_only_with_per_ac_child_tasks"
     },
@@ -3571,6 +5268,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+<<<<<<< HEAD
       "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
       "source_location": null,
       "weight": 1.0,
@@ -3601,11 +5299,17 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+=======
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md",
       "source_location": null,
       "weight": 1.0,
       "source": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+<<<<<<< HEAD
       "target": "mcp_azure_devops_wit_update_work_item"
+=======
+      "target": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates_tf401320"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -3648,6 +5352,7 @@
       "target": "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type"
     },
     {
+<<<<<<< HEAD
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -3656,6 +5361,16 @@
       "weight": 1.0,
       "source": "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches",
       "target": "mcp_azure_devops_wit_update_work_item"
+=======
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_vercel_domain_alias_vs_project_domains_api",
+      "target": "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
     },
     {
       "relation": "references",
@@ -3750,6 +5465,7 @@
   ],
   "hyperedges": [
     {
+<<<<<<< HEAD
       "id": "graphify_tooling_gotchas",
       "label": "graphify CLI invocation & update gotchas",
       "nodes": [
@@ -3757,10 +5473,40 @@
         "wiki_code_graphify_cli_not_invokable_via_bun",
         "wiki_code_graphify_update_re_extraction_gotchas",
         "wiki_index_graphify_scope_for_casacolinacare_v2"
+=======
+      "id": "wiki_code_taxonomy_membership",
+      "label": "wiki/code pages implement the Code taxonomy bucket",
+      "nodes": [
+        "wiki__schema_taxonomy",
+        "wiki_code_next_js_16_componentmod_handler_architecture_page",
+        "wiki_code_next_js_16_turbopack_root_confusion_page",
+        "wiki_code_bun_bunx_not_on_path_windows_page",
+        "wiki_code_cred_grid_hardcoded_columns_page",
+        "wiki_code_designsync_binary_truncation_page",
+        "wiki_code_graphify_cli_not_invokable_via_bun_page",
+        "wiki_code_graphify_update_re_extraction_gotchas_page",
+        "wiki_code_next_font_axes_weight_constraint_page",
+        "wiki_code_playwright_cli_vs_playwright_test_page",
+        "wiki_code_sitewide_content_duplication_pattern_page"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_schema.md"
+    },
+    {
+      "id": "windows_path_resolution_gotcha_cluster",
+      "label": "Windows PATH/environment-resolution gotchas discovered in the same sessions",
+      "nodes": [
+        "wiki_code_bun_bunx_not_on_path_windows_page",
+        "wiki_code_graphify_cli_not_invokable_via_bun_page",
+        "wiki_code_playwright_cli_vs_playwright_test_conflict_callout"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
+<<<<<<< HEAD
       "source_file": "CLAUDE.md"
     },
     {
@@ -3799,10 +5545,35 @@
         "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
         "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches",
         "wiki_platforms_azure_devops_user_story_tasks_panel_renders_as_a_checklist_only_with_per_ac_child_tasks"
+=======
+      "source_file": "wiki/code/bun-bunx-not-on-path-windows.md"
+    },
+    {
+      "id": "graphify_operational_mechanics_cluster",
+      "label": "graphify CLI usage rule plus its invocation and re-extraction gotchas",
+      "nodes": [
+        "claude_graphify_rules",
+        "wiki_code_graphify_cli_not_invokable_via_bun_page",
+        "wiki_code_graphify_update_re_extraction_gotchas_page"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "ado_field_validation_quirks",
+      "label": "ADO wit_update_work_item field-validation quirks",
+      "nodes": [
+        "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+        "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
+        "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
+<<<<<<< HEAD
       "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md"
     },
     {
@@ -3812,11 +5583,23 @@
         "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
         "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
         "wiki_platforms_vercel_bun_auto_detection",
+=======
+      "source_file": "wiki/platforms/Azure DevOps wit_update_work_item rejects mixed-field-type batches.md"
+    },
+    {
+      "id": "vercel_deployment_pipeline_casacolinacare",
+      "label": "Vercel deployment pipeline behavior for casacolinacare-v2",
+      "nodes": [
+        "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
+        "wiki_platforms_vercel_bun_auto_detection",
+        "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
         "wiki_platforms_vercel_domain_alias_vs_project_domains_api"
       ],
       "relation": "form",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
+<<<<<<< HEAD
       "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md"
     },
     {
@@ -3834,4 +5617,23 @@
     }
   ],
   "built_at_commit": "3f5e6f1c4c35b297a910761edcbee29f9aefdec3"
+=======
+      "source_file": "wiki/platforms/Vercel GitHub integration auto-deploys production on merge to main.md"
+    },
+    {
+      "id": "claude_code_tooling_ecosystem_casacolinacare",
+      "label": "Claude Code plugin/skill tooling ecosystem for casacolinacare-v2",
+      "nodes": [
+        "wiki_platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+        "wiki_platforms_claude_code_plugin_marketplace_naming_ambiguities",
+        "wiki_platforms_graphify_scope_for_casacolinacare_v2"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md"
+    }
+  ],
+  "built_at_commit": "d545bc892af0b73838568419f5ec2989ef02a1b4"
+>>>>>>> f504f1e342b40582ff4e45b2ab7d027c1007c25b
 }
