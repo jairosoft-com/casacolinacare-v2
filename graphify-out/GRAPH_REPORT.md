@@ -1,122 +1,138 @@
-# Graph Report - .  (2026-07-08)
+# Graph Report - .  (2026-07-16)
 
 ## Corpus Check
-- 5 files · ~10,287 words
-- Verdict: corpus is large enough that graph structure adds value.
+- Corpus is ~15,378 words - fits in a single context window. You may not need a graph.
 
 ## Summary
-- 111 nodes · 161 edges · 17 communities (12 shown, 5 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.87)
-- Token cost: 0 input · 0 output
+- 154 nodes · 181 edges · 19 communities (16 shown, 3 thin omitted)
+- Extraction: 93% EXTRACTED · 7% INFERRED · 1% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.79)
+- Token cost: 206,776 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_TypeScript Config|TypeScript Config]]
-- [[_COMMUNITY_Package Manifest & Deps|Package Manifest & Deps]]
-- [[_COMMUNITY_Claude Code Plugins|Claude Code Plugins]]
-- [[_COMMUNITY_Dev Dependencies|Dev Dependencies]]
-- [[_COMMUNITY_Next.jsVercel Platform Notes|Next.js/Vercel Platform Notes]]
-- [[_COMMUNITY_Layout & Content Gotchas|Layout & Content Gotchas]]
-- [[_COMMUNITY_Tooling & CLI Gotchas|Tooling & CLI Gotchas]]
-- [[_COMMUNITY_Page & Client Islands|Page & Client Islands]]
-- [[_COMMUNITY_ADO & Test Suite|ADO & Test Suite]]
-- [[_COMMUNITY_Playwright & Turbopack Tooling|Playwright & Turbopack Tooling]]
-- [[_COMMUNITY_AGENTSCLAUDE Shim|AGENTS/CLAUDE Shim]]
-- [[_COMMUNITY_ESLint Config|ESLint Config]]
-- [[_COMMUNITY_Next.js Config|Next.js Config]]
-- [[_COMMUNITY_PostCSS Config|PostCSS Config]]
-- [[_COMMUNITY_README|README]]
-- [[_COMMUNITY_Wiki Backlog|Wiki Backlog]]
+- Wiki Docs & Gotchas
+- NPM Dev Dependencies
+- TS Compiler Options
+- ADO Tooling & Bug Tests
+- Package Scripts & Build
+- AGENTS.md Shim & CI
+- Docs & Plugin Setup
+- TSConfig Root Refs
+- Homepage Components
+- App Layout & Fonts
+- Next/React Dependencies
+- Vercel Deployment Wiki
+- ESLint Config File
+- Next Config File
+- PostCSS Config File
 
 ## God Nodes (most connected - your core abstractions)
-1. `Wiki Index` - 24 edges
-2. `Wiki Log` - 19 edges
-3. `compilerOptions` - 16 edges
-4. `Claude Code Plugin Marketplace Naming Ambiguities` - 11 edges
-5. `playwright-cli vs @playwright/test — two separate tools` - 9 edges
-6. `AGENTS.md — Project Guidance` - 7 edges
-7. `Wiki Gotchas Lack Code-Side Back-References` - 7 edges
-8. `CasaColinaCare.com (Azure DevOps Project)` - 7 edges
-9. `Next.js 16 Breaking Changes` - 7 edges
-10. `Vercel bun Auto-Detection` - 7 edges
+1. `Wiki Index` - 17 edges
+2. `compilerOptions` - 16 edges
+3. `AGENTS.md — Claude Code Guidance` - 9 edges
+4. `Claude Code Plugins for This Repo` - 8 edges
+5. `include` - 7 edges
+6. `playwright-cli vs @playwright/test — two separate tools` - 7 edges
+7. `scripts` - 6 edges
+8. `CasaColinaCare.com (Azure DevOps Project)` - 6 edges
+9. `Wiki Log` - 5 edges
+10. `graphify CLI not invokable via bun/bunx` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Casa Colina site duplicates marketing facts across sections` --references--> `metadata`  [EXTRACTED]
-  wiki/code/sitewide-content-duplication-pattern.md → app/layout.tsx
-- `cred-grid CSS hardcodes column count to card count` --references--> `Page()`  [EXTRACTED]
-  wiki/code/cred-grid-hardcoded-columns.md → app/page.tsx
-- `Casa Colina site duplicates marketing facts across sections` --references--> `Page()`  [EXTRACTED]
-  wiki/code/sitewide-content-duplication-pattern.md → app/page.tsx
-- `AGENTS.md — Project Guidance` --conceptually_related_to--> `Next.js 16 Turbopack Root Confusion`  [INFERRED]
-  AGENTS.md → wiki/code/Next.js 16 Turbopack Root Confusion.md
-- `AGENTS.md — Project Guidance` --conceptually_related_to--> `Turbopack CSS file-watch miss on programmatic write`  [INFERRED]
-  AGENTS.md → wiki/code/turbopack-css-filewatcher-miss.md
+- `playwright plugin (Claude Code)` --semantically_similar_to--> `playwright-cli vs @playwright/test — two separate tools`  [INFERRED] [semantically similar]
+  docs/plugins-for-this-repo.md → wiki/code/playwright-cli-vs-playwright-test.md
+- `.claude/hooks/langfuse_hook.py` --semantically_similar_to--> `graphify --update Re-extraction Gotchas`  [INFERRED] [semantically similar]
+  docs/langfuse-local-setup.md → wiki/code/graphify-update-re-extraction-gotchas.md
+- `Playwright Tests CI Workflow` --conceptually_related_to--> `CLAUDE.md — graphify shim`  [AMBIGUOUS]
+  .github/workflows/playwright.yml → CLAUDE.md
+- `Playwright Tests CI Workflow` --conceptually_related_to--> `playwright-cli vs @playwright/test — two separate tools`  [INFERRED]
+  .github/workflows/playwright.yml → wiki/code/playwright-cli-vs-playwright-test.md
+- `Playwright Tests CI Workflow` --shares_data_with--> `playwright.config.ts`  [INFERRED]
+  .github/workflows/playwright.yml → AGENTS.md
 
 ## Import Cycles
 - None detected.
 
-## Communities (17 total, 5 thin omitted)
+## Hyperedges (group relationships)
+- **graphify CLI invocation & update gotchas** — claude, wiki_code_graphify_cli_not_invokable_via_bun, wiki_code_graphify_update_re_extraction_gotchas, wiki_index_graphify_scope_for_casacolinacare_v2 [INFERRED 0.85]
+- **Next.js 16 Turbopack failure-mode cluster** — wiki_code_next_js_16_componentmod_handler_architecture, wiki_code_next_js_16_turbopack_root_confusion, wiki_code_turbopack_css_filewatcher_miss, wiki_index_next_js_16_breaking_changes [INFERRED 0.85]
+- **New-developer onboarding documentation set** — readme, docs_langfuse_local_setup, docs_vercel_react_best_practices_setup, docs_plugins_for_this_repo [EXTRACTED 0.95]
+- **Azure DevOps work-item field write gotchas cluster** — wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates, wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type, wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches, wiki_platforms_azure_devops_user_story_tasks_panel_renders_as_a_checklist_only_with_per_ac_child_tasks [INFERRED 0.85]
+- **Vercel deployment pipeline knowledge cluster** — wiki_platforms_vercel_cli_first_deploy_auto_connects_github, wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main, wiki_platforms_vercel_bun_auto_detection, wiki_platforms_vercel_domain_alias_vs_project_domains_api [INFERRED 0.85]
+- **Claude Code plugin and MCP tooling ecosystem for this project** — wiki_platforms_claude_code_plugin_cli_and_skills_dir_plugins, wiki_platforms_claude_code_plugin_marketplace_naming_ambiguities, wiki_platforms_azure_devops_mcp_identity_lookup [INFERRED 0.75]
 
-### Community 0 - "TypeScript Config"
-Cohesion: 0.10
-Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+11 more)
+## Communities (19 total, 3 thin omitted)
 
-### Community 1 - "Package Manifest & Deps"
-Cohesion: 0.12
-Nodes (15): dependencies, next, react, react-dom, ignoreScripts, name, private, scripts (+7 more)
-
-### Community 2 - "Claude Code Plugins"
+### Community 0 - "Wiki Docs & Gotchas"
 Cohesion: 0.22
-Nodes (11): Claude Code Plugin CLI and Skills-Dir Plugins, graphify (skills-dir plugin example), Claude Code Plugin Marketplace Naming Ambiguities, azure plugin (Azure cloud-ops, claude-plugins-official), claude-plugins-official (marketplace), commit-commands plugin, github plugin (GitHub MCP server), gitlab plugin (GitLab MCP server) (+3 more)
+Nodes (19): jx-kb plugin, Wiki Backlog, bun/bunx not on PATH in Windows Claude Code environment, cred-grid CSS hardcodes column count to card count, DesignSync get_file truncates binary assets at 256 KB, graphify CLI not invokable via bun/bunx, graphify --update Re-extraction Gotchas, next/font — axes + weight constraint for variable fonts (+11 more)
 
-### Community 3 - "Dev Dependencies"
+### Community 1 - "NPM Dev Dependencies"
+Cohesion: 0.11
+Nodes (19): eslint, eslint-config-next, devDependencies, eslint, eslint-config-next, @playwright/test, tailwindcss, @tailwindcss/postcss (+11 more)
+
+### Community 2 - "TS Compiler Options"
+Cohesion: 0.11
+Nodes (19): dom, dom.iterable, esnext, compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules (+11 more)
+
+### Community 3 - "ADO Tooling & Bug Tests"
+Cohesion: 0.16
+Nodes (14): core_get_identity_ids (Azure DevOps MCP tool), wit_update_work_item (Azure DevOps MCP tool), mcp__github__get_me, Bug-driven TDD — red spec before fix, CasaColinaCare.com (Azure DevOps Project), Azure DevOps MCP has no whoami tool — use core_get_identity_ids, Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type, Azure DevOps Task fields reject certain values on state-transition updates (+6 more)
+
+### Community 4 - "Package Scripts & Build"
+Cohesion: 0.16
+Nodes (13): ignoreScripts, name, private, scripts, build, dev, lint, start (+5 more)
+
+### Community 5 - "AGENTS.md Shim & CI"
+Cohesion: 0.24
+Nodes (11): AGENTS.md — Claude Code Guidance, app/globals.css, app/layout.tsx, app/page.tsx, next.config.ts, playwright.config.ts, tests/bugs.spec.ts, CLAUDE.md — graphify shim (+3 more)
+
+### Community 6 - "Docs & Plugin Setup"
+Cohesion: 0.25
+Nodes (10): Langfuse Local Dev Setup, .claude/hooks/langfuse_hook.py, Claude Code Plugins for This Repo, jx-pm plugin, langfuse plugin, playwright plugin (Claude Code), vercel plugin (Claude Code), Vercel React Best Practices Skill Setup (+2 more)
+
+### Community 7 - "TSConfig Root Refs"
 Cohesion: 0.20
-Nodes (10): devDependencies, eslint, eslint-config-next, @playwright/test, tailwindcss, @tailwindcss/postcss, @types/node, @types/react (+2 more)
+Nodes (9): **/*.mts, .next/dev/types/**/*.ts, next-env.d.ts, .next/types/**/*.ts, node_modules, **/*.ts, **/*.tsx, exclude (+1 more)
 
-### Community 4 - "Next.js/Vercel Platform Notes"
-Cohesion: 0.44
-Nodes (9): DesignSync get_file Truncates Binary Assets at 256 KB, Next.js 16 ComponentMod.handler Architecture, Next.js 16 Turbopack Root Confusion, Next.js 16 Breaking Changes, Vercel bun Auto-Detection, Vercel CLI First Deploy Auto-Connects GitHub, Vercel Domain Alias vs Project Domains API, Wiki Index (+1 more)
-
-### Community 5 - "Layout & Content Gotchas"
+### Community 8 - "Homepage Components"
 Cohesion: 0.29
-Nodes (6): fraunces, inter, metadata, Page(), cred-grid CSS hardcodes column count to card count, Casa Colina site duplicates marketing facts across sections
-
-### Community 6 - "Tooling & CLI Gotchas"
-Cohesion: 0.46
-Nodes (8): bun/bunx not on PATH in Windows Claude Code environment, graphify CLI not invokable via bun/bunx, graphify --update Re-extraction Gotchas, next/font — axes + weight constraint for variable fonts, Fraunces (variable font, opsz axis), Wiki Gotchas Lack Code-Side Back-References, graphify Scope for casacolinacare-v2, Wiki Log
-
-### Community 7 - "Page & Client Islands"
-Cohesion: 0.33
 Nodes (3): SmoothLink(), SmoothLinkProps, quotes
 
-### Community 8 - "ADO & Test Suite"
-Cohesion: 0.40
-Nodes (5): Bug-driven TDD — red spec before fix, CasaColinaCare.com (Azure DevOps Project), CasaColinaDestination.com (unrelated ADO project), Azure DevOps MCP has no whoami tool — use core_get_identity_ids, core_get_identity_ids (ADO MCP identity tool)
+### Community 9 - "App Layout & Fonts"
+Cohesion: 0.29
+Nodes (5): fraunces, inter, metadata, Wiki Gotchas Lack Code-Side Back-References, graphify Scope for casacolinacare-v2
 
-### Community 9 - "Playwright & Turbopack Tooling"
-Cohesion: 0.50
-Nodes (4): playwright-cli vs @playwright/test — two separate tools, @playwright/cli (interactive browser driver), @playwright/test (spec test runner), Turbopack CSS file-watch miss on programmatic write
+### Community 10 - "Next/React Dependencies"
+Cohesion: 0.29
+Nodes (7): next, dependencies, next, react, react-dom, react, react-dom
 
-### Community 10 - "AGENTS/CLAUDE Shim"
+### Community 11 - "Vercel Deployment Wiki"
 Cohesion: 1.00
-Nodes (3): AGENTS.md — Project Guidance, CLAUDE.md — Shim File, AGENTS.md + CLAUDE.md Shim Pattern
+Nodes (4): Vercel bun auto-detection, Vercel CLI first deploy auto-connects GitHub, Vercel domain alias API vs project domains API, Vercel GitHub integration auto-deploys production on merge to main
+
+## Ambiguous Edges - Review These
+- `Playwright Tests CI Workflow` → `CLAUDE.md — graphify shim`  [AMBIGUOUS]
+  .github/workflows/playwright.yml · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **60 isolated node(s):** `SmoothLinkProps`, `quotes`, `fraunces`, `inter`, `eslintConfig` (+55 more)
+- **63 isolated node(s):** `SmoothLinkProps`, `quotes`, `fraunces`, `inter`, `metadata` (+58 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Wiki Index` connect `Next.js/Vercel Platform Notes` to `Claude Code Plugins`, `Layout & Content Gotchas`, `Tooling & CLI Gotchas`, `ADO & Test Suite`, `Playwright & Turbopack Tooling`, `AGENTS/CLAUDE Shim`?**
-  _High betweenness centrality (0.109) - this node is a cross-community bridge._
-- **Why does `Wiki Log` connect `Tooling & CLI Gotchas` to `Claude Code Plugins`, `Next.js/Vercel Platform Notes`, `Layout & Content Gotchas`, `ADO & Test Suite`, `Playwright & Turbopack Tooling`, `AGENTS/CLAUDE Shim`?**
+- **What is the exact relationship between `Playwright Tests CI Workflow` and `CLAUDE.md — graphify shim`?**
+  _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
+- **Why does `playwright-cli vs @playwright/test — two separate tools` connect `Wiki Docs & Gotchas` to `AGENTS.md Shim & CI`, `Docs & Plugin Setup`?**
+  _High betweenness centrality (0.078) - this node is a cross-community bridge._
+- **Why does `Playwright Tests CI Workflow` connect `AGENTS.md Shim & CI` to `Wiki Docs & Gotchas`?**
+  _High betweenness centrality (0.075) - this node is a cross-community bridge._
+- **Why does `AGENTS.md — Claude Code Guidance` connect `AGENTS.md Shim & CI` to `ADO Tooling & Bug Tests`?**
   _High betweenness centrality (0.072) - this node is a cross-community bridge._
-- **Why does `Claude Code Plugin Marketplace Naming Ambiguities` connect `Claude Code Plugins` to `Next.js/Vercel Platform Notes`, `Tooling & CLI Gotchas`?**
-  _High betweenness centrality (0.063) - this node is a cross-community bridge._
+- **Are the 2 inferred relationships involving `Wiki Index` (e.g. with `jx-kb plugin` and `Wiki Schema`) actually correct?**
+  _`Wiki Index` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `SmoothLinkProps`, `quotes`, `fraunces` to the rest of the system?**
-  _61 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `TypeScript Config` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
-- **Should `Package Manifest & Deps` be split into smaller, more focused modules?**
-  _Cohesion score 0.125 - nodes in this community are weakly interconnected._
+  _63 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `NPM Dev Dependencies` be split into smaller, more focused modules?**
+  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
