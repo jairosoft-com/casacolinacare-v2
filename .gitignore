@@ -73,3 +73,7 @@ next-env.d.ts
 # ad-hoc screenshots (playwright-cli, playwright test runner, manual captures)
 /screenshots/
 /*.png
+
+# Playwright
+node_modules/
+/playwright/.auth/
