@@ -1,7 +1,97 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {},
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "wiki_code_taxonomy_membership",
+        "label": "wiki/code pages implement the Code taxonomy bucket",
+        "nodes": [
+          "wiki__schema_taxonomy",
+          "wiki_code_next_js_16_componentmod_handler_architecture_page",
+          "wiki_code_next_js_16_turbopack_root_confusion_page",
+          "wiki_code_bun_bunx_not_on_path_windows_page",
+          "wiki_code_cred_grid_hardcoded_columns_page",
+          "wiki_code_designsync_binary_truncation_page",
+          "wiki_code_graphify_cli_not_invokable_via_bun_page",
+          "wiki_code_graphify_update_re_extraction_gotchas_page",
+          "wiki_code_next_font_axes_weight_constraint_page",
+          "wiki_code_playwright_cli_vs_playwright_test_page",
+          "wiki_code_sitewide_content_duplication_pattern_page"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "wiki/_schema.md"
+      },
+      {
+        "id": "windows_path_resolution_gotcha_cluster",
+        "label": "Windows PATH/environment-resolution gotchas discovered in the same sessions",
+        "nodes": [
+          "wiki_code_bun_bunx_not_on_path_windows_page",
+          "wiki_code_graphify_cli_not_invokable_via_bun_page",
+          "wiki_code_playwright_cli_vs_playwright_test_conflict_callout"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "wiki/code/bun-bunx-not-on-path-windows.md"
+      },
+      {
+        "id": "graphify_operational_mechanics_cluster",
+        "label": "graphify CLI usage rule plus its invocation and re-extraction gotchas",
+        "nodes": [
+          "claude_graphify_rules",
+          "wiki_code_graphify_cli_not_invokable_via_bun_page",
+          "wiki_code_graphify_update_re_extraction_gotchas_page"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "CLAUDE.md"
+      },
+      {
+        "id": "ado_field_validation_quirks",
+        "label": "ADO wit_update_work_item field-validation quirks",
+        "nodes": [
+          "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+          "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
+          "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "wiki/platforms/Azure DevOps wit_update_work_item rejects mixed-field-type batches.md"
+      },
+      {
+        "id": "vercel_deployment_pipeline_casacolinacare",
+        "label": "Vercel deployment pipeline behavior for casacolinacare-v2",
+        "nodes": [
+          "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
+          "wiki_platforms_vercel_bun_auto_detection",
+          "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
+          "wiki_platforms_vercel_domain_alias_vs_project_domains_api"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "wiki/platforms/Vercel GitHub integration auto-deploys production on merge to main.md"
+      },
+      {
+        "id": "claude_code_tooling_ecosystem_casacolinacare",
+        "label": "Claude Code plugin/skill tooling ecosystem for casacolinacare-v2",
+        "nodes": [
+          "wiki_platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+          "wiki_platforms_claude_code_plugin_marketplace_naming_ambiguities",
+          "wiki_platforms_graphify_scope_for_casacolinacare_v2"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md"
+      }
+    ]
+  },
   "nodes": [
     {
       "label": "SmoothLink.tsx",
@@ -9,9 +99,9 @@
       "source_file": "app/components/SmoothLink.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "smoothlink.tsx",
-      "id": "components_smoothlink"
+      "id": "app_components_smoothlink",
+      "community": 9,
+      "norm_label": "smoothlink.tsx"
     },
     {
       "label": "SmoothLinkProps",
@@ -19,9 +109,9 @@
       "source_file": "app/components/SmoothLink.tsx",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "smoothlinkprops",
-      "id": "components_smoothlink_smoothlinkprops"
+      "id": "app_components_smoothlink_smoothlinkprops",
+      "community": 9,
+      "norm_label": "smoothlinkprops"
     },
     {
       "label": "SmoothLink()",
@@ -29,9 +119,9 @@
       "source_file": "app/components/SmoothLink.tsx",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "smoothlink()",
-      "id": "components_smoothlink_smoothlink"
+      "id": "app_components_smoothlink_smoothlink",
+      "community": 9,
+      "norm_label": "smoothlink()"
     },
     {
       "label": "TestimonialCarousel.tsx",
@@ -39,9 +129,9 @@
       "source_file": "app/components/TestimonialCarousel.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "testimonialcarousel.tsx",
-      "id": "components_testimonialcarousel"
+      "id": "app_components_testimonialcarousel",
+      "community": 9,
+      "norm_label": "testimonialcarousel.tsx"
     },
     {
       "label": "quotes",
@@ -49,9 +139,9 @@
       "source_file": "app/components/TestimonialCarousel.tsx",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "quotes",
-      "id": "components_testimonialcarousel_quotes"
+      "id": "app_components_testimonialcarousel_quotes",
+      "community": 9,
+      "norm_label": "quotes"
     },
     {
       "label": "TestimonialCarousel()",
@@ -59,9 +149,9 @@
       "source_file": "app/components/TestimonialCarousel.tsx",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "testimonialcarousel()",
-      "id": "components_testimonialcarousel_testimonialcarousel"
+      "id": "app_components_testimonialcarousel_testimonialcarousel",
+      "community": 9,
+      "norm_label": "testimonialcarousel()"
     },
     {
       "label": "layout.tsx",
@@ -69,9 +159,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": "layout.tsx",
-      "id": "app_layout"
+      "id": "app_layout",
+      "community": 4,
+      "norm_label": "layout.tsx"
     },
     {
       "label": "fraunces",
@@ -79,9 +169,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": "fraunces",
-      "id": "app_layout_fraunces"
+      "id": "app_layout_fraunces",
+      "community": 4,
+      "norm_label": "fraunces"
     },
     {
       "label": "inter",
@@ -89,9 +179,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": "inter",
-      "id": "app_layout_inter"
+      "id": "app_layout_inter",
+      "community": 4,
+      "norm_label": "inter"
     },
     {
       "label": "metadata",
@@ -99,9 +189,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": "metadata",
-      "id": "app_layout_metadata"
+      "id": "app_layout_metadata",
+      "community": 4,
+      "norm_label": "metadata"
     },
     {
       "label": "RootLayout()",
@@ -109,9 +199,9 @@
       "source_file": "app/layout.tsx",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": "rootlayout()",
-      "id": "app_layout_rootlayout"
+      "id": "app_layout_rootlayout",
+      "community": 4,
+      "norm_label": "rootlayout()"
     },
     {
       "label": "page.tsx",
@@ -119,9 +209,9 @@
       "source_file": "app/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "page.tsx",
-      "id": "app_page"
+      "id": "app_page",
+      "community": 9,
+      "norm_label": "page.tsx"
     },
     {
       "label": "Page()",
@@ -129,9 +219,9 @@
       "source_file": "app/page.tsx",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": "page()",
-      "id": "app_page_page"
+      "id": "app_page_page",
+      "community": 9,
+      "norm_label": "page()"
     },
     {
       "label": "eslint.config.mjs",
@@ -139,9 +229,9 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "eslint_config",
       "community": 11,
-      "norm_label": "eslint.config.mjs",
-      "id": "eslint_config"
+      "norm_label": "eslint.config.mjs"
     },
     {
       "label": "eslintConfig",
@@ -149,9 +239,9 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L5",
       "_origin": "ast",
+      "id": "eslint_config_eslintconfig",
       "community": 11,
-      "norm_label": "eslintconfig",
-      "id": "eslint_config_eslintconfig"
+      "norm_label": "eslintconfig"
     },
     {
       "label": "next.config.ts",
@@ -159,9 +249,9 @@
       "source_file": "next.config.ts",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "next_config",
       "community": 12,
-      "norm_label": "next.config.ts",
-      "id": "next_config"
+      "norm_label": "next.config.ts"
     },
     {
       "label": "nextConfig",
@@ -169,9 +259,9 @@
       "source_file": "next.config.ts",
       "source_location": "L3",
       "_origin": "ast",
+      "id": "next_config_nextconfig",
       "community": 12,
-      "norm_label": "nextconfig",
-      "id": "next_config_nextconfig"
+      "norm_label": "nextconfig"
     },
     {
       "label": "package.json",
@@ -179,9 +269,9 @@
       "source_file": "package.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "package.json",
-      "id": "package"
+      "id": "package",
+      "community": 5,
+      "norm_label": "package.json"
     },
     {
       "label": "name",
@@ -189,9 +279,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "name",
-      "id": "package_name"
+      "id": "package_name",
+      "community": 5,
+      "norm_label": "name"
     },
     {
       "label": "version",
@@ -199,9 +289,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "version",
-      "id": "package_version"
+      "id": "package_version",
+      "community": 5,
+      "norm_label": "version"
     },
     {
       "label": "private",
@@ -209,9 +299,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "private",
-      "id": "package_private"
+      "id": "package_private",
+      "community": 5,
+      "norm_label": "private"
     },
     {
       "label": "scripts",
@@ -219,9 +309,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "scripts",
-      "id": "package_scripts"
+      "id": "package_scripts",
+      "community": 5,
+      "norm_label": "scripts"
     },
     {
       "label": "dev",
@@ -229,9 +319,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "dev",
-      "id": "package_scripts_dev"
+      "id": "package_scripts_dev",
+      "community": 5,
+      "norm_label": "dev"
     },
     {
       "label": "build",
@@ -239,9 +329,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "build",
-      "id": "package_scripts_build"
+      "id": "package_scripts_build",
+      "community": 5,
+      "norm_label": "build"
     },
     {
       "label": "start",
@@ -249,9 +339,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "start",
-      "id": "package_scripts_start"
+      "id": "package_scripts_start",
+      "community": 5,
+      "norm_label": "start"
     },
     {
       "label": "lint",
@@ -259,9 +349,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "lint",
-      "id": "package_scripts_lint"
+      "id": "package_scripts_lint",
+      "community": 5,
+      "norm_label": "lint"
     },
     {
       "label": "test:e2e",
@@ -269,9 +359,9 @@
       "source_file": "package.json",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "test:e2e",
-      "id": "package_scripts_test_e2e"
+      "id": "package_scripts_test_e2e",
+      "community": 5,
+      "norm_label": "test:e2e"
     },
     {
       "label": "dependencies",
@@ -279,9 +369,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "dependencies",
-      "id": "package_dependencies"
+      "id": "package_dependencies",
+      "community": 10,
+      "norm_label": "dependencies"
     },
     {
       "label": "next",
@@ -289,9 +379,19 @@
       "source_file": "package.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "next",
-      "id": "package_dependencies_next"
+      "id": "package_dependencies_next",
+      "community": 10,
+      "norm_label": "next"
+    },
+    {
+      "label": "next",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "next",
+      "community": 10,
+      "norm_label": "next"
     },
     {
       "label": "react",
@@ -299,9 +399,19 @@
       "source_file": "package.json",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "react",
-      "id": "package_dependencies_react"
+      "id": "package_dependencies_react",
+      "community": 10,
+      "norm_label": "react"
+    },
+    {
+      "label": "react",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "react",
+      "community": 10,
+      "norm_label": "react"
     },
     {
       "label": "react-dom",
@@ -309,9 +419,19 @@
       "source_file": "package.json",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "react-dom",
-      "id": "package_dependencies_react_dom"
+      "id": "package_dependencies_react_dom",
+      "community": 10,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "react_dom",
+      "community": 10,
+      "norm_label": "react-dom"
     },
     {
       "label": "devDependencies",
@@ -319,9 +439,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "devdependencies",
-      "id": "package_devdependencies"
+      "id": "package_devdependencies",
+      "community": 1,
+      "norm_label": "devdependencies"
     },
     {
       "label": "@playwright/test",
@@ -329,9 +449,19 @@
       "source_file": "package.json",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "@playwright/test",
-      "id": "package_devdependencies_playwright_test"
+      "id": "package_devdependencies_playwright_test",
+      "community": 1,
+      "norm_label": "@playwright/test"
+    },
+    {
+      "label": "@playwright/test",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "playwright_test",
+      "community": 1,
+      "norm_label": "@playwright/test"
     },
     {
       "label": "@tailwindcss/postcss",
@@ -339,9 +469,19 @@
       "source_file": "package.json",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "@tailwindcss/postcss",
-      "id": "package_devdependencies_tailwindcss_postcss"
+      "id": "package_devdependencies_tailwindcss_postcss",
+      "community": 1,
+      "norm_label": "@tailwindcss/postcss"
+    },
+    {
+      "label": "@tailwindcss/postcss",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "tailwindcss_postcss",
+      "community": 1,
+      "norm_label": "@tailwindcss/postcss"
     },
     {
       "label": "@types/node",
@@ -349,9 +489,19 @@
       "source_file": "package.json",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "@types/node",
-      "id": "package_devdependencies_types_node"
+      "id": "package_devdependencies_types_node",
+      "community": 1,
+      "norm_label": "@types/node"
+    },
+    {
+      "label": "@types/node",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "types_node",
+      "community": 1,
+      "norm_label": "@types/node"
     },
     {
       "label": "@types/react",
@@ -359,9 +509,19 @@
       "source_file": "package.json",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "@types/react",
-      "id": "package_devdependencies_types_react"
+      "id": "package_devdependencies_types_react",
+      "community": 1,
+      "norm_label": "@types/react"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "types_react",
+      "community": 1,
+      "norm_label": "@types/react"
     },
     {
       "label": "@types/react-dom",
@@ -369,9 +529,19 @@
       "source_file": "package.json",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "@types/react-dom",
-      "id": "package_devdependencies_types_react_dom"
+      "id": "package_devdependencies_types_react_dom",
+      "community": 1,
+      "norm_label": "@types/react-dom"
+    },
+    {
+      "label": "@types/react-dom",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "types_react_dom",
+      "community": 1,
+      "norm_label": "@types/react-dom"
     },
     {
       "label": "eslint",
@@ -379,9 +549,19 @@
       "source_file": "package.json",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "eslint",
-      "id": "package_devdependencies_eslint"
+      "id": "package_devdependencies_eslint",
+      "community": 1,
+      "norm_label": "eslint"
+    },
+    {
+      "label": "eslint",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "eslint",
+      "community": 1,
+      "norm_label": "eslint"
     },
     {
       "label": "eslint-config-next",
@@ -389,9 +569,19 @@
       "source_file": "package.json",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "eslint-config-next",
-      "id": "package_devdependencies_eslint_config_next"
+      "id": "package_devdependencies_eslint_config_next",
+      "community": 1,
+      "norm_label": "eslint-config-next"
+    },
+    {
+      "label": "eslint-config-next",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "eslint_config_next",
+      "community": 1,
+      "norm_label": "eslint-config-next"
     },
     {
       "label": "tailwindcss",
@@ -399,9 +589,19 @@
       "source_file": "package.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "tailwindcss",
-      "id": "package_devdependencies_tailwindcss"
+      "id": "package_devdependencies_tailwindcss",
+      "community": 1,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "tailwindcss",
+      "community": 1,
+      "norm_label": "tailwindcss"
     },
     {
       "label": "typescript",
@@ -409,9 +609,19 @@
       "source_file": "package.json",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "typescript",
-      "id": "package_devdependencies_typescript"
+      "id": "package_devdependencies_typescript",
+      "community": 1,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "typescript",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "typescript",
+      "community": 1,
+      "norm_label": "typescript"
     },
     {
       "label": "ignoreScripts",
@@ -419,9 +629,29 @@
       "source_file": "package.json",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "ignorescripts",
-      "id": "package_ignorescripts"
+      "id": "package_ignorescripts",
+      "community": 5,
+      "norm_label": "ignorescripts"
+    },
+    {
+      "label": "sharp",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "ref_sharp",
+      "community": 5,
+      "norm_label": "sharp"
+    },
+    {
+      "label": "unrs-resolver",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "ref_unrs_resolver",
+      "community": 5,
+      "norm_label": "unrs-resolver"
     },
     {
       "label": "trustedDependencies",
@@ -429,9 +659,9 @@
       "source_file": "package.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "trusteddependencies",
-      "id": "package_trusteddependencies"
+      "id": "package_trusteddependencies",
+      "community": 5,
+      "norm_label": "trusteddependencies"
     },
     {
       "label": "playwright.config.ts",
@@ -439,9 +669,9 @@
       "source_file": "playwright.config.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
-      "norm_label": "playwright.config.ts",
-      "id": "playwright_config"
+      "id": "playwright_config",
+      "community": 15,
+      "norm_label": "playwright.config.ts"
     },
     {
       "label": "postcss.config.mjs",
@@ -449,9 +679,9 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "postcss_config",
       "community": 13,
-      "norm_label": "postcss.config.mjs",
-      "id": "postcss_config"
+      "norm_label": "postcss.config.mjs"
     },
     {
       "label": "config",
@@ -459,9 +689,9 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "postcss_config_config",
       "community": 13,
-      "norm_label": "config",
-      "id": "postcss_config_config"
+      "norm_label": "config"
     },
     {
       "label": "bugs.spec.ts",
@@ -469,9 +699,39 @@
       "source_file": "tests/bugs.spec.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
-      "norm_label": "bugs.spec.ts",
-      "id": "tests_bugs_spec"
+      "id": "tests_bugs_spec",
+      "community": 4,
+      "norm_label": "bugs.spec.ts"
+    },
+    {
+      "label": "credentials.spec.ts",
+      "file_type": "code",
+      "source_file": "tests/credentials.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_credentials_spec",
+      "community": 16,
+      "norm_label": "credentials.spec.ts"
+    },
+    {
+      "label": "example.spec.ts",
+      "file_type": "code",
+      "source_file": "tests/example.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_example_spec",
+      "community": 17,
+      "norm_label": "example.spec.ts"
+    },
+    {
+      "label": "footer-tagline-displays-open-since-2026.spec.ts",
+      "file_type": "code",
+      "source_file": "tests/footer-tagline-displays-open-since-2026.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_footer_tagline_displays_open_since_2026_spec",
+      "community": 18,
+      "norm_label": "footer-tagline-displays-open-since-2026.spec.ts"
     },
     {
       "label": "tsconfig.json",
@@ -479,9 +739,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "tsconfig.json",
-      "id": "tsconfig"
+      "id": "tsconfig",
+      "community": 7,
+      "norm_label": "tsconfig.json"
     },
     {
       "label": "compilerOptions",
@@ -489,9 +749,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "compileroptions",
-      "id": "tsconfig_compileroptions"
+      "id": "tsconfig_compileroptions",
+      "community": 2,
+      "norm_label": "compileroptions"
     },
     {
       "label": "target",
@@ -499,9 +759,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "target",
-      "id": "tsconfig_compileroptions_target"
+      "id": "tsconfig_compileroptions_target",
+      "community": 2,
+      "norm_label": "target"
     },
     {
       "label": "lib",
@@ -509,9 +769,39 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "lib",
-      "id": "tsconfig_compileroptions_lib"
+      "id": "tsconfig_compileroptions_lib",
+      "community": 2,
+      "norm_label": "lib"
+    },
+    {
+      "label": "dom",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "ref_dom",
+      "community": 2,
+      "norm_label": "dom"
+    },
+    {
+      "label": "dom.iterable",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "ref_dom_iterable",
+      "community": 2,
+      "norm_label": "dom.iterable"
+    },
+    {
+      "label": "esnext",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "ref_esnext",
+      "community": 2,
+      "norm_label": "esnext"
     },
     {
       "label": "allowJs",
@@ -519,9 +809,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "allowjs",
-      "id": "tsconfig_compileroptions_allowjs"
+      "id": "tsconfig_compileroptions_allowjs",
+      "community": 2,
+      "norm_label": "allowjs"
     },
     {
       "label": "skipLibCheck",
@@ -529,9 +819,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "skiplibcheck",
-      "id": "tsconfig_compileroptions_skiplibcheck"
+      "id": "tsconfig_compileroptions_skiplibcheck",
+      "community": 2,
+      "norm_label": "skiplibcheck"
     },
     {
       "label": "strict",
@@ -539,9 +829,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "strict",
-      "id": "tsconfig_compileroptions_strict"
+      "id": "tsconfig_compileroptions_strict",
+      "community": 2,
+      "norm_label": "strict"
     },
     {
       "label": "noEmit",
@@ -549,9 +839,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "noemit",
-      "id": "tsconfig_compileroptions_noemit"
+      "id": "tsconfig_compileroptions_noemit",
+      "community": 2,
+      "norm_label": "noemit"
     },
     {
       "label": "esModuleInterop",
@@ -559,9 +849,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "esmoduleinterop",
-      "id": "tsconfig_compileroptions_esmoduleinterop"
+      "id": "tsconfig_compileroptions_esmoduleinterop",
+      "community": 2,
+      "norm_label": "esmoduleinterop"
     },
     {
       "label": "module",
@@ -569,9 +859,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "module",
-      "id": "tsconfig_compileroptions_module"
+      "id": "tsconfig_compileroptions_module",
+      "community": 2,
+      "norm_label": "module"
     },
     {
       "label": "moduleResolution",
@@ -579,9 +869,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "moduleresolution",
-      "id": "tsconfig_compileroptions_moduleresolution"
+      "id": "tsconfig_compileroptions_moduleresolution",
+      "community": 2,
+      "norm_label": "moduleresolution"
     },
     {
       "label": "resolveJsonModule",
@@ -589,9 +879,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "resolvejsonmodule",
-      "id": "tsconfig_compileroptions_resolvejsonmodule"
+      "id": "tsconfig_compileroptions_resolvejsonmodule",
+      "community": 2,
+      "norm_label": "resolvejsonmodule"
     },
     {
       "label": "isolatedModules",
@@ -599,9 +889,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "isolatedmodules",
-      "id": "tsconfig_compileroptions_isolatedmodules"
+      "id": "tsconfig_compileroptions_isolatedmodules",
+      "community": 2,
+      "norm_label": "isolatedmodules"
     },
     {
       "label": "jsx",
@@ -609,9 +899,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "jsx",
-      "id": "tsconfig_compileroptions_jsx"
+      "id": "tsconfig_compileroptions_jsx",
+      "community": 2,
+      "norm_label": "jsx"
     },
     {
       "label": "incremental",
@@ -619,9 +909,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "incremental",
-      "id": "tsconfig_compileroptions_incremental"
+      "id": "tsconfig_compileroptions_incremental",
+      "community": 2,
+      "norm_label": "incremental"
     },
     {
       "label": "plugins",
@@ -629,9 +919,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "plugins",
-      "id": "tsconfig_compileroptions_plugins"
+      "id": "tsconfig_compileroptions_plugins",
+      "community": 2,
+      "norm_label": "plugins"
     },
     {
       "label": "paths",
@@ -639,19 +929,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "paths",
-      "id": "tsconfig_compileroptions_paths"
-    },
-    {
-      "label": "@/*",
-      "file_type": "code",
-      "source_file": "tsconfig.json",
-      "source_location": "L22",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "@/*",
-      "id": "tsconfig_paths"
+      "id": "tsconfig_compileroptions_paths",
+      "community": 2,
+      "norm_label": "paths"
     },
     {
       "label": "include",
@@ -659,9 +939,69 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "include",
-      "id": "tsconfig_include"
+      "id": "tsconfig_include",
+      "community": 7,
+      "norm_label": "include"
+    },
+    {
+      "label": "next-env.d.ts",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "ref_next_env_d_ts",
+      "community": 7,
+      "norm_label": "next-env.d.ts"
+    },
+    {
+      "label": "**/*.ts",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "ref_ts",
+      "community": 7,
+      "norm_label": "**/*.ts"
+    },
+    {
+      "label": "**/*.tsx",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "ref_tsx",
+      "community": 7,
+      "norm_label": "**/*.tsx"
+    },
+    {
+      "label": ".next/types/**/*.ts",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "ref_next_types_ts",
+      "community": 7,
+      "norm_label": ".next/types/**/*.ts"
+    },
+    {
+      "label": ".next/dev/types/**/*.ts",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "ref_next_dev_types_ts",
+      "community": 7,
+      "norm_label": ".next/dev/types/**/*.ts"
+    },
+    {
+      "label": "**/*.mts",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "ref_mts",
+      "community": 7,
+      "norm_label": "**/*.mts"
     },
     {
       "label": "exclude",
@@ -669,12 +1009,35 @@
       "source_file": "tsconfig.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "exclude",
-      "id": "tsconfig_exclude"
+      "id": "tsconfig_exclude",
+      "community": 7,
+      "norm_label": "exclude"
     },
     {
-      "label": "AGENTS.md \u2014 Project Guidance",
+      "label": "node_modules",
+      "file_type": "concept",
+      "source_file": "tsconfig.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "ref_node_modules",
+      "community": 7,
+      "norm_label": "node_modules"
+    },
+    {
+      "label": "Playwright CI Workflow",
+      "file_type": "code",
+      "source_file": ".github/workflows/playwright.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "_github_workflows_playwright_workflow",
+      "community": 6,
+      "norm_label": "playwright ci workflow"
+    },
+    {
+      "label": "AGENTS.md - Project Guidance Document",
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": null,
@@ -682,25 +1045,155 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
-      "norm_label": "agents.md \u2014 project guidance",
-      "id": "agents"
+      "id": "agents_document",
+      "community": 6,
+      "norm_label": "agents.md - project guidance document"
     },
     {
-      "label": "CLAUDE.md \u2014 Shim File",
+      "label": "Casa Colina Care Site Architecture Overview",
       "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_architecture_overview",
+      "community": 6,
+      "norm_label": "casa colina care site architecture overview"
+    },
+    {
+      "label": "Smooth-scroll Nav Bug (ADO 207038)",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_smooth_scroll_nav_bug",
+      "community": 6,
+      "norm_label": "smooth-scroll nav bug (ado 207038)"
+    },
+    {
+      "label": "Testimonial Carousel Behavior",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_testimonial_carousel",
+      "community": 6,
+      "norm_label": "testimonial carousel behavior"
+    },
+    {
+      "label": "Reveal Animations (IntersectionObserver)",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_reveal_animations",
+      "community": 6,
+      "norm_label": "reveal animations (intersectionobserver)"
+    },
+    {
+      "label": "Ken Burns Hero Animation",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_ken_burns_hero",
+      "community": 6,
+      "norm_label": "ken burns hero animation"
+    },
+    {
+      "label": "Turbopack CSS Hot-reload Gotcha",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_turbopack_css_hot_reload_gotcha",
+      "community": 0,
+      "norm_label": "turbopack css hot-reload gotcha"
+    },
+    {
+      "label": "Playwright Browser Install Gotcha",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_playwright_browser_install_gotcha",
+      "community": 6,
+      "norm_label": "playwright browser install gotcha"
+    },
+    {
+      "label": "Bun-only Package Manager Rule",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_package_manager_bun_rule",
+      "community": 6,
+      "norm_label": "bun-only package manager rule"
+    },
+    {
+      "label": "Next.js 16 Breaking-Changes Warning",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_nextjs16_not_the_nextjs_you_know",
+      "community": 6,
+      "norm_label": "next.js 16 breaking-changes warning"
+    },
+    {
+      "label": "CLAUDE.md to AGENTS.md Shim",
+      "file_type": "concept",
       "source_file": "CLAUDE.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
-      "norm_label": "claude.md \u2014 shim file",
-      "id": "claude"
+      "id": "claude_agents_md_shim",
+      "community": 6,
+      "norm_label": "claude.md to agents.md shim"
     },
     {
-      "label": "README.md \u2014 Project Bootstrap",
+      "label": "graphify Usage Rules",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_graphify_rules",
+      "community": 0,
+      "norm_label": "graphify usage rules"
+    },
+    {
+      "label": "README Observability (Langfuse) Section",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": null,
@@ -708,48 +1201,308 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
-      "norm_label": "readme.md \u2014 project bootstrap",
-      "id": "readme"
+      "id": "readme_observability_langfuse",
+      "community": 3,
+      "norm_label": "readme observability (langfuse) section"
     },
     {
-      "label": "Wiki Backlog",
+      "label": "README Code Quality (Vercel Skill) Section",
       "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_code_quality_vercel_skill",
+      "community": 0,
+      "norm_label": "readme code quality (vercel skill) section"
+    },
+    {
+      "label": "README Claude Code Plugins Section",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_claude_code_plugins",
+      "community": 3,
+      "norm_label": "readme claude code plugins section"
+    },
+    {
+      "label": "Langfuse Local Dev Setup Guide",
+      "file_type": "document",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_page",
+      "community": 3,
+      "norm_label": "langfuse local dev setup guide"
+    },
+    {
+      "label": "Langfuse Claude Code Stop Hook",
+      "file_type": "concept",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_stop_hook",
+      "community": 3,
+      "norm_label": "langfuse claude code stop hook"
+    },
+    {
+      "label": "Langfuse Env Var Credential Injection",
+      "file_type": "concept",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_env_vars",
+      "community": 3,
+      "norm_label": "langfuse env var credential injection"
+    },
+    {
+      "label": "Langfuse Hook Fail-open Design",
+      "file_type": "rationale",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_fail_open_design",
+      "community": 3,
+      "norm_label": "langfuse hook fail-open design"
+    },
+    {
+      "label": "Langfuse Setup Troubleshooting Table",
+      "file_type": "document",
+      "source_file": "docs/langfuse-local-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_langfuse_local_setup_troubleshooting",
+      "community": 3,
+      "norm_label": "langfuse setup troubleshooting table"
+    },
+    {
+      "label": "Claude Code Plugins for This Repo Guide",
+      "file_type": "document",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_page",
+      "community": 3,
+      "norm_label": "claude code plugins for this repo guide"
+    },
+    {
+      "label": "13 Required Claude Code Plugins",
+      "file_type": "document",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_required_plugins",
+      "community": 0,
+      "norm_label": "13 required claude code plugins"
+    },
+    {
+      "label": "Optional codex Plugin",
+      "file_type": "document",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_optional_plugins",
+      "community": 3,
+      "norm_label": "optional codex plugin"
+    },
+    {
+      "label": "Explicitly Dropped Plugins Rationale",
+      "file_type": "rationale",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_dropped_plugins",
+      "community": 3,
+      "norm_label": "explicitly dropped plugins rationale"
+    },
+    {
+      "label": ".claude/settings.json enabledPlugins Mechanism",
+      "file_type": "concept",
+      "source_file": "docs/plugins-for-this-repo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_plugins_for_this_repo_settings_json_mechanism",
+      "community": 3,
+      "norm_label": ".claude/settings.json enabledplugins mechanism"
+    },
+    {
+      "label": "Vercel React Best Practices Skill Guide",
+      "file_type": "document",
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_vercel_react_best_practices_setup_page",
+      "community": 0,
+      "norm_label": "vercel react best practices skill guide"
+    },
+    {
+      "label": "Vendored vercel-react-best-practices Skill",
+      "file_type": "concept",
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_vercel_react_best_practices_setup_vendored_skill",
+      "community": 0,
+      "norm_label": "vendored vercel-react-best-practices skill"
+    },
+    {
+      "label": "Windows Symlink Caveat for Vendored Skill",
+      "file_type": "rationale",
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_vercel_react_best_practices_setup_windows_symlink_caveat",
+      "community": 0,
+      "norm_label": "windows symlink caveat for vendored skill"
+    },
+    {
+      "label": "Path B: npx add-skill Install",
+      "file_type": "document",
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_vercel_react_best_practices_setup_install_path_b",
+      "community": 0,
+      "norm_label": "path b: npx add-skill install"
+    },
+    {
+      "label": "Backlog Priority Taxonomy (P0-P3)",
+      "file_type": "concept",
       "source_file": "wiki/_backlog.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
-      "norm_label": "wiki backlog",
-      "id": "wiki__backlog"
+      "id": "wiki__backlog_priority_taxonomy",
+      "community": 0,
+      "norm_label": "backlog priority taxonomy (p0-p3)"
     },
     {
-      "label": "Wiki Schema",
+      "label": "Wiki Index Page",
       "file_type": "document",
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki__index_wiki_index",
+      "community": 0,
+      "norm_label": "wiki index page"
+    },
+    {
+      "label": "Wiki Log Page",
+      "file_type": "document",
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki__log_wiki_log",
+      "community": 0,
+      "norm_label": "wiki log page"
+    },
+    {
+      "label": "Wiki Taxonomy (10 Buckets)",
+      "file_type": "concept",
       "source_file": "wiki/_schema.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "norm_label": "wiki schema",
-      "id": "wiki__schema"
+      "id": "wiki__schema_taxonomy",
+      "community": 0,
+      "norm_label": "wiki taxonomy (10 buckets)"
+    },
+    {
+      "label": "Wiki Contradiction Handling Convention",
+      "file_type": "rationale",
+      "source_file": "wiki/_schema.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki__schema_contradiction_handling",
+      "community": 19,
+      "norm_label": "wiki contradiction handling convention"
+    },
+    {
+      "label": "Wiki Tiebreaker Rule (Route to Ideas)",
+      "file_type": "rationale",
+      "source_file": "wiki/_schema.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki__schema_tiebreaker_rule",
+      "community": 3,
+      "norm_label": "wiki tiebreaker rule (route to ideas)"
     },
     {
       "label": "Next.js 16 ComponentMod.handler Architecture",
-      "file_type": "rationale",
+      "file_type": "concept",
       "source_file": "wiki/code/Next.js 16 ComponentMod.handler Architecture.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "norm_label": "next.js 16 componentmod.handler architecture",
-      "id": "code_next_js_16_componentmod_handler_architecture"
+      "id": "wiki_code_next_js_16_componentmod_handler_architecture_page",
+      "community": 0,
+      "norm_label": "next.js 16 componentmod.handler architecture"
     },
     {
       "label": "Next.js 16 Turbopack Root Confusion",
@@ -760,9 +1513,35 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "norm_label": "next.js 16 turbopack root confusion",
-      "id": "code_next_js_16_turbopack_root_confusion"
+      "id": "wiki_code_next_js_16_turbopack_root_confusion_page",
+      "community": 0,
+      "norm_label": "next.js 16 turbopack root confusion"
+    },
+    {
+      "label": "bun/bunx not on PATH in Windows Claude Code Environment",
+      "file_type": "rationale",
+      "source_file": "wiki/code/bun-bunx-not-on-path-windows.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_bun_bunx_not_on_path_windows_page",
+      "community": 0,
+      "norm_label": "bun/bunx not on path in windows claude code environment"
+    },
+    {
+      "label": "cred-grid CSS Hardcodes Column Count to Card Count",
+      "file_type": "rationale",
+      "source_file": "wiki/code/cred-grid-hardcoded-columns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_cred_grid_hardcoded_columns_page",
+      "community": 0,
+      "norm_label": "cred-grid css hardcodes column count to card count"
     },
     {
       "label": "DesignSync get_file Truncates Binary Assets at 256 KB",
@@ -773,459 +1552,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "norm_label": "designsync get_file truncates binary assets at 256 kb",
-      "id": "code_designsync_binary_truncation"
+      "id": "wiki_code_designsync_binary_truncation_page",
+      "community": 0,
+      "norm_label": "designsync get_file truncates binary assets at 256 kb"
     },
     {
-      "label": "next/font \u2014 axes + weight constraint for variable fonts",
-      "file_type": "code",
-      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "next/font \u2014 axes + weight constraint for variable fonts",
-      "id": "code_next_font_axes_weight_constraint"
-    },
-    {
-      "label": "Fraunces (variable font, opsz axis)",
-      "file_type": "concept",
-      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "fraunces (variable font, opsz axis)",
-      "id": "code_next_font_axes_weight_constraint_fraunces"
-    },
-    {
-      "label": "Turbopack CSS file-watch miss on programmatic write",
-      "file_type": "code",
-      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 9,
-      "norm_label": "turbopack css file-watch miss on programmatic write",
-      "id": "code_turbopack_css_filewatcher_miss"
-    },
-    {
-      "label": "Wiki Gotchas Lack Code-Side Back-References",
-      "file_type": "concept",
-      "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "wiki gotchas lack code-side back-references",
-      "id": "concepts_wiki_gotchas_lack_code_side_back_references"
-    },
-    {
-      "label": "AGENTS.md + CLAUDE.md Shim Pattern",
-      "file_type": "concept",
-      "source_file": "wiki/concepts/agents-md-claude-md-shim-pattern.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 10,
-      "norm_label": "agents.md + claude.md shim pattern",
-      "id": "concepts_agents_md_claude_md_shim_pattern"
-    },
-    {
-      "label": "Bug-driven TDD \u2014 red spec before fix",
-      "file_type": "concept",
-      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "bug-driven tdd \u2014 red spec before fix",
-      "id": "concepts_bug_driven_tdd_red_spec"
-    },
-    {
-      "label": "CasaColinaCare.com (Azure DevOps Project)",
-      "file_type": "document",
-      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "casacolinacare.com (azure devops project)",
-      "id": "entities_casacolinacare_com_azure_devops_project"
-    },
-    {
-      "label": "CasaColinaDestination.com (unrelated ADO project)",
-      "file_type": "concept",
-      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "casacolinadestination.com (unrelated ado project)",
-      "id": "entities_casacolinacare_com_azure_devops_project_casacolinadestination_com"
-    },
-    {
-      "label": "Claude Code Plugin CLI and Skills-Dir Plugins",
-      "file_type": "document",
-      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "claude code plugin cli and skills-dir plugins",
-      "id": "platforms_claude_code_plugin_cli_and_skills_dir_plugins"
-    },
-    {
-      "label": "graphify (skills-dir plugin example)",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "graphify (skills-dir plugin example)",
-      "id": "platforms_claude_code_plugin_cli_and_skills_dir_plugins_graphify"
-    },
-    {
-      "label": "Claude Code Plugin Marketplace Naming Ambiguities",
-      "file_type": "document",
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "claude code plugin marketplace naming ambiguities",
-      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities"
-    },
-    {
-      "label": "commit-commands plugin",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "commit-commands plugin",
-      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_commit_commands"
-    },
-    {
-      "label": "github plugin (GitHub MCP server)",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "github plugin (github mcp server)",
-      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_github"
-    },
-    {
-      "label": "gitlab plugin (GitLab MCP server)",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "gitlab plugin (gitlab mcp server)",
-      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_gitlab"
-    },
-    {
-      "label": "azure plugin (Azure cloud-ops, claude-plugins-official)",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "azure plugin (azure cloud-ops, claude-plugins-official)",
-      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_azure"
-    },
-    {
-      "label": "langfuse plugin (skills only)",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "langfuse plugin (skills only)",
-      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse"
-    },
-    {
-      "label": "langfuse-observability plugin (Stop/SessionEnd hooks)",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "langfuse-observability plugin (stop/sessionend hooks)",
-      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse_observability"
-    },
-    {
-      "label": "claude-plugins-official (marketplace)",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "claude-plugins-official (marketplace)",
-      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_claude_plugins_official"
-    },
-    {
-      "label": "jx-pm:ado skill",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "jx-pm:ado skill",
-      "id": "platforms_claude_code_plugin_marketplace_naming_ambiguities_jx_pm_ado"
-    },
-    {
-      "label": "Next.js 16 Breaking Changes",
-      "file_type": "rationale",
-      "source_file": "wiki/platforms/Next.js 16 Breaking Changes.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "next.js 16 breaking changes",
-      "id": "platforms_next_js_16_breaking_changes"
-    },
-    {
-      "label": "Vercel CLI First Deploy Auto-Connects GitHub",
-      "file_type": "rationale",
-      "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "vercel cli first deploy auto-connects github",
-      "id": "platforms_vercel_cli_first_deploy_auto_connects_github"
-    },
-    {
-      "label": "Vercel bun Auto-Detection",
-      "file_type": "rationale",
-      "source_file": "wiki/platforms/Vercel bun auto-detection.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "vercel bun auto-detection",
-      "id": "platforms_vercel_bun_auto_detection"
-    },
-    {
-      "label": "Vercel Domain Alias vs Project Domains API",
-      "file_type": "rationale",
-      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "vercel domain alias vs project domains api",
-      "id": "platforms_vercel_domain_alias_vs_project_domains_api"
-    },
-    {
-      "label": "bun/bunx not on PATH in Windows Claude Code environment",
-      "file_type": "rationale",
-      "source_file": "wiki/code/bun-bunx-not-on-path-windows.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Tool-spawned Windows shells get a minimal non-login environment that doesn't replay the user's profile PATH additions (~/.bun/bin), so bun/bunx must be invoked by full path.",
-      "community": 6,
-      "norm_label": "bun/bunx not on path in windows claude code environment",
-      "id": "code_bun_bunx_not_on_path_windows"
-    },
-    {
-      "label": "cred-grid CSS hardcodes column count to card count",
-      "file_type": "rationale",
-      "source_file": "wiki/code/cred-grid-hardcoded-columns.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": ".cred-grid uses grid-template-columns:repeat(5,1fr) hardcoded to the number of .cred cards in page.tsx; adding or removing a card without updating N breaks the layout.",
-      "community": 5,
-      "norm_label": "cred-grid css hardcodes column count to card count",
-      "id": "code_cred_grid_hardcoded_columns"
-    },
-    {
-      "label": "playwright-cli vs @playwright/test \u2014 two separate tools",
-      "file_type": "rationale",
-      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "@playwright/cli is an interactive browser driver; @playwright/test is the .spec test runner. Installing one does not provide the other; global playwright-cli availability is environment-dependent.",
-      "community": 9,
-      "norm_label": "playwright-cli vs @playwright/test \u2014 two separate tools",
-      "id": "code_playwright_cli_vs_playwright_test"
-    },
-    {
-      "label": "Casa Colina site duplicates marketing facts across sections",
-      "file_type": "rationale",
-      "source_file": "wiki/code/sitewide-content-duplication-pattern.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Marketing facts (phone, resident count, license tier) are restated verbatim in 2-5 markup locations plus the twice-duplicated marquee string; grep the fact across app/ before editing one circled instance.",
-      "community": 5,
-      "norm_label": "casa colina site duplicates marketing facts across sections",
-      "id": "code_sitewide_content_duplication_pattern"
-    },
-    {
-      "label": "Azure DevOps MCP has no whoami tool \u2014 use core_get_identity_ids",
-      "file_type": "rationale",
-      "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Unlike GitHub MCP's get_me, the azure-devops MCP server exposes no whoami tool; resolve the current identity via core_get_identity_ids with searchFilter set to the user's email.",
-      "community": 8,
-      "norm_label": "azure devops mcp has no whoami tool \u2014 use core_get_identity_ids",
-      "id": "platforms_azure_devops_mcp_identity_lookup"
-    },
-    {
-      "label": "@playwright/cli (interactive browser driver)",
-      "file_type": "concept",
-      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 9,
-      "norm_label": "@playwright/cli (interactive browser driver)",
-      "id": "code_playwright_cli_vs_playwright_test_playwright_cli"
-    },
-    {
-      "label": "@playwright/test (spec test runner)",
-      "file_type": "concept",
-      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 9,
-      "norm_label": "@playwright/test (spec test runner)",
-      "id": "code_playwright_cli_vs_playwright_test_playwright_test"
-    },
-    {
-      "label": "core_get_identity_ids (ADO MCP identity tool)",
-      "file_type": "concept",
-      "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "core_get_identity_ids (ado mcp identity tool)",
-      "id": "platforms_azure_devops_mcp_identity_lookup_core_get_identity_ids"
-    },
-    {
-      "label": "graphify Scope for casacolinacare-v2",
-      "file_type": "document",
-      "source_file": "wiki/platforms/graphify Scope for casacolinacare-v2.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "graphify scope for casacolinacare-v2",
-      "id": "platforms_graphify_scope_for_casacolinacare_v2"
-    },
-    {
-      "label": "Wiki Index",
-      "file_type": "document",
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "wiki index",
-      "id": "wiki__index"
-    },
-    {
-      "label": "Wiki Log",
-      "file_type": "document",
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "wiki log",
-      "id": "wiki__log"
-    },
-    {
-      "label": "graphify CLI not invokable via bun/bunx",
+      "label": "graphify CLI Not Invokable via bun/bunx",
       "file_type": "rationale",
       "source_file": "wiki/code/graphify-cli-not-invokable-via-bun.md",
       "source_location": null,
@@ -1233,10 +1565,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "graphify is not resolvable via PATH nor via `bunx graphify` (no such published bin), which blocked the CLAUDE.md-required post-edit `graphify update .`.",
-      "community": 6,
-      "norm_label": "graphify cli not invokable via bun/bunx",
-      "id": "code_graphify_cli_not_invokable_via_bun"
+      "id": "wiki_code_graphify_cli_not_invokable_via_bun_page",
+      "community": 0,
+      "norm_label": "graphify cli not invokable via bun/bunx"
     },
     {
       "label": "graphify --update Re-extraction Gotchas",
@@ -1247,33 +1578,411 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Content-only code edits are AST-invariant (skip re-extraction); build_merge replace-on-re-extract drops every edge whose source_file is in the new chunk, so hub/index files must be re-extracted with their complete link set.",
-      "id": "code_graphify_update_re_extraction_gotchas",
-      "community": 6,
+      "id": "wiki_code_graphify_update_re_extraction_gotchas_page",
+      "community": 3,
       "norm_label": "graphify --update re-extraction gotchas"
+    },
+    {
+      "label": "AST-invariant Content-only Edits Skip Re-extraction",
+      "file_type": "rationale",
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_graphify_update_re_extraction_gotchas_ast_invariant_edits",
+      "community": 3,
+      "norm_label": "ast-invariant content-only edits skip re-extraction"
+    },
+    {
+      "label": "build_merge Replace-on-Re-extract Drops All File Edges",
+      "file_type": "rationale",
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_graphify_update_re_extraction_gotchas_build_merge_replace_on_reextract",
+      "community": 3,
+      "norm_label": "build_merge replace-on-re-extract drops all file edges"
+    },
+    {
+      "label": "next/font axes + weight Constraint for Variable Fonts",
+      "file_type": "rationale",
+      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_next_font_axes_weight_constraint_page",
+      "community": 0,
+      "norm_label": "next/font axes + weight constraint for variable fonts"
+    },
+    {
+      "label": "playwright-cli vs @playwright/test - Two Separate Tools",
+      "file_type": "concept",
+      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_playwright_cli_vs_playwright_test_page",
+      "community": 0,
+      "norm_label": "playwright-cli vs @playwright/test - two separate tools"
+    },
+    {
+      "label": "Global Install Assumption Conflict Callout",
+      "file_type": "rationale",
+      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_playwright_cli_vs_playwright_test_conflict_callout",
+      "community": 0,
+      "norm_label": "global install assumption conflict callout"
+    },
+    {
+      "label": "Casa Colina Site Duplicates Marketing Facts Across Sections",
+      "file_type": "rationale",
+      "source_file": "wiki/code/sitewide-content-duplication-pattern.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_sitewide_content_duplication_pattern_page",
+      "community": 0,
+      "norm_label": "casa colina site duplicates marketing facts across sections"
+    },
+    {
+      "label": "Marquee Strip Duplicate-string Pattern",
+      "file_type": "rationale",
+      "source_file": "wiki/code/sitewide-content-duplication-pattern.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_code_sitewide_content_duplication_pattern_marquee_duplication",
+      "community": 0,
+      "norm_label": "marquee strip duplicate-string pattern"
+    },
+    {
+      "label": "Turbopack CSS file-watch miss on programmatic write",
+      "file_type": "rationale",
+      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Turbopack watches files via the OS file notification API (kqueue on macOS); programmatic writes sometimes don't emit a notification event, or the event fires before the write is fully flushed, leaving the watcher unaware of the change. `touch app/globals.css` updates mtime and reliably triggers reprocessing.",
+      "id": "wiki_code_turbopack_css_filewatcher_miss",
+      "community": 4,
+      "norm_label": "turbopack css file-watch miss on programmatic write"
+    },
+    {
+      "label": "Wiki Gotchas Lack Code-Side Back-References",
+      "file_type": "concept",
+      "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "graphify's own generated graph showed wiki gotcha articles have zero structural edges back to the source lines they describe, risking silent reintroduction of already-solved bugs during refactors since nothing in the code points a future editor at the constraint.",
+      "id": "wiki_concepts_wiki_gotchas_lack_code_side_back_references",
+      "community": 4,
+      "norm_label": "wiki gotchas lack code-side back-references"
+    },
+    {
+      "label": "AGENTS.md + CLAUDE.md shim pattern",
+      "file_type": "concept",
+      "source_file": "wiki/concepts/agents-md-claude-md-shim-pattern.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Different AI coding agents read different context files (Claude Code reads CLAUDE.md, Codex and others read AGENTS.md); maintaining both in full leads to drift, so AGENTS.md holds canonical content and CLAUDE.md is reduced to a one-line `@AGENTS.md` import shim.",
+      "id": "wiki_concepts_agents_md_claude_md_shim_pattern",
+      "community": 20,
+      "norm_label": "agents.md + claude.md shim pattern"
+    },
+    {
+      "label": "Bug-driven TDD \u2014 red spec before fix",
+      "file_type": "concept",
+      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Writing a red Playwright spec asserting fixed behavior before any fix code forces a precise, executable definition of 'fixed', makes each green test proof rather than opinion, and creates a permanent regression guard so the bug cannot silently reintroduce itself.",
+      "id": "wiki_concepts_bug_driven_tdd_red_spec",
+      "community": 4,
+      "norm_label": "bug-driven tdd \u2014 red spec before fix"
+    },
+    {
+      "label": "CasaColinaCare.com (Azure DevOps Project)",
+      "file_type": "document",
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_entities_casacolinacare_com_azure_devops_project",
+      "community": 4,
+      "norm_label": "casacolinacare.com (azure devops project)"
+    },
+    {
+      "label": "Azure DevOps MCP has no whoami tool \u2014 use core_get_identity_ids",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_platforms_azure_devops_mcp_identity_lookup",
+      "community": 4,
+      "norm_label": "azure devops mcp has no whoami tool \u2014 use core_get_identity_ids"
+    },
+    {
+      "label": "Azure DevOps Task fields reject certain values on state-transition updates",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "ADO's Reason field only accepts values from the work item type's defined transition set, not arbitrary text (TF401320 on mismatch); RemainingWork treats an explicit zero as empty (InvalidNotEmpty), which the close-task validation rule rejects. Fix: omit Reason (ADO auto-fills a valid default) and leave RemainingWork at its prior value.",
+      "id": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+      "community": 8,
+      "norm_label": "azure devops task fields reject certain values on state-transition updates"
+    },
+    {
+      "label": "Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_platforms_azure_devops_user_story_tasks_panel_renders_as_a_checklist_only_with_per_ac_child_tasks",
+      "community": 8,
+      "norm_label": "azure devops user story tasks panel renders as a checklist only with per-ac child tasks"
+    },
+    {
+      "label": "Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Rendering format for multiline fields (Description, AcceptanceCriteria) is stored per-work-item in the response's multilineFieldsFormat map, not fixed by work item type or process template, so writing the wrong syntax silently renders wrong instead of erroring. A later session found a prior claim (backtick-wrapped angle brackets get stripped) was contradicted by contrary evidence \u2014 flagged as an unresolved conflict needing per-field verification.",
+      "id": "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
+      "community": 8,
+      "norm_label": "azure devops multiline field format (html vs markdown) varies per work item, not by type"
+    },
+    {
+      "label": "Azure DevOps wit_update_work_item rejects mixed-field-type batches",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Azure DevOps wit_update_work_item rejects mixed-field-type batches.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Combining a content-and-format multiline patch (AC + multilineFieldsFormat) with unrelated scalar fields (Priority, StoryPoints) in one wit_update_work_item call fails with a generic 'type changed without a value' error, reproduced identically across two separate stories; splitting into single-purpose calls succeeds. Discovered empirically \u2014 the tool schema gives no hint why.",
+      "id": "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches",
+      "community": 8,
+      "norm_label": "azure devops wit_update_work_item rejects mixed-field-type batches"
+    },
+    {
+      "label": "Claude Code Plugin CLI and Skills-Dir Plugins",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+      "community": 14,
+      "norm_label": "claude code plugin cli and skills-dir plugins"
+    },
+    {
+      "label": "Claude Code Plugin Marketplace Naming Ambiguities",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_platforms_claude_code_plugin_marketplace_naming_ambiguities",
+      "community": 14,
+      "norm_label": "claude code plugin marketplace naming ambiguities"
+    },
+    {
+      "label": "Next.js 16 Breaking Changes",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Next.js 16 Breaking Changes.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_platforms_next_js_16_breaking_changes",
+      "community": 8,
+      "norm_label": "next.js 16 breaking changes"
+    },
+    {
+      "label": "Vercel CLI first deploy auto-connects GitHub",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Vercel CLI v54+ detects a GitHub-origin git remote and auto-connects the repo to the new Vercel project during the first `vercel --prod --yes` deploy, provided the Vercel GitHub App is already installed on the org/account \u2014 no separate `vercel git connect` command needed.",
+      "id": "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
+      "community": 8,
+      "norm_label": "vercel cli first deploy auto-connects github"
+    },
+    {
+      "label": "Vercel GitHub integration auto-deploys production on merge to main",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Vercel GitHub integration auto-deploys production on merge to main.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
+      "community": 8,
+      "norm_label": "vercel github integration auto-deploys production on merge to main"
+    },
+    {
+      "label": "Vercel bun auto-detection",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Vercel bun auto-detection.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Presence of bun.lock (and absence of package-lock.json/pnpm-lock.yaml) is the sole signal Vercel's build system uses to select bun for install/build (`bun install` then `bun run build`), without needing a vercel.json override.",
+      "id": "wiki_platforms_vercel_bun_auto_detection",
+      "community": 8,
+      "norm_label": "vercel bun auto-detection"
+    },
+    {
+      "label": "Vercel domain alias API vs project domains API",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_platforms_vercel_domain_alias_vs_project_domains_api",
+      "community": 8,
+      "norm_label": "vercel domain alias api vs project domains api"
+    },
+    {
+      "label": "Windows git worktree remove fails due to own shell cwd",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/Windows git worktree remove fails due to own shell cwd.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Two distinct causes: (1) a leftover next dev/Turbopack node.exe process holds file locks in .next/ and node_modules/.bin; (2) the agent's own persistent shell still has cwd inside the worktree, which holds a Windows directory handle open and blocks delete/rename even with zero other processes running.",
+      "id": "wiki_platforms_windows_git_worktree_remove_fails_due_to_own_shell_cwd",
+      "community": 4,
+      "norm_label": "windows git worktree remove fails due to own shell cwd"
+    },
+    {
+      "label": "graphify Scope for casacolinacare-v2",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/graphify Scope for casacolinacare-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A full-repo scan hits ~5.65M words dominated by .claude/ session logs and claude_design/ assets, neither adding real code or doc signal; scoping to app/, tests/, wiki/, and root config via .graphifyignore (honored by the incremental --update path) keeps updates clean. An incomplete ignore list leaked ~120 files (mostly .claude/data/sessions and .agents/skills docs) into a --update scan before .claude/, .agents/, and scratchpad/ were added.",
+      "id": "wiki_platforms_graphify_scope_for_casacolinacare_v2",
+      "community": 21,
+      "norm_label": "graphify scope for casacolinacare-v2"
+    },
+    {
+      "label": "jx-pm:impl-story-plan's worktree isolation can't see changes already staged in the main tree",
+      "file_type": "rationale",
+      "source_file": "wiki/platforms/jx-pm impl-story-plan's worktree isolation can't see changes already staged in the main tree.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A fresh worktree checks out from HEAD only, so it has no visibility into the main tree's staged-but-uncommitted git index state, nor into completely untracked files (e.g. a referenced image asset never `git add`-ed) \u2014 `git worktree add` only materializes committed, tracked content.",
+      "id": "wiki_platforms_jx_pm_impl_story_plan_s_worktree_isolation_can_t_see_changes_already_staged_in_the_main_tree",
+      "community": 4,
+      "norm_label": "jx-pm:impl-story-plan's worktree isolation can't see changes already staged in the main tree"
+    },
+    {
+      "label": "ADO Bug #207038 \u2014 nav links don't update URL hash",
+      "file_type": "document",
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_entities_casacolinacare_com_azure_devops_project_bug_207038",
+      "community": 4,
+      "norm_label": "ado bug #207038 \u2014 nav links don't update url hash"
+    },
+    {
+      "label": "TF401320 (ADO field validation error)",
+      "file_type": "document",
+      "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates_tf401320",
+      "community": 8,
+      "norm_label": "tf401320 (ado field validation error)"
     }
   ],
   "links": [
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_page",
-      "target": "components_smoothlink"
-    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/components/SmoothLink.tsx",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_smoothlink",
-      "target": "components_smoothlink_smoothlink"
+      "_origin": "ast",
+      "source": "app_components_smoothlink",
+      "target": "app_components_smoothlink_smoothlink",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1281,9 +1990,22 @@
       "source_file": "app/components/SmoothLink.tsx",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_smoothlink",
-      "target": "components_smoothlink_smoothlinkprops"
+      "_origin": "ast",
+      "source": "app_components_smoothlink",
+      "target": "app_components_smoothlink_smoothlinkprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_page",
+      "target": "app_components_smoothlink",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1292,9 +2014,32 @@
       "source_file": "app/page.tsx",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "app_page",
-      "target": "components_smoothlink_smoothlink"
+      "target": "app_components_smoothlink_smoothlink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TestimonialCarousel.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_components_testimonialcarousel",
+      "target": "app_components_testimonialcarousel_quotes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/TestimonialCarousel.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_components_testimonialcarousel",
+      "target": "app_components_testimonialcarousel_testimonialcarousel",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1303,29 +2048,10 @@
       "source_file": "app/page.tsx",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "app_page",
-      "target": "components_testimonialcarousel"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/TestimonialCarousel.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_testimonialcarousel",
-      "target": "components_testimonialcarousel_quotes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/TestimonialCarousel.tsx",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_testimonialcarousel",
-      "target": "components_testimonialcarousel_testimonialcarousel"
+      "target": "app_components_testimonialcarousel",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1333,9 +2059,10 @@
       "source_file": "app/layout.tsx",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "app_layout",
-      "target": "app_layout_fraunces"
+      "target": "app_layout_fraunces",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1343,9 +2070,10 @@
       "source_file": "app/layout.tsx",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "app_layout",
-      "target": "app_layout_inter"
+      "target": "app_layout_inter",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1353,9 +2081,10 @@
       "source_file": "app/layout.tsx",
       "source_location": "L18",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "app_layout",
-      "target": "app_layout_metadata"
+      "target": "app_layout_metadata",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1363,39 +2092,30 @@
       "source_file": "app/layout.tsx",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "app_layout",
-      "target": "app_layout_rootlayout"
+      "target": "app_layout_rootlayout",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "code_next_font_axes_weight_constraint",
-      "target": "app_layout"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
       "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "concepts_wiki_gotchas_lack_code_side_back_references",
-      "target": "app_layout"
+      "source": "wiki_concepts_wiki_gotchas_lack_code_side_back_references",
+      "target": "app_layout_fraunces"
     },
     {
       "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/code/sitewide-content-duplication-pattern.md",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_sitewide_content_duplication_pattern",
-      "target": "app_layout_metadata"
+      "source": "wiki_concepts_wiki_gotchas_lack_code_side_back_references",
+      "target": "app_layout_inter"
     },
     {
       "relation": "contains",
@@ -1403,29 +2123,10 @@
       "source_file": "app/page.tsx",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "app_page",
-      "target": "app_page_page"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/code/cred-grid-hardcoded-columns.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "code_cred_grid_hardcoded_columns",
-      "target": "app_page_page"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/code/sitewide-content-duplication-pattern.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "code_sitewide_content_duplication_pattern",
-      "target": "app_page_page"
+      "target": "app_page_page",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1433,9 +2134,10 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "eslint_config",
-      "target": "eslint_config_eslintconfig"
+      "target": "eslint_config_eslintconfig",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1443,9 +2145,10 @@
       "source_file": "next.config.ts",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "next_config",
-      "target": "next_config_nextconfig"
+      "target": "next_config_nextconfig",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1453,9 +2156,10 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package",
-      "target": "package_dependencies"
+      "target": "package_dependencies",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1463,9 +2167,10 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package",
-      "target": "package_devdependencies"
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1473,9 +2178,10 @@
       "source_file": "package.json",
       "source_location": "L28",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package",
-      "target": "package_ignorescripts"
+      "target": "package_ignorescripts",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1483,9 +2189,10 @@
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package",
-      "target": "package_name"
+      "target": "package_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1493,9 +2200,10 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package",
-      "target": "package_private"
+      "target": "package_private",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1503,9 +2211,10 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package",
-      "target": "package_scripts"
+      "target": "package_scripts",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1513,9 +2222,10 @@
       "source_file": "package.json",
       "source_location": "L32",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package",
-      "target": "package_trusteddependencies"
+      "target": "package_trusteddependencies",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1523,9 +2233,10 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package",
-      "target": "package_version"
+      "target": "package_version",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1533,9 +2244,10 @@
       "source_file": "package.json",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_scripts",
-      "target": "package_scripts_build"
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1543,9 +2255,10 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_scripts",
-      "target": "package_scripts_dev"
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1553,9 +2266,10 @@
       "source_file": "package.json",
       "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_scripts",
-      "target": "package_scripts_lint"
+      "target": "package_scripts_lint",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1563,9 +2277,10 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_scripts",
-      "target": "package_scripts_start"
+      "target": "package_scripts_start",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1573,9 +2288,10 @@
       "source_file": "package.json",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_scripts",
-      "target": "package_scripts_test_e2e"
+      "target": "package_scripts_test_e2e",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1583,9 +2299,10 @@
       "source_file": "package.json",
       "source_location": "L13",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_next"
+      "target": "package_dependencies_next",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1593,9 +2310,10 @@
       "source_file": "package.json",
       "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_react"
+      "target": "package_dependencies_react",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1603,9 +2321,46 @@
       "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom"
+      "target": "package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_dependencies_next",
+      "target": "next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_dependencies_react",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_dependencies_react_dom",
+      "target": "react_dom",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1613,9 +2368,10 @@
       "source_file": "package.json",
       "source_location": "L23",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint"
+      "target": "package_devdependencies_eslint",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1623,9 +2379,10 @@
       "source_file": "package.json",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_config_next"
+      "target": "package_devdependencies_eslint_config_next",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1633,9 +2390,10 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_devdependencies",
-      "target": "package_devdependencies_playwright_test"
+      "target": "package_devdependencies_playwright_test",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1643,9 +2401,10 @@
       "source_file": "package.json",
       "source_location": "L25",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_devdependencies",
-      "target": "package_devdependencies_tailwindcss"
+      "target": "package_devdependencies_tailwindcss",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1653,9 +2412,10 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_devdependencies",
-      "target": "package_devdependencies_tailwindcss_postcss"
+      "target": "package_devdependencies_tailwindcss_postcss",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1663,9 +2423,10 @@
       "source_file": "package.json",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_node"
+      "target": "package_devdependencies_types_node",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1673,9 +2434,10 @@
       "source_file": "package.json",
       "source_location": "L21",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react"
+      "target": "package_devdependencies_types_react",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1683,9 +2445,10 @@
       "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react_dom"
+      "target": "package_devdependencies_types_react_dom",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1693,9 +2456,166 @@
       "source_file": "package.json",
       "source_location": "L26",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript"
+      "target": "package_devdependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_devdependencies_playwright_test",
+      "target": "playwright_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_devdependencies_tailwindcss_postcss",
+      "target": "tailwindcss_postcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_devdependencies_types_node",
+      "target": "types_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_devdependencies_types_react",
+      "target": "types_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_devdependencies_types_react_dom",
+      "target": "types_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_devdependencies_eslint",
+      "target": "eslint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_devdependencies_eslint_config_next",
+      "target": "eslint_config_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_devdependencies_tailwindcss",
+      "target": "tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_devdependencies_typescript",
+      "target": "typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_ignorescripts",
+      "target": "ref_sharp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_ignorescripts",
+      "target": "ref_unrs_resolver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_trusteddependencies",
+      "target": "ref_sharp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_trusteddependencies",
+      "target": "ref_unrs_resolver",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1703,28 +2623,29 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "postcss_config",
-      "target": "postcss_config_config"
+      "target": "postcss_config_config",
+      "confidence_score": 1.0
     },
     {
-      "relation": "cites",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "concepts_bug_driven_tdd_red_spec",
+      "source": "wiki_concepts_bug_driven_tdd_red_spec",
       "target": "tests_bugs_spec"
     },
     {
-      "relation": "cites",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
       "source_location": null,
       "weight": 1.0,
-      "source": "entities_casacolinacare_com_azure_devops_project",
+      "source": "wiki_entities_casacolinacare_com_azure_devops_project",
       "target": "tests_bugs_spec"
     },
     {
@@ -1733,9 +2654,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig",
-      "target": "tsconfig_compileroptions"
+      "target": "tsconfig_compileroptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1743,9 +2665,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L33",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig",
-      "target": "tsconfig_exclude"
+      "target": "tsconfig_exclude",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1753,9 +2676,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig",
-      "target": "tsconfig_include"
+      "target": "tsconfig_include",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1763,9 +2687,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_allowjs"
+      "target": "tsconfig_compileroptions_allowjs",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1773,9 +2698,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_esmoduleinterop"
+      "target": "tsconfig_compileroptions_esmoduleinterop",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1783,9 +2709,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L15",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_incremental"
+      "target": "tsconfig_compileroptions_incremental",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1793,9 +2720,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_isolatedmodules"
+      "target": "tsconfig_compileroptions_isolatedmodules",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1803,9 +2731,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_jsx"
+      "target": "tsconfig_compileroptions_jsx",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1813,9 +2742,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_lib"
+      "target": "tsconfig_compileroptions_lib",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1823,9 +2753,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_module"
+      "target": "tsconfig_compileroptions_module",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1833,9 +2764,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_moduleresolution"
+      "target": "tsconfig_compileroptions_moduleresolution",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1843,9 +2775,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_noemit"
+      "target": "tsconfig_compileroptions_noemit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1853,9 +2786,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L21",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_paths"
+      "target": "tsconfig_compileroptions_paths",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1863,9 +2797,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_plugins"
+      "target": "tsconfig_compileroptions_plugins",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1873,9 +2808,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_resolvejsonmodule"
+      "target": "tsconfig_compileroptions_resolvejsonmodule",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1883,9 +2819,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_skiplibcheck"
+      "target": "tsconfig_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1893,9 +2830,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_strict"
+      "target": "tsconfig_compileroptions_strict",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1903,649 +2841,490 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "_origin": "ast",
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_target"
+      "target": "tsconfig_compileroptions_target",
+      "confidence_score": 1.0
     },
     {
-      "relation": "contains",
+      "relation": "extends",
       "confidence": "EXTRACTED",
       "source_file": "tsconfig.json",
-      "source_location": "L22",
+      "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions_paths",
-      "target": "tsconfig_paths"
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_compileroptions_lib",
+      "target": "ref_dom",
+      "confidence_score": 1.0
     },
     {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "AGENTS.md",
-      "source_location": null,
-      "weight": 0.95,
-      "source": "agents",
-      "target": "code_next_js_16_turbopack_root_confusion"
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_compileroptions_lib",
+      "target": "ref_dom_iterable",
+      "confidence_score": 1.0
     },
     {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "AGENTS.md",
-      "source_location": null,
-      "weight": 0.95,
-      "source": "agents",
-      "target": "code_turbopack_css_filewatcher_miss"
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_compileroptions_lib",
+      "target": "ref_esnext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_mts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_next_dev_types_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_next_env_d_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_next_types_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_include",
+      "target": "ref_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "tsconfig_exclude",
+      "target": "ref_node_modules",
+      "confidence_score": 1.0
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
-      "source_file": "AGENTS.md",
+      "source_file": ".github/workflows/playwright.yml",
       "source_location": null,
-      "weight": 0.85,
-      "source": "agents",
-      "target": "platforms_next_js_16_breaking_changes"
+      "weight": 1.0,
+      "source": "_github_workflows_playwright_workflow",
+      "target": "agents_architecture_overview"
     },
     {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "AGENTS.md",
       "source_location": null,
-      "weight": 0.75,
-      "source": "agents",
-      "target": "platforms_vercel_bun_auto_detection"
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_architecture_overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_ken_burns_hero"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_nextjs16_not_the_nextjs_you_know"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_package_manager_bun_rule"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_playwright_browser_install_gotcha"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_reveal_animations"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_smooth_scroll_nav_bug"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_testimonial_carousel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_document",
+      "target": "agents_turbopack_css_hot_reload_gotcha"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "line 1",
-      "weight": 1.0,
-      "source": "claude",
-      "target": "agents"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/concepts/agents-md-claude-md-shim-pattern.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "concepts_agents_md_claude_md_shim_pattern",
-      "target": "agents"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "entities_casacolinacare_com_azure_devops_project",
-      "target": "agents"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/concepts/agents-md-claude-md-shim-pattern.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concepts_agents_md_claude_md_shim_pattern",
-      "target": "claude"
+      "source": "claude_agents_md_shim",
+      "target": "agents_document"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "wiki/_schema.md",
+      "confidence_score": 0.85,
+      "source_file": "AGENTS.md",
       "source_location": null,
-      "weight": 0.95,
-      "source": "wiki__schema",
-      "target": "wiki__index"
+      "weight": 1.0,
+      "source": "agents_turbopack_css_hot_reload_gotcha",
+      "target": "wiki_code_next_js_16_turbopack_root_confusion_page"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/Next.js 16 ComponentMod.handler Architecture.md",
+      "source_file": "wiki/code/graphify-cli-not-invokable-via-bun.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_next_js_16_componentmod_handler_architecture",
-      "target": "code_next_js_16_turbopack_root_confusion"
+      "source": "wiki_code_graphify_cli_not_invokable_via_bun_page",
+      "target": "claude_graphify_rules"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/Next.js 16 ComponentMod.handler Architecture.md",
+      "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_next_js_16_componentmod_handler_architecture",
-      "target": "platforms_next_js_16_breaking_changes"
+      "source": "readme_observability_langfuse",
+      "target": "docs_langfuse_local_setup_page"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_next_js_16_componentmod_handler_architecture"
+      "source": "readme_code_quality_vercel_skill",
+      "target": "docs_vercel_react_best_practices_setup_page"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/Next.js 16 Turbopack Root Confusion.md",
+      "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_next_js_16_turbopack_root_confusion",
-      "target": "platforms_next_js_16_breaking_changes"
+      "source": "readme_claude_code_plugins",
+      "target": "docs_plugins_for_this_repo_page"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
+      "source_file": "docs/langfuse-local-setup.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_turbopack_css_filewatcher_miss",
-      "target": "code_next_js_16_turbopack_root_confusion"
+      "source": "docs_langfuse_local_setup_page",
+      "target": "docs_langfuse_local_setup_env_vars"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Vercel bun auto-detection.md",
+      "source_file": "docs/langfuse-local-setup.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "platforms_vercel_bun_auto_detection",
-      "target": "code_next_js_16_turbopack_root_confusion"
+      "source": "docs_langfuse_local_setup_page",
+      "target": "docs_langfuse_local_setup_fail_open_design"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "docs/langfuse-local-setup.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_next_js_16_turbopack_root_confusion"
+      "source": "docs_langfuse_local_setup_page",
+      "target": "docs_langfuse_local_setup_stop_hook"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "docs/langfuse-local-setup.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_designsync_binary_truncation"
+      "source": "docs_langfuse_local_setup_page",
+      "target": "docs_langfuse_local_setup_troubleshooting"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
+      "source_file": "docs/plugins-for-this-repo.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_next_font_axes_weight_constraint",
-      "target": "code_next_font_axes_weight_constraint_fraunces"
+      "source": "docs_plugins_for_this_repo_dropped_plugins",
+      "target": "docs_langfuse_local_setup_page"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
+      "source_file": "docs/plugins-for-this-repo.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_next_font_axes_weight_constraint",
-      "target": "concepts_wiki_gotchas_lack_code_side_back_references"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/code/next-font-axes-weight-constraint.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "code_next_font_axes_weight_constraint",
-      "target": "platforms_next_js_16_breaking_changes"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_next_font_axes_weight_constraint"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "code_next_font_axes_weight_constraint"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "code_playwright_cli_vs_playwright_test",
-      "target": "code_turbopack_css_filewatcher_miss"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "code_turbopack_css_filewatcher_miss",
-      "target": "concepts_wiki_gotchas_lack_code_side_back_references"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_turbopack_css_filewatcher_miss"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "code_turbopack_css_filewatcher_miss"
+      "source": "docs_plugins_for_this_repo_required_plugins",
+      "target": "docs_langfuse_local_setup_page"
     },
     {
       "relation": "semantically_similar_to",
       "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
+      "confidence_score": 0.65,
+      "source_file": "docs/langfuse-local-setup.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "concepts_wiki_gotchas_lack_code_side_back_references",
-      "target": "concepts_bug_driven_tdd_red_spec"
+      "source": "docs_langfuse_local_setup_fail_open_design",
+      "target": "wiki__schema_tiebreaker_rule"
     },
     {
-      "relation": "references",
+      "relation": "semantically_similar_to",
       "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "wiki/concepts/Wiki Gotchas Lack Code-Side Back-References.md",
+      "confidence_score": 0.65,
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "concepts_wiki_gotchas_lack_code_side_back_references",
-      "target": "platforms_graphify_scope_for_casacolinacare_v2"
+      "source": "wiki_code_graphify_update_re_extraction_gotchas_build_merge_replace_on_reextract",
+      "target": "docs_langfuse_local_setup_troubleshooting"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "docs/plugins-for-this-repo.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "concepts_wiki_gotchas_lack_code_side_back_references"
+      "source": "docs_plugins_for_this_repo_page",
+      "target": "docs_plugins_for_this_repo_dropped_plugins"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
+      "source_file": "docs/plugins-for-this-repo.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__log",
-      "target": "concepts_wiki_gotchas_lack_code_side_back_references"
+      "source": "docs_plugins_for_this_repo_page",
+      "target": "docs_plugins_for_this_repo_optional_plugins"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "docs/plugins-for-this-repo.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "concepts_agents_md_claude_md_shim_pattern"
+      "source": "docs_plugins_for_this_repo_page",
+      "target": "docs_plugins_for_this_repo_required_plugins"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
+      "source_file": "docs/plugins-for-this-repo.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__log",
-      "target": "concepts_agents_md_claude_md_shim_pattern"
+      "source": "docs_plugins_for_this_repo_page",
+      "target": "docs_plugins_for_this_repo_settings_json_mechanism"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
+      "source_file": "docs/plugins-for-this-repo.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "concepts_bug_driven_tdd_red_spec",
-      "target": "code_playwright_cli_vs_playwright_test"
+      "source": "docs_plugins_for_this_repo_required_plugins",
+      "target": "docs_vercel_react_best_practices_setup_page"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
+      "source_file": "docs/plugins-for-this-repo.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "concepts_bug_driven_tdd_red_spec",
-      "target": "entities_casacolinacare_com_azure_devops_project"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "concepts_bug_driven_tdd_red_spec"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "concepts_bug_driven_tdd_red_spec"
+      "source": "docs_plugins_for_this_repo_required_plugins",
+      "target": "wiki__schema_taxonomy"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "entities_casacolinacare_com_azure_devops_project",
-      "target": "entities_casacolinacare_com_azure_devops_project_casacolinadestination_com"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_azure_devops_mcp_identity_lookup",
-      "target": "entities_casacolinacare_com_azure_devops_project"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "entities_casacolinacare_com_azure_devops_project"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "entities_casacolinacare_com_azure_devops_project"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_cli_and_skills_dir_plugins",
-      "target": "platforms_claude_code_plugin_cli_and_skills_dir_plugins_graphify"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_cli_and_skills_dir_plugins",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_cli_and_skills_dir_plugins",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_claude_code_plugin_cli_and_skills_dir_plugins"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_claude_code_plugin_cli_and_skills_dir_plugins"
-    },
-    {
-      "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
-      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_cli_and_skills_dir_plugins_graphify",
-      "target": "platforms_graphify_scope_for_casacolinacare_v2"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_azure"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_claude_plugins_official"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_commit_commands"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_gitlab"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_jx_pm_ado"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse_observability"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "wiki/_log.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities"
+      "source": "wiki__log_wiki_log",
+      "target": "docs_plugins_for_this_repo_required_plugins"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_vercel_react_best_practices_setup_page",
+      "target": "docs_vercel_react_best_practices_setup_install_path_b"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_vercel_react_best_practices_setup_page",
+      "target": "docs_vercel_react_best_practices_setup_vendored_skill"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/vercel-react-best-practices-setup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_vercel_react_best_practices_setup_page",
+      "target": "docs_vercel_react_best_practices_setup_windows_symlink_caveat"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Claude Code Plugin Marketplace Naming Ambiguities.md",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.3,
+      "source_file": "docs/vercel-react-best-practices-setup.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse",
-      "target": "platforms_claude_code_plugin_marketplace_naming_ambiguities_langfuse_observability"
+      "source": "docs_vercel_react_best_practices_setup_windows_symlink_caveat",
+      "target": "wiki_code_bun_bunx_not_on_path_windows_page"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "wiki/_backlog.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_playwright_cli_vs_playwright_test",
-      "target": "platforms_next_js_16_breaking_changes"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Vercel bun auto-detection.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_vercel_bun_auto_detection",
-      "target": "platforms_next_js_16_breaking_changes"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_next_js_16_breaking_changes"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_vercel_cli_first_deploy_auto_connects_github",
-      "target": "platforms_vercel_bun_auto_detection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_vercel_domain_alias_vs_project_domains_api",
-      "target": "platforms_vercel_cli_first_deploy_auto_connects_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_vercel_cli_first_deploy_auto_connects_github"
+      "source": "wiki__backlog_priority_taxonomy",
+      "target": "wiki__schema_taxonomy"
     },
     {
       "relation": "references",
@@ -2554,18 +3333,8 @@
       "source_file": "wiki/_log.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_vercel_cli_first_deploy_auto_connects_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_vercel_domain_alias_vs_project_domains_api",
-      "target": "platforms_vercel_bun_auto_detection"
+      "source": "wiki__log_wiki_log",
+      "target": "wiki__backlog_priority_taxonomy"
     },
     {
       "relation": "references",
@@ -2574,18 +3343,8 @@
       "source_file": "wiki/_index.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_vercel_bun_auto_detection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_vercel_bun_auto_detection"
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_bun_bunx_not_on_path_windows_page"
     },
     {
       "relation": "references",
@@ -2594,8 +3353,88 @@
       "source_file": "wiki/_index.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_vercel_domain_alias_vs_project_domains_api"
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_cred_grid_hardcoded_columns_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_designsync_binary_truncation_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_graphify_cli_not_invokable_via_bun_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_next_font_axes_weight_constraint_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_next_js_16_componentmod_handler_architecture_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_next_js_16_turbopack_root_confusion_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_playwright_cli_vs_playwright_test_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__index_wiki_index",
+      "target": "wiki_code_sitewide_content_duplication_pattern_page"
     },
     {
       "relation": "references",
@@ -2604,8 +3443,78 @@
       "source_file": "wiki/_log.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_vercel_domain_alias_vs_project_domains_api"
+      "source": "wiki__log_wiki_log",
+      "target": "wiki__index_wiki_index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki__schema_taxonomy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_bun_bunx_not_on_path_windows_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_cred_grid_hardcoded_columns_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_graphify_cli_not_invokable_via_bun_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_playwright_cli_vs_playwright_test_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki__log_wiki_log",
+      "target": "wiki_code_sitewide_content_duplication_pattern_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/code/Next.js 16 ComponentMod.handler Architecture.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_next_js_16_componentmod_handler_architecture_page",
+      "target": "wiki_code_next_js_16_turbopack_root_confusion_page"
     },
     {
       "relation": "references",
@@ -2614,8 +3523,8 @@
       "source_file": "wiki/code/bun-bunx-not-on-path-windows.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_bun_bunx_not_on_path_windows",
-      "target": "code_graphify_cli_not_invokable_via_bun"
+      "source": "wiki_code_bun_bunx_not_on_path_windows_page",
+      "target": "wiki_code_graphify_cli_not_invokable_via_bun_page"
     },
     {
       "relation": "references",
@@ -2624,28 +3533,8 @@
       "source_file": "wiki/code/bun-bunx-not-on-path-windows.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_bun_bunx_not_on_path_windows",
-      "target": "code_playwright_cli_vs_playwright_test"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_bun_bunx_not_on_path_windows"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "code_bun_bunx_not_on_path_windows"
+      "source": "wiki_code_bun_bunx_not_on_path_windows_page",
+      "target": "wiki_code_playwright_cli_vs_playwright_test_page"
     },
     {
       "relation": "references",
@@ -2654,128 +3543,8 @@
       "source_file": "wiki/code/cred-grid-hardcoded-columns.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_cred_grid_hardcoded_columns",
-      "target": "code_sitewide_content_duplication_pattern"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_cred_grid_hardcoded_columns"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "code_cred_grid_hardcoded_columns"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "wiki/code/graphify-cli-not-invokable-via-bun.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "code_graphify_cli_not_invokable_via_bun",
-      "target": "code_playwright_cli_vs_playwright_test"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "code_playwright_cli_vs_playwright_test",
-      "target": "code_playwright_cli_vs_playwright_test_playwright_cli"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "code_playwright_cli_vs_playwright_test",
-      "target": "code_playwright_cli_vs_playwright_test_playwright_test"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_playwright_cli_vs_playwright_test"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "code_playwright_cli_vs_playwright_test"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_sitewide_content_duplication_pattern"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "code_sitewide_content_duplication_pattern"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_azure_devops_mcp_identity_lookup",
-      "target": "platforms_azure_devops_mcp_identity_lookup_core_get_identity_ids"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_azure_devops_mcp_identity_lookup"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_azure_devops_mcp_identity_lookup"
+      "source": "wiki_code_cred_grid_hardcoded_columns_page",
+      "target": "wiki_code_sitewide_content_duplication_pattern_page"
     },
     {
       "relation": "references",
@@ -2784,8 +3553,8 @@
       "source_file": "wiki/code/graphify-cli-not-invokable-via-bun.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_graphify_cli_not_invokable_via_bun",
-      "target": "platforms_graphify_scope_for_casacolinacare_v2"
+      "source": "wiki_code_graphify_cli_not_invokable_via_bun_page",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_page"
     },
     {
       "relation": "references",
@@ -2794,80 +3563,368 @@
       "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_graphify_update_re_extraction_gotchas",
-      "target": "platforms_graphify_scope_for_casacolinacare_v2"
+      "source": "wiki_code_graphify_update_re_extraction_gotchas_page",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_ast_invariant_edits"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "platforms_graphify_scope_for_casacolinacare_v2"
+      "source": "wiki_code_graphify_update_re_extraction_gotchas_page",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_build_merge_replace_on_reextract"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/code/graphify-update-re-extraction-gotchas.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_graphify_update_re_extraction_gotchas_ast_invariant_edits",
+      "target": "wiki_code_graphify_update_re_extraction_gotchas_build_merge_replace_on_reextract"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
+      "source_file": "wiki/code/playwright-cli-vs-playwright-test.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__log",
-      "target": "platforms_graphify_scope_for_casacolinacare_v2"
+      "source": "wiki_code_playwright_cli_vs_playwright_test_page",
+      "target": "wiki_code_playwright_cli_vs_playwright_test_conflict_callout"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "wiki/code/sitewide-content-duplication-pattern.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_graphify_cli_not_invokable_via_bun"
+      "source": "wiki_code_sitewide_content_duplication_pattern_page",
+      "target": "wiki_code_sitewide_content_duplication_pattern_marquee_duplication"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_index.md",
+      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__index",
-      "target": "code_graphify_update_re_extraction_gotchas"
+      "source": "wiki_code_turbopack_css_filewatcher_miss",
+      "target": "wiki_concepts_wiki_gotchas_lack_code_side_back_references"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "wiki/code/turbopack-css-filewatcher-miss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_code_turbopack_css_filewatcher_miss",
+      "target": "wiki_platforms_windows_git_worktree_remove_fails_due_to_own_shell_cwd"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_concepts_bug_driven_tdd_red_spec",
+      "target": "wiki_concepts_wiki_gotchas_lack_code_side_back_references"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
+      "source_file": "wiki/concepts/bug-driven-tdd-red-spec.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__log",
-      "target": "code_graphify_cli_not_invokable_via_bun"
+      "source": "wiki_concepts_bug_driven_tdd_red_spec",
+      "target": "wiki_entities_casacolinacare_com_azure_devops_project"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/_log.md",
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
       "source_location": null,
       "weight": 1.0,
-      "source": "wiki__log",
-      "target": "code_graphify_update_re_extraction_gotchas"
+      "source": "wiki_entities_casacolinacare_com_azure_devops_project",
+      "target": "wiki_entities_casacolinacare_com_azure_devops_project_bug_207038"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "wiki/code/graphify-cli-not-invokable-via-bun.md",
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
       "source_location": null,
       "weight": 1.0,
-      "source": "code_graphify_cli_not_invokable_via_bun",
-      "target": "code_graphify_update_re_extraction_gotchas"
+      "source": "wiki_entities_casacolinacare_com_azure_devops_project",
+      "target": "wiki_platforms_azure_devops_user_story_tasks_panel_renders_as_a_checklist_only_with_per_ac_child_tasks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/entities/CasaColinaCare.com (Azure DevOps Project).md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_entities_casacolinacare_com_azure_devops_project",
+      "target": "wiki_platforms_jx_pm_impl_story_plan_s_worktree_isolation_can_t_see_changes_already_staged_in_the_main_tree"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Azure DevOps MCP identity lookup.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_azure_devops_mcp_identity_lookup",
+      "target": "wiki_entities_casacolinacare_com_azure_devops_project"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+      "target": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates_tf401320"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+      "target": "wiki_platforms_azure_devops_user_story_tasks_panel_renders_as_a_checklist_only_with_per_ac_child_tasks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Azure DevOps Task fields reject certain values on state-transition updates.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+      "target": "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
+      "target": "wiki_platforms_azure_devops_user_story_tasks_panel_renders_as_a_checklist_only_with_per_ac_child_tasks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Azure DevOps wit_update_work_item rejects mixed-field-type batches.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches",
+      "target": "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_vercel_domain_alias_vs_project_domains_api",
+      "target": "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+      "target": "wiki_platforms_claude_code_plugin_marketplace_naming_ambiguities"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Vercel bun auto-detection.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_vercel_bun_auto_detection",
+      "target": "wiki_platforms_next_js_16_breaking_changes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
+      "target": "wiki_platforms_vercel_bun_auto_detection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Vercel CLI first deploy auto-connects GitHub.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
+      "target": "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_vercel_domain_alias_vs_project_domains_api",
+      "target": "wiki_platforms_vercel_cli_first_deploy_auto_connects_github"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Vercel GitHub integration auto-deploys production on merge to main.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
+      "target": "wiki_platforms_vercel_bun_auto_detection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Vercel GitHub integration auto-deploys production on merge to main.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
+      "target": "wiki_platforms_vercel_domain_alias_vs_project_domains_api"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/Vercel domain alias vs project domains API.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_vercel_domain_alias_vs_project_domains_api",
+      "target": "wiki_platforms_vercel_bun_auto_detection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/platforms/jx-pm impl-story-plan's worktree isolation can't see changes already staged in the main tree.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wiki_platforms_jx_pm_impl_story_plan_s_worktree_isolation_can_t_see_changes_already_staged_in_the_main_tree",
+      "target": "wiki_platforms_windows_git_worktree_remove_fails_due_to_own_shell_cwd"
     }
   ],
-  "hyperedges": [],
-  "built_at_commit": "942b6387bfccecd379b1ab65539ca8c65860f996"
+  "hyperedges": [
+    {
+      "id": "wiki_code_taxonomy_membership",
+      "label": "wiki/code pages implement the Code taxonomy bucket",
+      "nodes": [
+        "wiki__schema_taxonomy",
+        "wiki_code_next_js_16_componentmod_handler_architecture_page",
+        "wiki_code_next_js_16_turbopack_root_confusion_page",
+        "wiki_code_bun_bunx_not_on_path_windows_page",
+        "wiki_code_cred_grid_hardcoded_columns_page",
+        "wiki_code_designsync_binary_truncation_page",
+        "wiki_code_graphify_cli_not_invokable_via_bun_page",
+        "wiki_code_graphify_update_re_extraction_gotchas_page",
+        "wiki_code_next_font_axes_weight_constraint_page",
+        "wiki_code_playwright_cli_vs_playwright_test_page",
+        "wiki_code_sitewide_content_duplication_pattern_page"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/_schema.md"
+    },
+    {
+      "id": "windows_path_resolution_gotcha_cluster",
+      "label": "Windows PATH/environment-resolution gotchas discovered in the same sessions",
+      "nodes": [
+        "wiki_code_bun_bunx_not_on_path_windows_page",
+        "wiki_code_graphify_cli_not_invokable_via_bun_page",
+        "wiki_code_playwright_cli_vs_playwright_test_conflict_callout"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/code/bun-bunx-not-on-path-windows.md"
+    },
+    {
+      "id": "graphify_operational_mechanics_cluster",
+      "label": "graphify CLI usage rule plus its invocation and re-extraction gotchas",
+      "nodes": [
+        "claude_graphify_rules",
+        "wiki_code_graphify_cli_not_invokable_via_bun_page",
+        "wiki_code_graphify_update_re_extraction_gotchas_page"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "ado_field_validation_quirks",
+      "label": "ADO wit_update_work_item field-validation quirks",
+      "nodes": [
+        "wiki_platforms_azure_devops_task_fields_reject_certain_values_on_state_transition_updates",
+        "wiki_platforms_azure_devops_multiline_field_format_html_vs_markdown_varies_per_work_item_not_by_type",
+        "wiki_platforms_azure_devops_wit_update_work_item_rejects_mixed_field_type_batches"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/platforms/Azure DevOps wit_update_work_item rejects mixed-field-type batches.md"
+    },
+    {
+      "id": "vercel_deployment_pipeline_casacolinacare",
+      "label": "Vercel deployment pipeline behavior for casacolinacare-v2",
+      "nodes": [
+        "wiki_platforms_vercel_cli_first_deploy_auto_connects_github",
+        "wiki_platforms_vercel_bun_auto_detection",
+        "wiki_platforms_vercel_github_integration_auto_deploys_production_on_merge_to_main",
+        "wiki_platforms_vercel_domain_alias_vs_project_domains_api"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/platforms/Vercel GitHub integration auto-deploys production on merge to main.md"
+    },
+    {
+      "id": "claude_code_tooling_ecosystem_casacolinacare",
+      "label": "Claude Code plugin/skill tooling ecosystem for casacolinacare-v2",
+      "nodes": [
+        "wiki_platforms_claude_code_plugin_cli_and_skills_dir_plugins",
+        "wiki_platforms_claude_code_plugin_marketplace_naming_ambiguities",
+        "wiki_platforms_graphify_scope_for_casacolinacare_v2"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/platforms/Claude Code Plugin CLI and Skills-Dir Plugins.md"
+    }
+  ],
+  "built_at_commit": "d545bc892af0b73838568419f5ec2989ef02a1b4"
 }
