@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import SmoothLink from '@/app/components/SmoothLink';
-import TestimonialCarousel from '@/app/components/TestimonialCarousel';
+import TestimonialSection from '@/app/components/TestimonialSection';
 
 export default function Page() {
   return (
@@ -243,7 +243,7 @@ export default function Page() {
       </section>
 
       {/* TESTIMONIAL */}
-      <TestimonialCarousel />
+      <TestimonialSection />
 
       {/* CARE LEVELS */}
       <section className="care">
