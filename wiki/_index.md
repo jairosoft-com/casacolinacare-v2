@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
-updated: 2026-07-13
-page_count: 29
+updated: 2026-07-14
+page_count: 32
 ---
 
 # Wiki Index
@@ -32,6 +32,9 @@ _No plugins yet._
 
 - [[Claude Code Plugin CLI and Skills-Dir Plugins]] — `claude plugin install/list/details` CLI; skills-dir plugins under `~/.claude/skills/` auto-load without marketplace install
 - [[Claude Code Plugin Marketplace Naming Ambiguities]] — no exact "git"/"ado" plugin exists; `langfuse` vs `langfuse-observability` are distinct plugins
+- [[Claude Code to Langfuse session tracing]] — the langfuse Stop hook reads keys from `os.environ` (no `.env` loader); put them in gitignored `settings.local.json`, not `.env`, or tracing dies on restart
+- [[Claude Code plugin enablement is per-developer]] — `enabledPlugins` in gitignored `settings.local.json` isn't shared; commit it to `settings.json` to declare the repo's plugin set (installs stay per-machine)
+- [[Vendored skills symlink breaks on Windows git]] — `.claude/skills/*` → `.agents/skills/*` symlinks need `core.symlinks=true` or they clone as text files on Windows and the skill won't load
 - [[graphify Scope for casacolinacare-v2]] — scope to app/tests/wiki/root; exclude `.claude/` and `claude_design/` to avoid the 2M-word warning
 - [[Next.js 16 Breaking Changes]] — Turbopack default, async-only request APIs, middleware→proxy rename, new render path
 - [[Vercel bun auto-detection]] — `bun.lock` presence causes Vercel build system to use bun automatically; no vercel.json needed

@@ -4,6 +4,21 @@ title: Wiki Log
 
 # Wiki Log
 
+## 2026-07-14 — Session Insights: Langfuse tracing + plugin/skill onboarding
+
+- **Operation**: insights
+- **Label**: Langfuse tracing + Claude Code plugin/skill onboarding
+- **Pages created**:
+  - `platforms/Claude Code to Langfuse session tracing.md` (platform)
+  - `platforms/Claude Code plugin enablement is per-developer.md` (platform)
+  - `platforms/Vendored skills symlink breaks on Windows git.md` (platform)
+- **Pages updated**:
+  - `platforms/Claude Code Plugin Marketplace Naming Ambiguities.md` — clarified that the langfuse tracer is published to two marketplaces (`langfuse@langfuse-observability` == `langfuse-observability@claude-plugins-official`, same v1.0.0 hook)
+- **Ideas extracted**: 0
+- **Conflicts flagged**: 0
+- **Cross-references added**: 5
+- **Outcome**: Success
+
 ## 2026-07-13 — Session Insights: ADO story creation, refinement, and implementation for #208447/#208450
 
 - **Operation**: insights
