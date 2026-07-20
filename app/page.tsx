@@ -389,7 +389,7 @@ export default function Page() {
               <li>+1 808 444 1168</li>
               <li>kriss@casacolinacare.com</li>
               <li>189 Anapalau Street</li>
-              <li>Hawaii Kai · 96825</li>
+              <li>Honolulu · 96825</li>
             </ul>
           </div>
         </div>
