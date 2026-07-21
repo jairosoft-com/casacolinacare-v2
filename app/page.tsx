@@ -305,7 +305,7 @@ export default function Page() {
             <div className="cred">
               <div className="seal">★</div>
               <h4>State Licensed ARCH I</h4>
-              <p>License OCHA #1808-C · Reviewed and renewed by Hawaii Dept. of Health (OHCA), annually</p>
+              <p>License OHCA #1808-C · Reviewed and renewed by Hawaii Dept. of Health (OHCA), annually</p>
             </div>
             <div className="cred">
               <div className="seal">✓</div>
@@ -347,7 +347,7 @@ export default function Page() {
               </div>
               <div className="addr">
                 189 Anapalau Street<br />
-                Hawaii Kai · Honolulu, HI 96825
+                Honolulu, HI 96825
               </div>
               <div className="hours">
                 <span>Mon–Sat · 8:00 AM – 7:00 PM</span>

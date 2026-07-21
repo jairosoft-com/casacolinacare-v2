@@ -22,7 +22,7 @@ test.describe('Casa Colina — credentials content', () => {
     expect(credText).not.toContain('March 2025');
   });
 
-  test('208851 — State Licensed ARCH I credential shows the updated license number', async ({ page }) => {
+  test('208878 — State Licensed ARCH I credential shows OHCA, not OCHA', async ({ page }) => {
     await page.goto('/');
     const credText = await page
       .locator('.cred')
@@ -30,7 +30,7 @@ test.describe('Casa Colina — credentials content', () => {
       .locator('p')
       .innerText();
 
-    expect(credText).toContain('License OCHA #1808-C · Reviewed and renewed by Hawaii Dept. of Health (OHCA), annually');
-    expect(credText).not.toContain('License #HI-01840');
+    expect(credText).toContain('License OHCA #1808-C · Reviewed and renewed by Hawaii Dept. of Health (OHCA), annually');
+    expect(credText).not.toContain('License OCHA #1808-C');
   });
 });
