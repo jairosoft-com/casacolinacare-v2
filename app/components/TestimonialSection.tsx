@@ -18,8 +18,8 @@ export default function TestimonialSection() {
         <div className="testi-img-wrap">
           <div className="testi-img">
             <Image
-              src="/assets/caregiver-resident.png"
-              alt="Marikriss with a resident"
+              src="/assets/kriss-homepage-new.png"
+              alt="Kriss, RN, sharing a quiet moment with a resident"
               fill
               sizes="(min-width: 1320px) 464px, 42vw"
               style={{ objectFit: 'cover', objectPosition: 'center' }}
