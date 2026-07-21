@@ -13,7 +13,7 @@ test('testimonial section renders founder-story design and stays responsive', as
 
   const textColumn = page.locator('.testimonial-inner > div').first();
   const photoWrap = page.locator('.testi-img-wrap');
-  const photo = page.getByRole('img', { name: 'Marikriss with a resident' });
+  const photo = page.getByRole('img', { name: 'Kriss, RN, sharing a quiet moment with a resident' });
   await expect(photo).toBeVisible();
   await expect(photoWrap.locator('.testi-img')).toHaveCSS('border-radius', '38px 160px');
 
