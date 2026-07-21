@@ -17,7 +17,7 @@ test('testimonial section renders founder-story design and stays responsive', as
   await expect(photo).toBeVisible();
   await expect(photoWrap.locator('.testi-img')).toHaveCSS('border-radius', '38px 160px');
 
-  const cite = page.getByText('♡ Marikriss');
+  const cite = page.getByText('♡ Kriss');
   await expect(cite).toBeVisible();
 
   // desktop: photo column sits beside the text column, not rotating/cycling
