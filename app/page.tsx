@@ -305,7 +305,7 @@ export default function Page() {
             <div className="cred">
               <div className="seal">★</div>
               <h4>State Licensed ARCH I</h4>
-              <p>License #HI-01840 · Reviewed and renewed by Hawaii Dept. of Health (OHCA), annually</p>
+              <p>License OCHA #1808-C · Reviewed and renewed by Hawaii Dept. of Health (OHCA), annually</p>
             </div>
             <div className="cred">
               <div className="seal">✓</div>

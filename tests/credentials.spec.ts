@@ -21,4 +21,16 @@ test.describe('Casa Colina — credentials content', () => {
     expect(credText).toContain('March 2026 · no deficiencies');
     expect(credText).not.toContain('March 2025');
   });
+
+  test('208851 — State Licensed ARCH I credential shows the updated license number', async ({ page }) => {
+    await page.goto('/');
+    const credText = await page
+      .locator('.cred')
+      .filter({ has: page.locator('h4', { hasText: 'State Licensed ARCH I' }) })
+      .locator('p')
+      .innerText();
+
+    expect(credText).toContain('License OCHA #1808-C · Reviewed and renewed by Hawaii Dept. of Health (OHCA), annually');
+    expect(credText).not.toContain('License #HI-01840');
+  });
 });
