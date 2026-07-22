@@ -3,7 +3,7 @@ title: jx-pm:impl-story-plan's worktree isolation can't see changes already stag
 type: platform
 tags: [claude-code, jx-pm, worktree, git, plugin]
 created: 2026-07-08
-updated: 2026-07-13
+updated: 2026-07-22
 source_count: 1
 aliases: [impl-story-plan worktree, staged changes worktree mismatch, untracked file worktree]
 ---
@@ -28,6 +28,12 @@ verification. Had this gone unnoticed, the same file would have been missing aft
 fresh clone, CI run, or production deploy, since `git worktree add` only materializes committed,
 tracked content.
 
+**Related case (2026-07-22):** the same blind spot extends to `node_modules/` itself. Running
+`next dev` inside a freshly-created worktree failed immediately: `"couldn't find the Next.js
+package (next/package.json)"` — because `node_modules/` is gitignored, and a worktree only
+materializes committed, tracked content, exactly like the untracked-image case above but for the
+entire dependency tree instead of one asset.
+
 ## Fix
 
 Before creating a worktree, check whether the task is actually "write new code" (worktree is
@@ -41,6 +47,10 @@ whether any file the task references is untracked. If so, copy it into the workt
 there directly) alongside the code change — otherwise the fix silently breaks outside the current
 worktree.
 
+For Node.js projects, also symlink `node_modules` from the main tree into the worktree
+(`ln -s <main>/node_modules <worktree>/node_modules`) before running dev servers or tests there —
+faster and sufficient versus a fresh install, and avoids the missing-package failure above.
+
 ## Related
 
 - [[CasaColinaCare.com (Azure DevOps Project)]]
@@ -50,3 +60,4 @@ worktree.
 
 - casacolinacare-v2 dev session 2026-07-08
 - Session: ADO story creation, refinement, and implementation for #208447/#208450 (2026-07-13)
+- Session: Story #208916 end-to-end + kriss-homepage-new2 hotfixes (2026-07-22)

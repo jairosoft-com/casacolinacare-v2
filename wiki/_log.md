@@ -4,6 +4,26 @@ title: Wiki Log
 
 # Wiki Log
 
+## 2026-07-22 — Session Insights: Story #208916 end-to-end + kriss-homepage-new2 hotfixes
+
+- **Operation**: insights
+- **Label**: Story #208916 end-to-end (create-story → refine-story → test-case → generate → plan-story → impl-story-plan → PR merge) + kriss-homepage-new2 hotfixes
+- **Pages created**:
+  - `platforms/gh pr merge --delete-branch fails when a worktree holds the branch.md` (platform)
+  - `concepts/CI-gated PR merge via background poll-and-merge script.md` (concept)
+  - `platforms/jx-pm refine-story implementation-check hardcodes wrong repo.md` (platform)
+  - `ideas/Casa Colina main has 7 pre-existing failing bugs.spec.ts tests.md` (idea, raw)
+- **Pages updated**:
+  - `platforms/Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type.md` — added the `op: "replace"` requirement to force Markdown format via `wit_update_work_item`
+  - `platforms/Azure DevOps Task fields reject certain values on state-transition updates.md` — added Task terminal state must be `"Closed"`, not `"Done"`
+  - `platforms/jx-pm impl-story-plan's worktree isolation can't see changes already staged in the main tree.md` — broadened to cover missing `node_modules/` breaking Turbopack in a fresh worktree
+  - `platforms/Windows git worktree remove fails due to own shell cwd.md` — added a third cause (Windows path-length limit, "Filename too long") plus a note on force-deleting squash-merged branches
+  - `entities/CasaColinaCare.com (Azure DevOps Project).md` — cross-referenced the 3 new platform/idea pages from this session
+- **Ideas extracted**: 1
+- **Conflicts flagged**: 0
+- **Cross-references added**: 6
+- **Outcome**: Success
+
 ## 2026-07-14 — Session Insights: Langfuse tracing + plugin/skill onboarding
 
 - **Operation**: insights

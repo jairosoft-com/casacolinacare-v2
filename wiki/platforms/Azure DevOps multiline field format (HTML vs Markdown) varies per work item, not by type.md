@@ -3,7 +3,7 @@ title: Azure DevOps multiline field format (HTML vs Markdown) varies per work it
 type: platform
 tags: [azure-devops, work-item-fields, html, markdown, rich-text]
 created: 2026-07-08
-updated: 2026-07-13
+updated: 2026-07-22
 source_count: 1
 aliases: [multilineFieldsFormat, ado html vs markdown fields]
 ---
@@ -27,6 +27,14 @@ Additional gotcha found in the same session: backtick-wrapped angle-bracket text
 `` `<Image alt>` ``) gets silently stripped by ADO's sanitizer even inside backticks — the
 rendered field just shows empty backticks. Avoid literal `<...>` syntax in field values; describe
 the element in prose instead (e.g. "the Image component's alt text").
+
+**Forcing the format via `wit_update_work_item` (2026-07-22):** sending
+`{op: "add", path: "/multilineFieldsFormat/<field>", value: "Markdown"}` alone throws
+`"The type changed without a value. Please provide a valid value."` Pairing it with a same-call
+`add` patch of the field's *value* avoids that error, but if the value patch happens to be
+unchanged from what's already stored, the call still returns 200 while silently leaving the
+format at `"html"` — no error, no effect. Using `op: "replace"` for **both** the value patch and
+the format patch in the same call is what actually flips the format.
 
 ## Fix
 
@@ -55,3 +63,4 @@ field:
 ## Sources
 
 - casacolinacare-v2 dev session 2026-07-08
+- Session: Story #208916 end-to-end + kriss-homepage-new2 hotfixes (2026-07-22)
