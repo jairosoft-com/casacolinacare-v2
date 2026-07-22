@@ -90,8 +90,8 @@ export default function Page() {
               <div className="eyebrow accent">A letter from our home</div>
               <div className="essay-img">
                 <Image
-                  src="/assets/caregiver-resident.png"
-                  alt="A caregiver sharing a quiet moment with a resident"
+                  src="/assets/kriss-homepage-new1.png"
+                  alt="Kriss, RN, owner and director of Casa Colina Care"
                   fill
                   sizes="(min-width: 1320px) 473px, 42vw"
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
