@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 // Test Case 208839 - Essay and testimonial sections display swapped photos
-test('essay section shows kriss-homepage-new1 photo, testimonial shows kriss-homepage-new photo', async ({ page }) => {
+test('essay section shows kriss-homepage-new2 photo, testimonial shows kriss-homepage-new photo', async ({ page }) => {
   await page.goto('/');
 
   const heroImg = page.locator('.hero-img img');
@@ -9,7 +9,7 @@ test('essay section shows kriss-homepage-new1 photo, testimonial shows kriss-hom
 
   const essayImg = page.locator('.essay-img img');
   await essayImg.scrollIntoViewIfNeeded();
-  await expect(essayImg).toHaveAttribute('src', /kriss-homepage-new1\.png/);
+  await expect(essayImg).toHaveAttribute('src', /kriss-homepage-new2\.png/);
 
   const testimonialImg = page.locator('.testi-img img');
   await testimonialImg.scrollIntoViewIfNeeded();
