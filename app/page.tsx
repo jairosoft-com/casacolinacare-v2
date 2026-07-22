@@ -167,7 +167,7 @@ export default function Page() {
             <h2>Five bed home. One real kitchen.<br />Koko Head from the <span className="i">front lawn.</span></h2>
           </div>
           <div className="mosaic reveal">
-            <div className="mosaic-img" style={{ gridColumn: '1/8', gridRow: '1/4' }}>
+            <div className="mosaic-img mosaic-img-1">
               <Image
                 src="/assets/home-kokohead.jpg"
                 alt="Koko Head crater seen from the home's back lawn"
@@ -177,7 +177,7 @@ export default function Page() {
               />
               <div className="mosaic-cap">Koko Head, from the lawn</div>
             </div>
-            <div className="mosaic-img" style={{ gridColumn: '8/13', gridRow: '1/3' }}>
+            <div className="mosaic-img mosaic-img-2">
               <Image
                 src="/assets/home-living-room-wide.jpg"
                 alt="The living room, looking out to the garden"
@@ -187,7 +187,7 @@ export default function Page() {
               />
               <div className="mosaic-cap">The living room, garden side</div>
             </div>
-            <div className="mosaic-img" style={{ gridColumn: '8/13', gridRow: '3/5' }}>
+            <div className="mosaic-img mosaic-img-3">
               <Image
                 src="/assets/home-kitchen-island.jpg"
                 alt="The kitchen island at midday"
@@ -197,7 +197,7 @@ export default function Page() {
               />
               <div className="mosaic-cap">The kitchen at midday</div>
             </div>
-            <div className="mosaic-img" style={{ gridColumn: '1/5', gridRow: '4/6' }}>
+            <div className="mosaic-img mosaic-img-4">
               <Image
                 src="/assets/home-lanai-chairs.jpg"
                 alt="Chairs on the lanai in afternoon shade"
@@ -207,7 +207,7 @@ export default function Page() {
               />
               <div className="mosaic-cap">The lanai, afternoon shade</div>
             </div>
-            <div className="mosaic-img" style={{ gridColumn: '5/9', gridRow: '4/6' }}>
+            <div className="mosaic-img mosaic-img-5">
               <Image
                 src="/assets/home-bathroom-modern.jpg"
                 alt="Walk-in shower in a resident bathroom"
@@ -217,7 +217,7 @@ export default function Page() {
               />
               <div className="mosaic-cap">Walk-in shower, every room</div>
             </div>
-            <div className="mosaic-img" style={{ gridColumn: '9/13', gridRow: '5/6' }}>
+            <div className="mosaic-img mosaic-img-6">
               <Image
                 src="/assets/home-dog-portrait.jpg"
                 alt="The home's resident dog"
