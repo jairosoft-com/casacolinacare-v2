@@ -134,7 +134,7 @@ export default function Page() {
             <div className="pillar reveal">
               <div className="num">i.</div>
               <h3>Personal plans</h3>
-              <p>A care plan built for her — not a room number. Updated as needs change, with family at the table.</p>
+              <p>A care plan built for them — not a room number. Updated as needs change, with family at the table.</p>
               <div className="more">Read about care →</div>
             </div>
             <div className="pillar reveal">
