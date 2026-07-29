@@ -135,7 +135,7 @@ export default function Page() {
               <div className="num">i.</div>
               <h3>Personal plans</h3>
               <p>A care plan built for them — not a room number. Updated as needs change, with family at the table.</p>
-              <div className="more">Read about care →</div>
+              <div className="more"><SmoothLink href="#care-levels">Read about care →</SmoothLink></div>
             </div>
             <div className="pillar reveal">
               <div className="num">ii.</div>
@@ -147,13 +147,13 @@ export default function Page() {
               <div className="num">iii.</div>
               <h3>Real food</h3>
               <p>Home-cooked meals, shaped by her tastes. Lemon-ginger tea on the lanai if she&apos;d like it.</p>
-              <div className="more">A day at the home →</div>
+              <div className="more"><SmoothLink href="#place">A day at the home →</SmoothLink></div>
             </div>
             <div className="pillar reveal">
               <div className="num">iv.</div>
               <h3>Quiet grounds</h3>
               <p>Tropical, tended, and close to family. Trade winds through the lanai most afternoons.</p>
-              <div className="more">See the home →</div>
+              <div className="more"><SmoothLink href="#place">See the home →</SmoothLink></div>
             </div>
           </div>
         </div>
@@ -246,7 +246,7 @@ export default function Page() {
       <TestimonialSection />
 
       {/* CARE LEVELS */}
-      <section className="care">
+      <section className="care" id="care-levels">
         <div className="wrap">
           <div className="care-head reveal">
             <div>
