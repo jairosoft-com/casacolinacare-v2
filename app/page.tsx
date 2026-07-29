@@ -22,7 +22,7 @@ export default function Page() {
             <SmoothLink href="#visit">Visit</SmoothLink>
           </div>
           <div className="nav-cta">
-            <span className="phone"><a href="tel:+18084441168">+1 (808) 444-1168</a></span>
+            <span className="phone"><a href="tel:+18084441168" className="tel-link">+1 (808) 444-1168</a></span>
             <SmoothLink href="#visit" className="btn btn-primary">
               Request a visit <span className="arr">→</span>
             </SmoothLink>
@@ -338,11 +338,11 @@ export default function Page() {
             <div className="visit-card reveal">
               <div>
                 <div className="label">Speak directly with Kriss</div>
-                <div className="phone"><a href="tel:+18084441168">+1 808 444 1168</a></div>
-                <div className="email"><a href="mailto:kriss@casacolinacare.com">kriss@casacolinacare.com</a></div>
+                <div className="phone"><a href="tel:+18084441168" className="tel-link">+1 808 444 1168</a></div>
+                <div className="email"><a href="mailto:kriss@casacolinacare.com" className="addr-link">kriss@casacolinacare.com</a></div>
               </div>
               <div className="addr">
-                <a href="https://www.google.com/maps/search/?api=1&query=189+Anapalau+Street+Honolulu+HI+96825" target="_blank" rel="noopener">
+                <a href="https://www.google.com/maps/search/?api=1&query=189+Anapalau+Street+Honolulu+HI+96825" target="_blank" rel="noopener" className="addr-link">
                   189 Anapalau Street<br />
                   Honolulu, HI 96825
                 </a>
