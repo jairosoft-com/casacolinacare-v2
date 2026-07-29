@@ -22,7 +22,7 @@ export default function Page() {
             <SmoothLink href="#visit">Visit</SmoothLink>
           </div>
           <div className="nav-cta">
-            <span className="phone">+1 (808) 444-1168</span>
+            <span className="phone"><a href="tel:+18084441168">+1 (808) 444-1168</a></span>
             <SmoothLink href="#visit" className="btn btn-primary">
               Request a visit <span className="arr">→</span>
             </SmoothLink>
@@ -342,12 +342,14 @@ export default function Page() {
             <div className="visit-card reveal">
               <div>
                 <div className="label">Speak directly with Kriss</div>
-                <div className="phone">+1 808 444 1168</div>
-                <div className="email">kriss@casacolinacare.com</div>
+                <div className="phone"><a href="tel:+18084441168">+1 808 444 1168</a></div>
+                <div className="email"><a href="mailto:kriss@casacolinacare.com">kriss@casacolinacare.com</a></div>
               </div>
               <div className="addr">
-                189 Anapalau Street<br />
-                Honolulu, HI 96825
+                <a href="https://www.google.com/maps/search/?api=1&query=189+Anapalau+Street+Honolulu+HI+96825" target="_blank" rel="noopener">
+                  189 Anapalau Street<br />
+                  Honolulu, HI 96825
+                </a>
               </div>
               <div className="hours">
                 <span>Mon–Sat · 8:00 AM – 7:00 PM</span>
@@ -386,10 +388,10 @@ export default function Page() {
           <div>
             <h4>Speak with us</h4>
             <ul>
-              <li>+1 808 444 1168</li>
-              <li>kriss@casacolinacare.com</li>
-              <li>189 Anapalau Street</li>
-              <li>Honolulu · 96825</li>
+              <li><a href="tel:+18084441168">+1 808 444 1168</a></li>
+              <li><a href="mailto:kriss@casacolinacare.com">kriss@casacolinacare.com</a></li>
+              <li><a href="https://www.google.com/maps/search/?api=1&query=189+Anapalau+Street+Honolulu+HI+96825" target="_blank" rel="noopener">189 Anapalau Street</a></li>
+              <li><a href="https://www.google.com/maps/search/?api=1&query=189+Anapalau+Street+Honolulu+HI+96825" target="_blank" rel="noopener">Honolulu · 96825</a></li>
             </ul>
           </div>
         </div>

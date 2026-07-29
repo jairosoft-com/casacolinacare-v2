@@ -21,7 +21,9 @@ test('nav, visit card, and footer expose real tel/mailto/map links', async ({ pa
   await expect(footer.locator('a[href="tel:+18084441168"]')).toHaveCount(1);
   await expect(footer.locator('a[href="mailto:kriss@casacolinacare.com"]')).toHaveCount(1);
   const footerMapLink = footer.locator('a[href*="google.com/maps"]');
-  await expect(footerMapLink).toHaveCount(1);
-  await expect(footerMapLink).toHaveAttribute('target', '_blank');
-  await expect(footerMapLink).toHaveAttribute('rel', /noopener/);
+  await expect(footerMapLink).toHaveCount(2);
+  for (const link of await footerMapLink.all()) {
+    await expect(link).toHaveAttribute('target', '_blank');
+    await expect(link).toHaveAttribute('rel', /noopener/);
+  }
 });
