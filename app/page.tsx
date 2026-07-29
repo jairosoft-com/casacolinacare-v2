@@ -334,10 +334,6 @@ export default function Page() {
               <div className="eyebrow accent" style={{ marginBottom: '20px' }}>Come see the home</div>
               <h2>Tours are private,<br />one family <span className="i">at a time.</span></h2>
               <p>We&apos;ll walk you through the home, introduce you to the team, and answer everything. No hard sell. No fluorescent lights. Just a real conversation about your family.</p>
-              <div className="visit-actions">
-                <a href="#" className="btn btn-accent">Request a consultation <span className="arr">→</span></a>
-                <a href="#" className="btn btn-ghost">Schedule a visit</a>
-              </div>
             </div>
             <div className="visit-card reveal">
               <div>
