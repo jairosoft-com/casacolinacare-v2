@@ -8,7 +8,7 @@ test('footer Visit list links to their sections, and hero/testimonial have the n
   // that also contain that heading as a descendant (see ADO Bug #207042).
   const visitList = page.locator('footer h4:text-is("Visit") + ul');
 
-  const homeLink = visitList.getByRole('link', { name: 'Home' });
+  const homeLink = visitList.getByRole('link', { name: 'Home', exact: true });
   await expect(homeLink).toHaveAttribute('href', '#top');
   const aboutLink = visitList.getByRole('link', { name: 'About' });
   await expect(aboutLink).toHaveAttribute('href', '#about');

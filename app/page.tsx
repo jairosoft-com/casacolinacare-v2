@@ -34,7 +34,7 @@ export default function Page() {
       </nav>
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero" id="top">
         <div className="hero-img">
           <Image
             src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=2400&q=80&auto=format&fit=crop"
@@ -370,10 +370,10 @@ export default function Page() {
           <div>
             <h4>Visit</h4>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Care</li>
-              <li>The home</li>
+              <li><SmoothLink href="#top">Home</SmoothLink></li>
+              <li><SmoothLink href="#about">About</SmoothLink></li>
+              <li><SmoothLink href="#care">Care</SmoothLink></li>
+              <li><SmoothLink href="#place">The home</SmoothLink></li>
             </ul>
           </div>
           <div>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function TestimonialSection() {
   return (
-    <section className="testimonial">
+    <section className="testimonial" id="about">
       <div className="testimonial-inner reveal">
         <div>
           <h2>Discover the heart<br />behind our <span className="i">care.</span></h2>
