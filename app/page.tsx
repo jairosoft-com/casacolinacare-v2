@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import SmoothLink from '@/app/components/SmoothLink';
+import NavLinks from '@/app/components/NavLinks';
 import TestimonialSection from '@/app/components/TestimonialSection';
 
 export default function Page() {
@@ -14,13 +15,7 @@ export default function Page() {
             Casa Colina Care
             <small>EST. 2026</small>
           </div>
-          <div className="nav-links">
-            <a href="#" className="active">Home</a>
-            <SmoothLink href="#story">About</SmoothLink>
-            <SmoothLink href="#care">Care</SmoothLink>
-            <SmoothLink href="#place">The Home</SmoothLink>
-            <SmoothLink href="#visit">Visit</SmoothLink>
-          </div>
+          <NavLinks />
           <div className="nav-cta">
             <span className="phone"><a href="tel:+18084441168" className="tel-link">+1 (808) 444-1168</a></span>
             <SmoothLink href="#visit" className="btn btn-primary">
