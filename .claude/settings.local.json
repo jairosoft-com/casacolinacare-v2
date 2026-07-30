@@ -1,0 +1,35 @@
+{
+  "env": {
+    "LANGFUSE_PUBLIC_KEY": "pk-lf-fc8d2560-8ec3-4485-9e51-510d635e4177",
+    "LANGFUSE_SECRET_KEY": "sk-lf-776760c3-def2-4dce-88bc-e03f84d311d8",
+    "LANGFUSE_BASE_URL": "https://us.cloud.langfuse.com",
+    "TRACE_TO_LANGFUSE": "true",
+    "LANGFUSE_USER_ID": "jvillanueva@jairosoft.com"
+  },
+
+  "permissions": {
+    "allow": [
+      "Skill(langfuse)",
+      "Bash(bun info *)",
+      "PowerShell(bun info *)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(Get-Item *)",
+      "PowerShell(npm install *)",
+      "PowerShell(npm list *)",
+      "WebFetch(domain:langfuse.com)",
+      "WebFetch(domain:js-sdk-v4-docs-snapshot.langfuse.com)",
+      "Skill(update-config)",
+      "PowerShell(python -c \"import langfuse; print\\(langfuse.__version__\\)\" 2>&1; python3 -c \"import langfuse; print\\(langfuse.__version__\\)\" 2>&1)",
+      "PowerShell(pip install *)",
+      "PowerShell(python -m pip install \"langfuse>=4.0,<5\" 2>&1 | Select-Object -Last 5)",
+      "PowerShell(uv tool *)",
+      "Bash(uv tool *)",
+      "PowerShell(powershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\" 2>&1)",
+      "PowerShell(graphify *)",
+      "PowerShell(graphify install *)",
+      "Bash(Test-Path *)",
+      "PowerShell(python -c \"import graphify; print\\(graphify.__version__\\)\" 2>&1)",
+      "PowerShell(python -m pip install graphifyy -q 2>&1 | Select-Object -Last 5)"
+    ]
+  }
+}
