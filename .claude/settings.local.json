@@ -6,7 +6,6 @@
     "TRACE_TO_LANGFUSE": "true",
     "LANGFUSE_USER_ID": "jvillanueva@jairosoft.com"
   },
-
   "permissions": {
     "allow": [
       "Skill(langfuse)",
@@ -29,7 +28,43 @@
       "PowerShell(graphify install *)",
       "Bash(Test-Path *)",
       "PowerShell(python -c \"import graphify; print\\(graphify.__version__\\)\" 2>&1)",
-      "PowerShell(python -m pip install graphifyy -q 2>&1 | Select-Object -Last 5)"
+      "PowerShell(python -m pip install graphifyy -q 2>&1 | Select-Object -Last 5)",
+      "mcp__azure-devops__core_list_projects",
+      "mcp__azure-devops__wit_query",
+      "mcp__azure-devops__wit_work_item",
+      "Bash(xargs -n1 basename)",
+      "Bash(bun run *)",
+      "Bash(graphify --version)",
+      "Bash(graphify query *)",
+      "Bash(graphify explain *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000)",
+      "Skill(playwright-cli)",
+      "mcp__azure-devops__wit_work_item_write",
+      "mcp__azure-devops__wit_work_item_comment_write",
+      "Skill(jx-pm:refine-story)",
+      "Bash(playwright-cli open *)",
+      "Bash(playwright-cli resize *)",
+      "Bash(playwright-cli eval *)",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const doc = document.documentElement; const overflow = doc.scrollWidth - doc.clientWidth; const navCta = document.querySelector\\('.nav-cta'\\); const navCtaVisible = navCta ? getComputedStyle\\(navCta\\).display : 'n/a'; const worst = []; document.querySelectorAll\\('body *'\\).forEach\\(el => { if \\(el.closest\\('.strip'\\)\\) return; const r = el.getBoundingClientRect\\(\\); if \\(r.right > 391\\) worst.push\\({sel: \\(el.className && el.className.toString\\(\\)\\) || el.tagName, right: Math.round\\(r.right\\)}\\); }\\); worst.sort\\(\\(a,b\\)=>b.right-a.right\\); return { pageOverflow: overflow, navCtaDisplay: navCtaVisible, top5: worst.slice\\(0,5\\) }; }\")",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const visitActions = document.querySelector\\('.visit-actions'\\); const visitHtml = visitActions ? visitActions.innerHTML : 'NOT FOUND'; return visitHtml; }\")",
+      "Bash(playwright-cli reload *)",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const doc = document.documentElement; const overflow = doc.scrollWidth - doc.clientWidth; const worst = []; document.querySelectorAll\\('body *'\\).forEach\\(el => { if \\(el.closest\\('.strip'\\)\\) return; const r = el.getBoundingClientRect\\(\\); if \\(r.right > 391\\) worst.push\\({sel: \\(el.className && el.className.toString\\(\\)\\) || el.tagName, right: Math.round\\(r.right\\)}\\); }\\); worst.sort\\(\\(a,b\\)=>b.right-a.right\\); return { pageOverflow: overflow, top5: worst.slice\\(0,5\\) }; }\")",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { let found=null; document.querySelectorAll\\('p'\\).forEach\\(el=>{ const r=el.getBoundingClientRect\\(\\); if\\(r.right>391\\){ found={ text: el.textContent.slice\\(0,60\\), parentClass: el.parentElement.className, className: el.className, right: Math.round\\(r.right\\), left: Math.round\\(r.left\\) }; } }\\); return found; }\")",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const doc = document.documentElement; return doc.scrollWidth - doc.clientWidth; }\")",
+      "Bash(playwright-cli close *)",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const btn = document.querySelector\\('.nav-toggle-btn'\\); const r = btn.getBoundingClientRect\\(\\); const before = { width: Math.round\\(r.width\\), height: Math.round\\(r.height\\), tag: btn.tagName, ariaExpanded: btn.getAttribute\\('aria-expanded'\\) }; btn.click\\(\\); return before; }\")",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const btn = document.querySelector\\('.nav-toggle-btn'\\); const navLinksVisible = getComputedStyle\\(document.querySelector\\('.nav-links'\\)\\).display; return { ariaExpandedAfterClick: btn.getAttribute\\('aria-expanded'\\), navLinksDisplay: navLinksVisible }; }\")",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const btn = document.querySelector\\('.nav-toggle-btn'\\); btn.click\\(\\); return 'closed'; }\")",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const measure = sel => { const el = document.querySelector\\(sel\\); if \\(!el\\) return 'not found'; const r = el.getBoundingClientRect\\(\\); return { width: Math.round\\(r.width\\) }; }; return { pillarGrid: measure\\('.pillar-grid'\\), credGrid: measure\\('.cred-grid'\\), footerWrap: measure\\('footer .wrap'\\), careRow: measure\\('.care-row'\\), essay: measure\\('.essay'\\), visitInner: measure\\('.visit-inner'\\) }; }\")",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const link = [...document.querySelectorAll\\('.nav-links a'\\)].find\\(a => a.textContent.trim\\(\\) === 'The Home'\\); link.click\\(\\); return 'clicked'; }\")",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const h = [...document.querySelectorAll\\('h2'\\)].find\\(e => e.textContent.includes\\('Five bed home'\\)\\); const nav = document.querySelector\\('.nav'\\); return { headingTop: Math.round\\(h.getBoundingClientRect\\(\\).top\\), navBottom: Math.round\\(nav.getBoundingClientRect\\(\\).bottom\\), url: location.href }; }\")",
+      "Bash(playwright-cli goto *)",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { const h = [...document.querySelectorAll\\('h2'\\)].find\\(e => e.textContent.includes\\('Five bed home'\\)\\); const nav = document.querySelector\\('.nav'\\); return { headingTop: Math.round\\(h.getBoundingClientRect\\(\\).top\\), navBottom: Math.round\\(nav.getBoundingClientRect\\(\\).bottom\\) }; }\")",
+      "Bash(grep -E \"app[/\\\\\\\\\\\\\\\\]\\(page|globals|components\\)|tests[/\\\\\\\\\\\\\\\\]\\(bugs|footer-visit\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
