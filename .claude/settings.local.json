@@ -64,7 +64,14 @@
       "Bash(grep -E \"app[/\\\\\\\\\\\\\\\\]\\(page|globals|components\\)|tests[/\\\\\\\\\\\\\\\\]\\(bugs|footer-visit\\)\")",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git log *)",
+      "Bash(grep *)",
+      "Bash(playwright-cli --raw eval \"\\(\\) => { window.scrollTo\\(0, 1200\\); return window.scrollY; }\")",
+      "Bash(playwright-cli *)",
+      "Bash(tasklist //FI \"IMAGENAME eq node.exe\" //FI \"IMAGENAME eq bun.exe\")",
+      "Bash(tasklist)",
+      "Bash(taskkill //PID 20124 //F //T)"
     ]
   }
 }
