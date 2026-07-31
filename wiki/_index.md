@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
-updated: 2026-07-22
-page_count: 36
+updated: 2026-07-29
+page_count: 41
 ---
 
 # Wiki Index
@@ -13,8 +13,9 @@ page_count: 36
 ## Concepts
 
 - [[AGENTS.md + CLAUDE.md shim pattern]] — store agent guidance in AGENTS.md; CLAUDE.md is a one-line `@AGENTS.md` shim for multi-agent projects
-- [[Bug-driven TDD — red spec before fix]] — write failing tests asserting fixed behavior before writing any fix; ADO ID in test name gives direct traceability
+- [[Bug-driven TDD — red spec before fix]] — write failing tests asserting fixed behavior before writing any fix; generalized to the full story pipeline (create→refine→test case→red spec→plan→implement), not just pre-filed bugs
 - [[CI-gated PR merge via background poll-and-merge script]] — poll `gh pr checks` in the background until non-pending, then merge on green or report on fail — used 3x in one session
+- [[Legacy regression tests can go stale against a new design source]] — a design re-import can make a pre-existing red test's premise obsolete (fix vs. remove) or expose an unrelated locator bug in the test itself
 - [[Wiki Gotchas Lack Code-Side Back-References]] — graphify found documented gotchas (font axes, Turbopack CSS) have no structural link back to the source lines they apply to
 
 ## Entities
@@ -31,10 +32,12 @@ _No plugins yet._
 
 ## Platforms
 
+- [[Azure DevOps child work items don't inherit AssignedTo from parent]] — child Tasks/Test Cases are created unassigned even when the parent Story auto-assigns on Active; patch `AssignedTo` per child explicitly
 - [[Azure DevOps MCP identity lookup]] — no "whoami" tool; use `core_get_identity_ids` with an email/name `searchFilter`
 - [[Azure DevOps multiline field format (HTML vs Markdown) varies per work item, not by type]] — check `multilineFieldsFormat` before writing; `wit_update_work_item` needs `op: "replace"` on both value and format patch to actually force Markdown
 - [[Azure DevOps Task fields reject certain values on state-transition updates]] — omit `System.Reason`, never set `RemainingWork` to `"0"`, and use state `"Closed"` not `"Done"` for Tasks
 - [[Azure DevOps User Story Tasks panel renders as a checklist only with per-AC child Tasks]] — one child Task per Gherkin AC scenario, not one consolidated task, is what makes the Tasks panel render as a checkbox checklist
+- [[Claude Design MCP (DesignSync) for design-fidelity diffing]] — `list_files`/`get_file` against a claude.ai/design project ID reads raw HTML/CSS directly, no screenshot needed, to diff against live code
 - [[Azure DevOps wit_update_work_item rejects mixed-field-type batches]] — combining AC/format patches with unrelated scalar fields (Priority, StoryPoints) in one call fails; split into single-purpose calls
 - [[Claude Code Plugin CLI and Skills-Dir Plugins]] — `claude plugin install/list/details` CLI; skills-dir plugins under `~/.claude/skills/` auto-load without marketplace install
 - [[Claude Code Plugin Marketplace Naming Ambiguities]] — no exact "git"/"ado" plugin exists; `langfuse` vs `langfuse-observability` are distinct plugins
@@ -63,10 +66,12 @@ _No decisions yet._
 ## Code
 
 - [[next/font — axes + weight constraint for variable fonts]] — `axes` requires `weight` to be omitted; explicit weight array alongside `axes` throws a build error
+- [[Next.js 16 app/icon.svg overrides app/favicon.ico]] — the `icon` file convention takes priority over the more limited root-only `favicon.ico` slot
 - [[Turbopack CSS file-watch miss on programmatic write]] — programmatic file writes may not trigger HMR; `touch` the file to force recompile
 - [[Next.js 16 Turbopack Root Confusion]] — Turbopack infers parent dir as root when parent lockfiles exist; fix with `turbopack: { root: __dirname }` + clear `.next/`
 - [[DesignSync get_file truncates binary assets at 256 KB]] — binary images cap at 256 KB (`truncated: true`); use the archived project folder instead
 - [[Next.js 16 ComponentMod.handler Architecture]] — All App Router pages render via `ComponentMod.handler(req, res, ctx)` in base-server.js:1462
+- [[Playwright :has() filter matches ancestor elements, not just descendants]] — an ancestor-inclusive `:has()` filter can silently miscount across unrelated sibling content; scope with an adjacent-sibling selector instead
 - [[playwright-cli vs @playwright/test — two separate tools]] — playwright-cli is an interactive browser driver; @playwright/test is the spec runner; installing one does not imply the other
 - [[bun/bunx not on PATH in Windows Claude Code environment]] — invoke via full path `$env:USERPROFILE\.bun\bin\bun.exe` / `bunx.exe` in Bash and PowerShell tools
 - [[graphify CLI not invokable via bun/bunx]] — `bunx graphify` fails; CLAUDE.md's `graphify update .` step is currently blocked, invocation method unresolved

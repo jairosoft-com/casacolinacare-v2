@@ -27,9 +27,13 @@ The Azure DevOps project that backs this repo's bug tracking.
 - [[gh pr merge --delete-branch fails when a worktree holds the branch]]
 - [[jx-pm refine-story implementation-check hardcodes wrong repo]]
 - [[Casa Colina main has 7 pre-existing failing bugs.spec.ts tests]]
+- [[Legacy regression tests can go stale against a new design source]]
+- [[Claude Design MCP (DesignSync) for design-fidelity diffing]]
+- [[Azure DevOps child work items don't inherit AssignedTo from parent]]
 
 ## Sources
 
 - Session: Plugin mgmt + ADO project mapping (2026-07-06)
 - casacolinacare-v2 dev session 2026-07-08
 - Session: Story #208916 end-to-end + kriss-homepage-new2 hotfixes (2026-07-22)
+- Session: Lanai design-fidelity batch (5 stories) + hover/favicon/scroll-spy fixes (2026-07-29)

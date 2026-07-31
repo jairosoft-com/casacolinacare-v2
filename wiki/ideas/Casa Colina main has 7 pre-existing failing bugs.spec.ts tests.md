@@ -28,6 +28,11 @@ unfixed, not a stale test) — no new defect needed, filing one would have dupli
 - [Bug #207042](https://dev.azure.com/jairo/CasaColinaCare.com/_workitems/edit/207042) — Footer navigation items are plain text, no anchor links
 - [Bug #207043](https://dev.azure.com/jairo/CasaColinaCare.com/_workitems/edit/207043) — Pillar CTA text looks like links but is non-interactive
 
+## Related
+
+- [[Legacy regression tests can go stale against a new design source]] — #207041, #207042, #207043 turned out to need reconciliation, not straightforward fixes, once a Lanai design import gave a different ground truth than these bugs assumed
+
 ## Sources
 
 - Session: Story #208916 end-to-end + kriss-homepage-new2 hotfixes (2026-07-22)
+- Session: Lanai design-fidelity batch (5 stories) + hover/favicon/scroll-spy fixes (2026-07-29)

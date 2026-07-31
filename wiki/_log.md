@@ -4,6 +4,25 @@ title: Wiki Log
 
 # Wiki Log
 
+## 2026-07-29 — Session Insights: Lanai design-fidelity batch + hover/favicon/scroll-spy fixes
+
+- **Operation**: insights
+- **Label**: Lanai design-fidelity batch (5 stories, create→refine→test case→red spec→plan→implement pipeline) + hover states/favicon/scroll-spy nav follow-up fixes
+- **Pages created**:
+  - `concepts/legacy-regression-tests-stale-against-new-design.md` (concept)
+  - `code/playwright-has-filter-matches-ancestors.md` (code)
+  - `code/nextjs-16-icon-svg-overrides-favicon-ico.md` (code)
+  - `platforms/claude-design-mcp-designsync-for-design-fidelity-diffing.md` (platform)
+  - `platforms/azure-devops-child-work-items-dont-inherit-assignedto.md` (platform)
+- **Pages updated**:
+  - `concepts/bug-driven-tdd-red-spec.md` — generalized the red-spec pattern from a pre-filed bug backlog to the full story pipeline; documented the explicit red-first vs green-after decision
+  - `ideas/Casa Colina main has 7 pre-existing failing bugs.spec.ts tests.md` — cross-referenced the new stale-tests concept
+  - `entities/CasaColinaCare.com (Azure DevOps Project).md` — cross-referenced the 3 new project-relevant pages
+- **Ideas extracted**: 0
+- **Conflicts flagged**: 0
+- **Cross-references added**: 5
+- **Outcome**: Success
+
 ## 2026-07-22 — Session Insights: Story #208916 end-to-end + kriss-homepage-new2 hotfixes
 
 - **Operation**: insights

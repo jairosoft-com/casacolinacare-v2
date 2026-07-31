@@ -3,7 +3,7 @@ title: Bug-driven TDD — red spec before fix
 type: concept
 tags: [testing, tdd, playwright, bug-tracking, ado]
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-07-29
 source_count: 1
 aliases: [red spec, bug regression spec, failing test first]
 ---
@@ -43,11 +43,26 @@ expect(page.url()).not.toContain('#story');
 
 `tests/bugs.spec.ts` contains 8 tests for ADO bugs 207036–207043 (nav overflow, marquee, URL hash, tel:/mailto: links, inert care cards, placeholder CTAs, footer nav, pillar CTAs). All 8 were red at creation; 207037 passed immediately, revealing that the strip `overflow-x: hidden` was already in place.
 
+## Generalized to feature stories, not just bug fixes
+
+This pattern isn't limited to a pre-filed bug backlog. This project's standing story
+pipeline (create story → refine → test case → generate Playwright spec → plan → implement)
+applies the same red-before-fix discipline to brand-new feature stories: the spec is written
+and committed while the feature is still unimplemented, confirmed failing, then implementation
+turns it green.
+
+Confirmed as a deliberate choice, not a default: offered a choice between red-first (spec
+before code) and green-after (spec written once the fix already passes, matching how the
+first few design-fidelity stories were actually done), the user picked red-first as the
+standing default for all future stories on this project.
+
 ## Related
 
 - [[playwright-cli vs @playwright/test — two separate tools]]
 - [[CasaColinaCare.com (Azure DevOps Project)]]
+- [[Legacy regression tests can go stale against a new design source]]
 
 ## Sources
 
 - casacolinacare-v2 dev session 2026-06-22
+- Session: Lanai design-fidelity batch (5 stories) + hover/favicon/scroll-spy fixes (2026-07-29)
