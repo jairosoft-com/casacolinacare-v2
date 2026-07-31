@@ -2,12 +2,11 @@
  * Casa Colina Care — GA4 tracking spec
  *
  * Encodes ADO Test Case #209726 (Tests Story #209384).
- * AC1/AC2 tests FAIL on the current codebase — GA4 is not yet wired up. That is
- * intentional; they turn green once the story is implemented.
- * AC3 (graceful degradation) already passes today, since there is no GA4 script
- * to block yet — it stays green as a guard against future regressions.
+ * AC1/AC2 require NEXT_PUBLIC_GA_ID to be set (env var, e.g. via .env.local) —
+ * without it, the app deliberately skips rendering the GA4 scripts (see AC3),
+ * so those two tests fall back to red rather than false-passing.
  *
- * Run: bun run test:e2e -- -g "GA4"
+ * Run: NEXT_PUBLIC_GA_ID=G-TEST0000 bun run test:e2e -- -g "GA4"
  */
 
 import { expect, test } from '@playwright/test';
@@ -16,6 +15,17 @@ import { expect, test } from '@playwright/test';
 test.describe('GA4 tracking', () => {
   test('AC1 — pageview event fires to GA4 on page load', async ({ page }) => {
     await page.goto('/');
+
+    // next/script's "afterInteractive" strategy runs after hydration, not
+    // necessarily by the 'load' event — poll instead of reading immediately.
+    await page.waitForFunction(
+      () => {
+        const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
+        return Array.isArray(dl) && dl.length > 0;
+      },
+      undefined,
+      { timeout: 5000 }
+    );
 
     const dataLayerLength = await page.evaluate(() => {
       const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
@@ -29,6 +39,14 @@ test.describe('GA4 tracking', () => {
 
   test('AC2 — clicking the "Request a visit" CTA sends a GA4 custom event', async ({ page }) => {
     await page.goto('/');
+    await page.waitForFunction(
+      () => {
+        const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
+        return Array.isArray(dl) && dl.length > 0;
+      },
+      undefined,
+      { timeout: 5000 }
+    );
 
     const dataLayerLengthBefore = await page.evaluate(() => {
       const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
@@ -48,16 +66,16 @@ test.describe('GA4 tracking', () => {
   });
 
   test('AC3 — page still renders and functions if the GA4 script is blocked', async ({ page }) => {
-    const consoleErrors: string[] = [];
-    page.on('console', (msg) => {
-      if (msg.type() === 'error') consoleErrors.push(msg.text());
-    });
+    const pageErrors: string[] = [];
+    page.on('pageerror', (err) => pageErrors.push(err.message));
 
     await page.route(/googletagmanager\.com|google-analytics\.com/, (route) => route.abort());
     await page.goto('/');
 
     await expect(page.getByRole('heading', { level: 1 }).first()).toBeVisible();
     await expect(page.getByRole('link', { name: /Request a visit/ }).first()).toBeVisible();
-    expect(consoleErrors).toEqual([]);
+    // Browser-level "failed to load resource" logs from the deliberate route.abort()
+    // above are expected and not asserted on — only uncaught JS exceptions matter here.
+    expect(pageErrors).toEqual([]);
   });
 });

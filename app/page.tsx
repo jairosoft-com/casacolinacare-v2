@@ -18,7 +18,11 @@ export default function Page() {
           <NavLinks />
           <div className="nav-cta">
             <span className="phone"><a href="tel:+18084441168" className="tel-link">+1 (808) 444-1168</a></span>
-            <SmoothLink href="#visit" className="btn btn-primary">
+            <SmoothLink
+              href="#visit"
+              className="btn btn-primary"
+              trackEvent={{ name: 'cta_click', params: { cta: 'nav_request_a_visit' } }}
+            >
               Request a visit <span className="arr">→</span>
             </SmoothLink>
           </div>
