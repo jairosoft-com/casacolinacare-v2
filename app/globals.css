@@ -78,6 +78,7 @@ a{color:inherit;text-decoration:none}
   .nav-cta{flex-direction:row;align-items:center;justify-content:space-between;width:100%}
   .nav-inner:has(.nav-toggle-input:checked) .nav-links,
   .nav-inner:has(.nav-toggle-input:checked) .nav-cta{display:flex}
+  .nav:has(.nav-toggle-input:checked){background:var(--cream)}
 }
 
 @media (max-width: 420px){
