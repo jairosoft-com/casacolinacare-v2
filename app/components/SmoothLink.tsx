@@ -15,8 +15,8 @@ export default function SmoothLink({ href, className, style, children }: SmoothL
       const el = document.getElementById(href.replace('#', ''));
       if (el) {
         e.preventDefault();
-        // Deliberately does NOT update location.hash — known bug ADO 207038.
         window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' });
+        history.pushState(null, '', href);
       }
     }
   }

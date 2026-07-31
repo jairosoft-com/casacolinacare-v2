@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import SmoothLink from '@/app/components/SmoothLink';
 import NavLinks from '@/app/components/NavLinks';
+import NavToggle from '@/app/components/NavToggle';
 import TestimonialSection from '@/app/components/TestimonialSection';
 
 export default function Page() {
@@ -10,7 +11,6 @@ export default function Page() {
       {/* NAV */}
       <nav className="nav">
         <div className="nav-inner">
-          <input type="checkbox" id="nav-toggle" className="nav-toggle-input" />
           <div className="nav-brand">
             Casa Colina Care
             <small>EST. 2026</small>
@@ -22,9 +22,7 @@ export default function Page() {
               Request a visit <span className="arr">→</span>
             </SmoothLink>
           </div>
-          <label htmlFor="nav-toggle" className="nav-toggle-btn" aria-label="Menu">
-            <span></span><span></span><span></span>
-          </label>
+          <NavToggle />
         </div>
       </nav>
 
@@ -130,7 +128,7 @@ export default function Page() {
               <div className="num">i.</div>
               <h3>Personal plans</h3>
               <p>A care plan built for them — not a room number. Updated as needs change, with family at the table.</p>
-              <div className="more"><SmoothLink href="#care-levels">Read about care →</SmoothLink></div>
+              <SmoothLink href="#care-levels" className="more">Read about care →</SmoothLink>
             </div>
             <div className="pillar reveal">
               <div className="num">ii.</div>
@@ -142,13 +140,13 @@ export default function Page() {
               <div className="num">iii.</div>
               <h3>Real food</h3>
               <p>Home-cooked meals, shaped by her tastes. Lemon-ginger tea on the lanai if she&apos;d like it.</p>
-              <div className="more"><SmoothLink href="#place">A day at the home →</SmoothLink></div>
+              <SmoothLink href="#place" className="more">A day at the home →</SmoothLink>
             </div>
             <div className="pillar reveal">
               <div className="num">iv.</div>
               <h3>Quiet grounds</h3>
               <p>Tropical, tended, and close to family. Trade winds through the lanai most afternoons.</p>
-              <div className="more"><SmoothLink href="#place">See the home →</SmoothLink></div>
+              <SmoothLink href="#place" className="more">See the home →</SmoothLink>
             </div>
           </div>
         </div>
@@ -257,25 +255,21 @@ export default function Page() {
               <div className="num">i.</div>
               <h3>Assisted Living</h3>
               <p>Help with daily living, bathing, medication, and meals — while preserving as much independence as possible.</p>
-              <div className="arrow">→</div>
             </div>
             <div className="care-row">
               <div className="num">ii.</div>
               <h3>Special Diet Certified</h3>
               <p>Provide therapeutic or texture-modified diets. The PCP (Primary Care Physician) maintains signed orders, posts menus a month in advance, and strictly documents any food substitutions.</p>
-              <div className="arrow">→</div>
             </div>
             <div className="care-row">
               <div className="num">iii.</div>
               <h3>Respite &amp; Short-Stay</h3>
               <p>Short-term stays with a minimum stay of two weeks — so family caregivers can rest, travel, or recover.</p>
-              <div className="arrow">→</div>
             </div>
             <div className="care-row">
               <div className="num">iv.</div>
               <h3>End-of-Life Comfort</h3>
               <p>Gentle, loving care in familiar surroundings, in partnership with your hospice provider of choice.</p>
-              <div className="arrow">→</div>
             </div>
           </div>
         </div>
@@ -358,7 +352,7 @@ export default function Page() {
             <div className="brand">Casa Colina Care</div>
             <p className="tag">A family-style care home in Hawaii Kai. Five residents. Real aloha. Open since 2026.</p>
           </div>
-          <div>
+          <div className="footer-col-visit">
             <h4>Visit</h4>
             <ul>
               <li><SmoothLink href="#top">Home</SmoothLink></li>

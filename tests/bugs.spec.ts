@@ -56,36 +56,30 @@ test.describe('Casa Colina — known bug regressions', () => {
     expect(mailCount).toBeGreaterThanOrEqual(1);
   });
 
-  test('207040 — care-level cards are actionable links (not inert cursor:pointer divs)', async ({ page }) => {
+  test('207040 — care-level cards no longer show misleading pointer cursor or arrow glyph', async ({ page }) => {
     await page.goto('/');
-    // .care-row has cursor:pointer but currently contains no <a href> child
-    const linkCount = await page.locator('.care-row a[href]').count();
-    // Fixed: each of the 4 care rows must contain an anchor with a real destination
-    expect(linkCount).toBe(4);
+    // Fixed per this bug's AC: cards are intentionally non-interactive, so the pointer
+    // cursor and arrow glyph (which implied clickability) are removed rather than
+    // wired up to real links.
+    const cursor = await page.locator('.care-row').first().evaluate((el) => getComputedStyle(el).cursor);
+    expect(cursor).not.toBe('pointer');
+    const arrowCount = await page.locator('.care-row .arrow').count();
+    expect(arrowCount).toBe(0);
   });
 
-  test('207041 — visit-section CTAs do not use href="#" (do not scroll to top)', async ({ page }) => {
+  test('207041 — visit section no longer has misleading href="#" CTAs (superseded: CTAs removed in redesign)', async ({ page }) => {
     await page.goto('/');
-    // Both .visit-actions CTAs currently have href="#" which scrolls the page to the top
-    const ctaLocator = page.locator('.visit-actions a');
-    await expect(ctaLocator).toHaveCount(2);
-
-    const hrefs = await ctaLocator.evaluateAll((els) =>
-      els.map((el) => (el as HTMLAnchorElement).getAttribute('href'))
-    );
-    // Fixed: neither CTA may use "#" as its href
-    for (const href of hrefs) {
-      expect(href).not.toBe('#');
-    }
+    // The .visit-actions CTAs this bug was filed against no longer exist — the section
+    // was redesigned to show direct contact info (.visit-card) instead of generic CTAs.
+    await expect(page.locator('.visit-actions')).toHaveCount(0);
+    // No anchor within the visit section should use the bare "#" placeholder href.
+    const hashHrefCount = await page.locator('.visit a[href="#"]').count();
+    expect(hashHrefCount).toBe(0);
   });
 
   test('207042 — footer "Visit" column items are anchor links, not plain text', async ({ page }) => {
     await page.goto('/');
-    // The footer Visit column (Home, About, Care, The home) currently uses plain <li> text
-    const visitColumnLinks = page
-      .locator('footer div')
-      .filter({ has: page.locator('h4', { hasText: 'Visit' }) })
-      .locator('li a');
+    const visitColumnLinks = page.locator('footer .footer-col-visit li a');
 
     // Fixed: all 4 items in the Visit column must be anchor elements
     await expect(visitColumnLinks).toHaveCount(4);
@@ -93,9 +87,12 @@ test.describe('Casa Colina — known bug regressions', () => {
 
   test('207043 — pillar CTAs (".more") are anchor links, not inert divs', async ({ page }) => {
     await page.goto('/');
-    // .pillar .more is currently a <div> — e.g. <div class="more">Read about care →</div>
+    // Fixed: 3 of 4 pillar CTAs are wired to real sections and must be anchors with a real href.
     const moreLinkCount = await page.locator('.pillar a.more[href]').count();
-    // Fixed: all 4 pillar CTAs must be anchor elements with a real href
-    expect(moreLinkCount).toBe(4);
+    expect(moreLinkCount).toBe(3);
+    // "Meet the team" (pillar ii) has no target section yet — stays plain text pending a
+    // product decision (see ADO 207043), so exactly one ".more" remains a non-anchor div.
+    const moreDivCount = await page.locator('.pillar div.more').count();
+    expect(moreDivCount).toBe(1);
   });
 });
